@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Categories=System
+Exec=kdesu /usr/sbin/sli
+Icon=sli
+OnlyShowIn=KDE
+StartupNotify=true
+Terminal=false
+NoDisplay=false
+_Name=Slackel-Live Installation
+_GenericName=Slackel-Live Installation
+_Comment=Slackel-Live Installation

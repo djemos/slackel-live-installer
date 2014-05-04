@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-11 21:58+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/sli.ui:10
+msgid "About"
+msgstr ""
+
+#: src/sli.ui:19
+msgid "http://slackware-live.tuxfamily.org"
+msgstr ""
+
+#: src/sli.ui:20
+msgid "CeCILL <http://www.cecill.info/licences.fr.html>"
+msgstr ""
+
+#: src/sli.ui:53 src/sli.ui:100
+msgid "sli"
+msgstr ""
+
+#: src/sli.ui:63
+msgid "Error encountered."
+msgstr ""
+
+#: src/sli.ui:109
+msgid "Installation completed."
+msgstr ""
+
+#: src/sli.ui:148
+msgid "Your two root password entries do not match. Please verify and correct."
+msgstr ""
+
+#: src/sli.ui:199
+msgid "Your two user password entries do not match. Please verify and correct."
+msgstr ""
+
+#: src/sli.ui:250
+msgid ""
+"root password, user name and user password entries \n"
+"cannot be emtpy.\n"
+"root password and user password should have at least 5 characters\n"
+"\n"
+"Please verify and correct.\n"
+msgstr ""
+
+#: src/sli.ui:358
+msgid "_File"
+msgstr ""
+
+#: src/sli.ui:388
+msgid "_Help"
+msgstr ""
+
+#: src/sli.ui:480
+msgid "Partitions"
+msgstr ""
+
+#: src/sli.ui:484
+msgid ""
+"Important!\n"
+"\n"
+"Slackel needs, at the very minimum, one swap partition\n"
+"and one Linux partition to hold its main directory tree.\n"
+"\n"
+"If you do not already have these needed partitions ready, \n"
+"you should now click on the button 'Partitions'\n"
+"in order to create them. Be aware that partitioning a disk\n"
+"drive is a delicate operation which could lead to data loss\n"
+"if not performed cautiously. It is therefore highly advisable\n"
+"to backup important data before starting this procedure."
+msgstr ""
+
+#: src/sli.ui:523
+msgid ""
+"<i>Warning: copy / installation wipes everything on the selected location.</"
+"i>"
+msgstr ""
+
+#: src/sli.ui:549
+msgid "Copy location:"
+msgstr ""
+
+#: src/sli.ui:588
+msgid "click here if you want to copy system to usb"
+msgstr ""
+
+#: src/sli.ui:610
+msgid "Copy live system to usb"
+msgstr ""
+
+#: src/sli.ui:664
+msgid "Install location:"
+msgstr ""
+
+#: src/sli.ui:669
+msgid "Install (e)LiLo"
+msgstr ""
+
+#: src/sli.ui:673
+msgid "check this if you want to install (e)Lilo boot loader"
+msgstr ""
+
+#: src/sli.ui:714
+msgid "click here if you want to install system on hard disk"
+msgstr ""
+
+#: src/sli.ui:736
+msgid "Install live system"
+msgstr ""
+
+#: src/sli.ui:835
+msgid "Actions needed before proceed on system installation.\n"
+msgstr ""
+
+#: src/sli.ui:899
+msgid ""
+"Set root password, define login name, choose a password to be coupled with "
+"your\n"
+"login name."
+msgstr ""
+
+#: src/sli.ui:933
+msgid "root password"
+msgstr ""
+
+#: src/sli.ui:940
+msgid "user name"
+msgstr ""
+
+#: src/sli.ui:951
+msgid "user password"
+msgstr ""
+
+#: src/sli.ui:963
+msgid ""
+"Here you must define your login name which should only include\n"
+"alphanumerical characters with no space or upper case letters. "
+msgstr ""
+
+#: src/sli.ui:983
+msgid ""
+"Choose a password or passphrase to be coupled with your\n"
+"login name. Your password or passprase should include a mix\n"
+"of upper and lower case letters, numbers, and even symbols\n"
+"(such as the @, !, and &)"
+msgstr ""
+
+#: src/sli.ui:1006
+msgid ""
+"On Linux systems, the superuser, or root, is a special user\n"
+"account used for system administration. Here you must set\n"
+"its password or passphrase. Remember, this password or\n"
+"passphrase should include a mix of upper and lower case\n"
+"letters, numbers, and even symbols (such as the @, !, and &)"
+msgstr ""
+
+#: src/sli.ui:1029
+msgid ""
+"Here you must retype the superuser (root) password as a\n"
+"confirmation of your choice."
+msgstr ""
+
+#: src/sli.ui:1049
+msgid ""
+"Here you must retype your password as\n"
+"a confirmation of your choice."
+msgstr ""
+
+#: src/sli.ui:1068 src/sli.ui:1085
+msgid "visible"
+msgstr ""
+
+#: src/sli.ui:1073 src/sli.ui:1090
+msgid ""
+"Check this box if you want to be able to see the password\n"
+"you are typing."
+msgstr ""
+
+#: src/sli.ui:1128
+msgid "Choose installation mode"
+msgstr ""
+
+#: src/sli.ui:1153
+msgid "core installation"
+msgstr ""
+
+#: src/sli.ui:1158
+msgid ""
+"Core installation:\n"
+"Only the minimum essentials for a console system to start are \n"
+"included. A graphical environment is not provided. This is ideal \n"
+"if you are an experienced user and want to customize your \n"
+"installation for any specific purpose, such as a web server.\n"
+"file server etc. "
+msgstr ""
+
+#: src/sli.ui:1176
+msgid "basic installation"
+msgstr ""
+
+#: src/sli.ui:1181
+msgid ""
+"Basic installation:\n"
+"This installs only a basic desktop environment, with very few \n"
+"extra applications installed on top, such as a web browser and\n"
+"the gslapt package manager. Ideal for advanced users that \n"
+"would like to install a lightweight system and add their own\n"
+"choice of applications. "
+msgstr ""
+
+#: src/sli.ui:1199
+msgid "full installation"
+msgstr ""
+
+#: src/sli.ui:1204
+msgid ""
+"Full installation:\n"
+"Everything that is included in the iso is installed. That includes \n"
+"a complete desktop environment\n"
+"and a complete selection of matching applications,\n"
+"always following the \"one application per task\" rationale. "
+msgstr ""
+
+#: src/sli.ui:1245
+msgid "Error: system is not live."
+msgstr ""
+
+#: src/sli.desktop.in.h:1 src/sli-kde.desktop.in.h:1
+msgid "Slackel-Live Installation"
+msgstr ""

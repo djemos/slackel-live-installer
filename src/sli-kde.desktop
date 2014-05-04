@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+
+Name=Slackel-Live Installation
+Name[fr]=Installation de Slackel-Live
+Name[el]=Εγκατάσταση του Slackel-Live
+
+Categories=System
+Exec=kdesu /usr/sbin/sli
+Icon=sli
+OnlyShowIn=KDE
