@@ -32,6 +32,4 @@ EOF
 	cd ..
 rm -rf pkg
 md5sum sli-$VER-$ARCH-$RLZ.txz > sli-$VER-$ARCH-$RLZ.md5
-echo -e 
-"atk,bzip2,cairo,cxxlibs|gcc-g++,expat,fontconfig,freetype,gcc,gdk-pixbuf2,glib2,gtk+2,harfbuzz,icu4c,libX11,libXau,libXcomposite,libXcursor,libXdamage,libXdmcp,libXext,libXfixes,libXi,libXinerama,libXrandr,libXrender,libffi,libpng,libxcb,pango,pixman,zlib"
- > sli-$VER-$ARCH-$RLZ.dep
+echo -e "atk,bzip2,cairo,cxxlibs|gcc-g++,expat,fontconfig,freetype,gcc,gdk-pixbuf2,glib2,gtk+2,harfbuzz,icu4c,libX11,libXau,libXcomposite,libXcursor,libXdamage,libXdmcp,libXext,libXfixes,libXi,libXinerama,libXrandr,libXrender,libffi,libpng,libxcb,pango,pixman,zlib" > sli-$VER-$ARCH-$RLZ.dep
