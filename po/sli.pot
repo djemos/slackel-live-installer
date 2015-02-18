@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-11 21:58+0300\n"
+"POT-Creation-Date: 2015-02-18 13:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,19 +58,19 @@ msgid ""
 "Please verify and correct.\n"
 msgstr ""
 
-#: src/sli.ui:358
+#: src/sli.ui:357
 msgid "_File"
 msgstr ""
 
-#: src/sli.ui:388
+#: src/sli.ui:387
 msgid "_Help"
 msgstr ""
 
-#: src/sli.ui:480
+#: src/sli.ui:479
 msgid "Partitions"
 msgstr ""
 
-#: src/sli.ui:484
+#: src/sli.ui:483
 msgid ""
 "Important!\n"
 "\n"
@@ -85,74 +85,74 @@ msgid ""
 "to backup important data before starting this procedure."
 msgstr ""
 
-#: src/sli.ui:523
+#: src/sli.ui:522
 msgid ""
 "<i>Warning: copy / installation wipes everything on the selected location.</"
 "i>"
 msgstr ""
 
-#: src/sli.ui:549
+#: src/sli.ui:548
 msgid "Copy location:"
 msgstr ""
 
-#: src/sli.ui:588
+#: src/sli.ui:587
 msgid "click here if you want to copy system to usb"
 msgstr ""
 
-#: src/sli.ui:610
+#: src/sli.ui:609
 msgid "Copy live system to usb"
 msgstr ""
 
-#: src/sli.ui:664
+#: src/sli.ui:663
 msgid "Install location:"
 msgstr ""
 
-#: src/sli.ui:669
+#: src/sli.ui:668
 msgid "Install (e)LiLo"
 msgstr ""
 
-#: src/sli.ui:673
+#: src/sli.ui:672
 msgid "check this if you want to install (e)Lilo boot loader"
 msgstr ""
 
-#: src/sli.ui:714
+#: src/sli.ui:713
 msgid "click here if you want to install system on hard disk"
 msgstr ""
 
-#: src/sli.ui:736
+#: src/sli.ui:735
 msgid "Install live system"
 msgstr ""
 
-#: src/sli.ui:835
-msgid "Actions needed before proceed on system installation.\n"
+#: src/sli.ui:834
+msgid "Actions needed before proceeding with system installation.\n"
 msgstr ""
 
-#: src/sli.ui:899
+#: src/sli.ui:898
 msgid ""
 "Set root password, define login name, choose a password to be coupled with "
 "your\n"
 "login name."
 msgstr ""
 
-#: src/sli.ui:933
+#: src/sli.ui:932
 msgid "root password"
 msgstr ""
 
-#: src/sli.ui:940
+#: src/sli.ui:939
 msgid "user name"
 msgstr ""
 
-#: src/sli.ui:951
+#: src/sli.ui:950
 msgid "user password"
 msgstr ""
 
-#: src/sli.ui:963
+#: src/sli.ui:962
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters. "
 msgstr ""
 
-#: src/sli.ui:983
+#: src/sli.ui:982
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -160,7 +160,7 @@ msgid ""
 "(such as the @, !, and &)"
 msgstr ""
 
-#: src/sli.ui:1006
+#: src/sli.ui:1005
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -169,37 +169,37 @@ msgid ""
 "letters, numbers, and even symbols (such as the @, !, and &)"
 msgstr ""
 
-#: src/sli.ui:1029
+#: src/sli.ui:1028
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
 msgstr ""
 
-#: src/sli.ui:1049
+#: src/sli.ui:1048
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
 msgstr ""
 
-#: src/sli.ui:1068 src/sli.ui:1085
+#: src/sli.ui:1067 src/sli.ui:1084
 msgid "visible"
 msgstr ""
 
-#: src/sli.ui:1073 src/sli.ui:1090
+#: src/sli.ui:1072 src/sli.ui:1089
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
 msgstr ""
 
-#: src/sli.ui:1128
+#: src/sli.ui:1127
 msgid "Choose installation mode"
 msgstr ""
 
-#: src/sli.ui:1153
+#: src/sli.ui:1152
 msgid "core installation"
 msgstr ""
 
-#: src/sli.ui:1158
+#: src/sli.ui:1157
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are \n"
@@ -209,11 +209,11 @@ msgid ""
 "file server etc. "
 msgstr ""
 
-#: src/sli.ui:1176
+#: src/sli.ui:1175
 msgid "basic installation"
 msgstr ""
 
-#: src/sli.ui:1181
+#: src/sli.ui:1180
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few \n"
@@ -223,11 +223,11 @@ msgid ""
 "choice of applications. "
 msgstr ""
 
-#: src/sli.ui:1199
+#: src/sli.ui:1198
 msgid "full installation"
 msgstr ""
 
-#: src/sli.ui:1204
+#: src/sli.ui:1203
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -236,7 +236,7 @@ msgid ""
 "always following the \"one application per task\" rationale. "
 msgstr ""
 
-#: src/sli.ui:1245
+#: src/sli.ui:1244
 msgid "Error: system is not live."
 msgstr ""
 
