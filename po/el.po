@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sli-1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-18 13:41+0200\n"
-"PO-Revision-Date: 2015-02-18 13:42+0200\n"
+"POT-Creation-Date: 2015-03-04 10:50+0200\n"
+"PO-Revision-Date: 2015-03-31 23:31+0200\n"
 "Last-Translator: Dimitris Tzemos <djemos@slackel.gr>\n"
 "Language-Team: slackel <dijemos@gmail.com>\n"
 "Language: el\n"
@@ -26,27 +26,34 @@ msgstr "http://slackware-live.tuxfamily.org"
 msgid "CeCILL <http://www.cecill.info/licences.fr.html>"
 msgstr "CeCILL <http://www.cecill.info/licences.fr.html>"
 
-#: src/sli.ui:53 src/sli.ui:100
+#: src/sli.ui:55
+msgid ""
+"Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
+msgstr ""
+"Δεν μπορείτε να εγκαταστήσετε και το (e)Lilo και το Grub. Παρακαλώ επιλέξτε "
+"μόνο ένα."
+
+#: src/sli.ui:104 src/sli.ui:151
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:63
+#: src/sli.ui:114
 msgid "Error encountered."
 msgstr "Συνέβη σφάλμα."
 
-#: src/sli.ui:109
+#: src/sli.ui:160
 msgid "Installation completed."
 msgstr "Η εγκατάσταση τελείωσε."
 
-#: src/sli.ui:148
+#: src/sli.ui:199
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr "Οι κωδικοί διαχειριστή είναι διαφορετικοί. Παρακαλώ διορθώστε."
 
-#: src/sli.ui:199
+#: src/sli.ui:250
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr "Οι κωδικοί χρήστη είναι διαφορετικοί. Παρακαλώ διορθώστε."
 
-#: src/sli.ui:250
+#: src/sli.ui:301
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -61,19 +68,19 @@ msgstr ""
 "\n"
 "Παρακαλώ διορθώστε τα.\n"
 
-#: src/sli.ui:357
+#: src/sli.ui:414
 msgid "_File"
 msgstr "_Αρχείο"
 
-#: src/sli.ui:387
+#: src/sli.ui:444
 msgid "_Help"
 msgstr "_Βοήθεια"
 
-#: src/sli.ui:479
+#: src/sli.ui:536
 msgid "Partitions"
 msgstr "Διαχειριστής κατατμήσεων"
 
-#: src/sli.ui:483
+#: src/sli.ui:540
 msgid ""
 "Important!\n"
 "\n"
@@ -97,7 +104,7 @@ msgstr ""
 "με προσοχή. Επομένως, συνιστάται να δημιουργήσετε αντίγραφα ασφαλείας των\n"
 " σημαντικών δεδομένων πριν από την έναρξη αυτής της διαδικασίας."
 
-#: src/sli.ui:522
+#: src/sli.ui:579
 msgid ""
 "<i>Warning: copy / installation wipes everything on the selected location.</"
 "i>"
@@ -105,44 +112,66 @@ msgstr ""
 "<i>Προειδοποίηση: Η αντιγραφή / εγκατάσταση διαγράφει τα πάντα στην "
 "επιλεγμένη τοποθεσία.</i>"
 
-#: src/sli.ui:548
+#: src/sli.ui:605
 msgid "Copy location:"
 msgstr "Αντιγραφή σε:"
 
-#: src/sli.ui:587
+#: src/sli.ui:644
 msgid "click here if you want to copy system to usb"
 msgstr "Κάντε κλικ εδώ αν θέλετε να αντιγράψετε το σύστημα σε usb"
 
-#: src/sli.ui:609
+#: src/sli.ui:666
 msgid "Copy live system to usb"
 msgstr "Αντιγραφή live συστήματος σε usb"
 
-#: src/sli.ui:663
+#: src/sli.ui:729
 msgid "Install location:"
 msgstr "Εγκατάσταση σε:"
 
-#: src/sli.ui:668
+#: src/sli.ui:734
 msgid "Install (e)LiLo"
 msgstr "Εγκατάσταση (e)LiLo"
 
-#: src/sli.ui:672
+#: src/sli.ui:738
 msgid "check this if you want to install (e)Lilo boot loader"
 msgstr "Κάντε κλικ εδώ αν θέλετε να εγκαταστήσετε το (e)Lilo boot loader"
 
-#: src/sli.ui:713
+#: src/sli.ui:771
+msgid "Home location:"
+msgstr "Home διαμέρισμα:"
+
+#: src/sli.ui:782
+msgid ""
+"If you want to use a home partition to another disk then choose one from "
+"here.\n"
+"Otherwise leave it empty."
+msgstr ""
+"Αν θέλετε να χρησιμοποιήσετε ένα διαφορετικό διαμέρισμα για το κατάλογο "
+"χρήστη, επιλέξτε ένα από εδώ\n"
+"διαφορετικά αφήστε το πεδίο κενό."
+
+#: src/sli.ui:801
+msgid "Install Grub"
+msgstr "Εγκατάσταση Grub"
+
+#: src/sli.ui:805
+msgid "check this if you want to install Grub boot loader"
+msgstr "Κάντε κλικ εδώ αν θέλετε να εγκαταστήσετε το Grub boot loader"
+
+#: src/sli.ui:828
 msgid "click here if you want to install system on hard disk"
 msgstr "Κάντε κλικ εδώ αν θέλετε να εγκαταστήσετε το σύστημα στο σκληρό δίσκο"
 
-#: src/sli.ui:735
+#: src/sli.ui:850
 msgid "Install live system"
 msgstr "Εγκατάσταση live συστήματος"
 
-#: src/sli.ui:834
+#: src/sli.ui:949
 msgid "Actions needed before proceeding with system installation.\n"
 msgstr ""
 "Ενέργειες που χρειάζονται πριν προχωρήσετε στην εγκατάσταση του συστήματος.\n"
 
-#: src/sli.ui:898
+#: src/sli.ui:1013
 msgid ""
 "Set root password, define login name, choose a password to be coupled with "
 "your\n"
@@ -152,19 +181,19 @@ msgstr ""
 "χρήστη\n"
 "για είσοδο στο σύστημα."
 
-#: src/sli.ui:932
+#: src/sli.ui:1047
 msgid "root password"
 msgstr "Συνθηματικό διαχειριστή"
 
-#: src/sli.ui:939
+#: src/sli.ui:1054
 msgid "user name"
 msgstr "Όνομα χρήστη"
 
-#: src/sli.ui:950
+#: src/sli.ui:1065
 msgid "user password"
 msgstr "Συνθηματικό χρήστη"
 
-#: src/sli.ui:962
+#: src/sli.ui:1077
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters. "
@@ -173,7 +202,7 @@ msgstr ""
 "περιλαμβάνει μόνο αλφαριθμητικούς χαρακτήρες χωρίς κενά\n"
 "και κεφαλαία."
 
-#: src/sli.ui:982
+#: src/sli.ui:1097
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -184,7 +213,7 @@ msgstr ""
 "να περιλαμβάνει πεζά και κεφαλαία, νούμερα, ακόμα και\n"
 "σύμβολα (όπως @, ! και &)."
 
-#: src/sli.ui:1005
+#: src/sli.ui:1120
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -198,7 +227,7 @@ msgstr ""
 "κωδικό χρήστη. Ο κωδικός θα πρέπει να περιλαμβάνει πεζά\n"
 "και κεφαλαία, νούμερα, ακόμα και σύμβολα (όπως @, ! και &)"
 
-#: src/sli.ui:1028
+#: src/sli.ui:1143
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
@@ -206,17 +235,17 @@ msgstr ""
 "Εδώ πρέπει να επανεισάγετε τον κωδικό διαχειριστή (root) \n"
 "για επαλήθευση."
 
-#: src/sli.ui:1048
+#: src/sli.ui:1163
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
 msgstr "Εδώ πρέπει να επανεισάγετε τον κωδικό χρήστη για επαλήθευση."
 
-#: src/sli.ui:1067 src/sli.ui:1084
+#: src/sli.ui:1182 src/sli.ui:1199
 msgid "visible"
 msgstr "Ορατό"
 
-#: src/sli.ui:1072 src/sli.ui:1089
+#: src/sli.ui:1187 src/sli.ui:1204
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
@@ -224,15 +253,15 @@ msgstr ""
 "Επιλέξτε το αν επιθυμείτε να εμφανίζεται ο κωδικός\n"
 "κατά την πληκτρολόγηση."
 
-#: src/sli.ui:1127
+#: src/sli.ui:1242
 msgid "Choose installation mode"
 msgstr "Επιλέξτε τρόπο εγκατάστασης"
 
-#: src/sli.ui:1152
+#: src/sli.ui:1267
 msgid "core installation"
 msgstr "Εγκατάσταση core"
 
-#: src/sli.ui:1157
+#: src/sli.ui:1272
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are \n"
@@ -248,11 +277,11 @@ msgstr ""
 "τροποποιήσουν μια εγκατάσταση για οποιοδήποτε σκοπό, όπως\n"
 "web server, file server κλπ."
 
-#: src/sli.ui:1175
+#: src/sli.ui:1290
 msgid "basic installation"
 msgstr "Εγκατάσταση basic"
 
-#: src/sli.ui:1180
+#: src/sli.ui:1295
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few \n"
@@ -269,11 +298,11 @@ msgstr ""
 " εγκαταστήσουν ένα ελαφρύ σύστημα και να προσθέσουν τη δική  \n"
 "τους επιλογή εφαρμογών."
 
-#: src/sli.ui:1198
+#: src/sli.ui:1313
 msgid "full installation"
 msgstr "Εγκατάσταση full"
 
-#: src/sli.ui:1203
+#: src/sli.ui:1318
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -287,13 +316,21 @@ msgstr ""
 "πλήρη επιλογή εφαρμογών, πάντα σύμφωνα με τη λογική \n"
 "\"μία εφαρμογή για κάθε εργασία\"."
 
-#: src/sli.ui:1244
+#: src/sli.ui:1359
 msgid "Error: system is not live."
 msgstr "Σφάλμα: Το σύστημα δεν είναι live."
 
 #: src/sli.desktop.in.h:1 src/sli-kde.desktop.in.h:1
 msgid "Slackel-Live Installation"
 msgstr "Εγκατάσταση του Slackel-Live"
+
+#~ msgid ""
+#~ "If you want to use a home partition from another disk then choose one "
+#~ "from here,\n"
+#~ "otherwise leave it empty.\n"
+#~ msgstr ""
+#~ "Αν θέλετε να χρησιμοποιήσετε ένα διαφορετικό διαμέρισμα για το κατάλογο "
+#~ "χρήστη, επιλέξτε ένα από εδώ,διαφορετικά αφήστε το πεδίο κενό. "
 
 #~ msgid ""
 #~ "type root's password and user name + user password for system installation"

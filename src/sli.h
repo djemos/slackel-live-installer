@@ -6,6 +6,7 @@ GPid pid;
 
 gint copydevicescount;
 gint installdevicescount;
+gint homedevicescount;
 
 void on_copy_btn_clicked (GtkWidget *widget, gpointer user_data);
 

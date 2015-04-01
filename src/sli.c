@@ -17,14 +17,14 @@
 #include "sli.h"
 
 void do_action (gboolean copy) {
-	gchar *commandline, **command, *location;
+	gchar *commandline, **command, *location, *home;
 	gint stdoutfd;
 	GtkTextView *view;
 	GtkTextBuffer *buffer;
 	GtkComboBox *listwidget;
 	GtkTreeIter iter;
 	GtkListStore *list;
-	char *rootpasswd,*usernam,*userpasswd, *installation_mode, *rootdirectory;
+	char *rootpasswd,*usernam,*userpasswd, *installation_mode, *rootdirectory, *bootloader;
 	
 	GtkWidget *rootpassword;
 	GtkWidget *username;
@@ -44,7 +44,16 @@ void do_action (gboolean copy) {
 	userpasswd =  g_strdup (gtk_entry_get_text(GTK_ENTRY(userpassword)));
 	
 	const gchar *DW[] = { "installdevices", "copydevices" };
-	
+	//
+	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "homedevices");
+	gtk_combo_box_get_active_iter(listwidget, &iter);
+	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
+	gtk_tree_model_get((GtkTreeModel *) list, &iter, 0, &home, -1);
+	if (strlen(home) == 0) {
+		g_free(home);
+		home = g_strdup(location);
+	}
+	//
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (core))) {
 		installation_mode = g_strdup ("core") ;
 		rootdirectory = g_strdup ("modules");
@@ -68,14 +77,23 @@ void do_action (gboolean copy) {
 	if (location == NULL) {
 		return;
 	}
-	
+	if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo"))) {
+		bootloader = g_strdup ("lilo");
+	   } 
+	else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub"))){
+		bootloader = g_strdup ("grub");
+	 }
+		
 	if (copy) {
 		commandline = g_strdup_printf("build-slackware-live.sh --usb /live/media %s\n", location);
-	} else { 
+	} else {
 			if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo"))) {
-					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode);			
+					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, home, bootloader);			
+			} 
+			else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub"))) {
+					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, home, bootloader);			
 			} else { 
-				commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -expert %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode);
+					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -expert %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, home);
 			 }
 	       }
 
@@ -124,6 +142,12 @@ void on_button4_clicked (GtkWidget *widget, gpointer user_data) {
 	gtk_widget_hide(dialoguserpass);
 }
 
+void on_button5_clicked (GtkWidget *widget, gpointer user_data) {
+	GtkWidget *dialogbootloader;
+	dialogbootloader = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogbootloader");
+	gtk_widget_hide(dialogbootloader);
+}
+
 
 void on_checkbutton1_toggled (GtkWidget *widget, gpointer user_data) {
  	if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "checkbutton1"))) {
@@ -142,7 +166,7 @@ void on_checkbutton2_toggled (GtkWidget *widget, gpointer user_data) {
 	} else {
 		gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword")), FALSE);
 		gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword1")), FALSE);
-		}
+		}	
 }
 
 void clearlocations() {
@@ -155,6 +179,11 @@ void clearlocations() {
     // Clear installdevices
 	gtk_list_store_clear (list) ;
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "installdevices");
+	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
+	gtk_list_store_clear (list) ;
+	// Clear homedevices
+	gtk_list_store_clear (list) ;
+	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "homedevices");
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
 	gtk_list_store_clear (list) ;
 	
@@ -177,6 +206,7 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 	GtkWidget *dialogusers;
 	GtkWidget *dialogrootpass;
 	GtkWidget *dialoguserpass;
+	GtkWidget *dialogbootloader;
 	GtkWidget *rootpassword;
 	GtkWidget *username;
 	GtkWidget *userpassword;
@@ -185,11 +215,13 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 	GtkWidget *button1;
 	GtkWidget *button3;
 	GtkWidget *button4;
-	
+	GtkWidget *button5;
+		
 	button1 = (GtkWidget *) gtk_builder_get_object(widgetstree, "button1");
 	button3 = (GtkWidget *) gtk_builder_get_object(widgetstree, "button3");
 	button4 = (GtkWidget *) gtk_builder_get_object(widgetstree, "button4");
-	
+	button5 = (GtkWidget *) gtk_builder_get_object(widgetstree, "button54");
+		
 	dialogusers = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogusers");
 	g_signal_connect  (button1, "clicked", G_CALLBACK (on_button1_clicked), (gpointer) dialogusers);	
 	
@@ -198,6 +230,10 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 	
 	dialoguserpass = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialoguserpass");
 	g_signal_connect  (button4, "clicked", G_CALLBACK (on_button4_clicked), (gpointer) dialoguserpass);	
+	
+	dialogbootloader = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogbootloader");
+	g_signal_connect  (button5, "clicked", G_CALLBACK (on_button5_clicked), (gpointer) dialogbootloader);	
+	
 	
 	rootpassword = (GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword");
 	username = (GtkWidget *) gtk_builder_get_object(widgetstree, "username");
@@ -218,7 +254,10 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 		   }
     else if  (strcmp(gtk_entry_get_text (GTK_ENTRY(userpassword)),gtk_entry_get_text (GTK_ENTRY(userpassword1)))!=0 ) {
 				gtk_widget_show(dialoguserpass);				
-		   } 
+		   }
+    else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo")) 
+		&& gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub"))){ 
+		gtk_widget_show(dialogbootloader);}
 	else {
 	do_action(FALSE);
 	}
@@ -283,6 +322,25 @@ void initlocations() {
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "install_btn"), TRUE);
 	}
 
+listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "homedevices");
+	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
+	homedevicescount = 0;
+	g_spawn_command_line_sync("sli-location-detection.sh home", &output, NULL, &status, NULL);
+	if (status == 0) {
+		lines = g_strsplit(output, "\n", 0);
+		for (i=0; lines[i] != NULL && strlen(lines[i])>0; i++) {
+			gtk_list_store_append(list, &iter);
+			gtk_list_store_set(list, &iter, 0, lines[i], -1);
+		}
+		homedevicescount = i;
+		g_strfreev(lines);
+		gtk_list_store_prepend(list, &iter);
+		gtk_list_store_set(list, &iter, 0, "", -1);
+	}
+	g_free(output);
+	if (homedevicescount != 0){
+		gtk_combo_box_set_active_iter(listwidget, &iter);
+	}
 }
 
 
