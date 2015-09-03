@@ -88,10 +88,10 @@ void do_action (gboolean copy) {
 		commandline = g_strdup_printf("build-slackware-live.sh --usb /live/media %s\n", location);
 	} else {
 			if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo"))) {
-					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, home, bootloader);			
+					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, bootloader, home);			
 			} 
 			else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub"))) {
-					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, home, bootloader);			
+					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, bootloader, home);			
 			} else { 
 					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -expert %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, home);
 			 }
