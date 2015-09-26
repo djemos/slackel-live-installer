@@ -1,3 +1,7 @@
 SLI (Slackel-Live installer) is a GUI to install or copy the live system (based on GTK+2).
-SLI-1.2 is based on SLI-1.1 of Slackware-Live LiNomad edition and is further developed to support password root change, user + password creation at installation time, add support for partitions creation using gparted etc.
+SLI-1.2.2 is based on SLI-1.1 of Slackware-Live LiNomad edition and is further developed to support password root change, 
+user + password creation at installation time, add support for partitions creation using gparted,  setting home directory, etc.
+
 Slackware-live is a dependency for SLI.
+
+The SLKBUILD source package can be found on http://www.slackel.gr/repo/source/slackel-source/slackware-live-installer-1.2.2/
