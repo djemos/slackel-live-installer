@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sli 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 10:50+0200\n"
+"POT-Creation-Date: 2015-09-25 19:46+0300\n"
 "PO-Revision-Date: 2014-04-11 21:59+0200\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: French\n"
@@ -19,44 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.5.4\n"
 
-#: src/sli.ui:10
-msgid "About"
-msgstr "A propos"
-
-#: src/sli.ui:19
-msgid "http://slackware-live.tuxfamily.org"
-msgstr ""
-
-#: src/sli.ui:20
-msgid "CeCILL <http://www.cecill.info/licences.fr.html>"
-msgstr ""
-
-#: src/sli.ui:55
+#: src/sli.ui:12
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
 
-#: src/sli.ui:104 src/sli.ui:151
-msgid "sli"
-msgstr ""
-
-#: src/sli.ui:114
-msgid "Error encountered."
-msgstr "Une erreur est survenue."
-
-#: src/sli.ui:160
-msgid "Installation completed."
-msgstr "Installation terminée."
-
-#: src/sli.ui:199
+#: src/sli.ui:63
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr ""
 
-#: src/sli.ui:250
+#: src/sli.ui:114
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr ""
 
-#: src/sli.ui:301
+#: src/sli.ui:165
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -65,19 +41,19 @@ msgid ""
 "Please verify and correct.\n"
 msgstr ""
 
-#: src/sli.ui:414
+#: src/sli.ui:278
 msgid "_File"
 msgstr ""
 
-#: src/sli.ui:444
+#: src/sli.ui:308
 msgid "_Help"
 msgstr ""
 
-#: src/sli.ui:536
+#: src/sli.ui:400
 msgid "Partitions"
 msgstr ""
 
-#: src/sli.ui:540
+#: src/sli.ui:404
 msgid ""
 "Important!\n"
 "\n"
@@ -92,7 +68,7 @@ msgid ""
 "to backup important data before starting this procedure."
 msgstr ""
 
-#: src/sli.ui:579
+#: src/sli.ui:443
 msgid ""
 "<i>Warning: copy / installation wipes everything on the selected location.</"
 "i>"
@@ -100,89 +76,89 @@ msgstr ""
 "<i>Attention : la copie ou l'installation efface complètement l'emplacement "
 "sélectionné.</i>"
 
-#: src/sli.ui:605
+#: src/sli.ui:469
 msgid "Copy location:"
 msgstr "Emplacement de la copie :"
 
-#: src/sli.ui:644
+#: src/sli.ui:508
 msgid "click here if you want to copy system to usb"
 msgstr ""
 
-#: src/sli.ui:666
+#: src/sli.ui:530
 #, fuzzy
 msgid "Copy live system to usb"
 msgstr "Copier le système vif"
 
-#: src/sli.ui:729
+#: src/sli.ui:593
 msgid "Install location:"
 msgstr "Emplacement de l'installation :"
 
-#: src/sli.ui:734
+#: src/sli.ui:598
 msgid "Install (e)LiLo"
 msgstr "Installer (e)LiLo"
 
-#: src/sli.ui:738
+#: src/sli.ui:602
 msgid "check this if you want to install (e)Lilo boot loader"
 msgstr ""
 
-#: src/sli.ui:771
+#: src/sli.ui:635
 #, fuzzy
 msgid "Home location:"
 msgstr "Emplacement de la copie :"
 
-#: src/sli.ui:782
+#: src/sli.ui:646
 msgid ""
 "If you want to use a home partition to another disk then choose one from "
 "here.\n"
 "Otherwise leave it empty."
 msgstr ""
 
-#: src/sli.ui:801
+#: src/sli.ui:665
 msgid "Install Grub"
 msgstr ""
 
-#: src/sli.ui:805
+#: src/sli.ui:669
 msgid "check this if you want to install Grub boot loader"
 msgstr ""
 
-#: src/sli.ui:828
+#: src/sli.ui:692
 msgid "click here if you want to install system on hard disk"
 msgstr ""
 
-#: src/sli.ui:850
+#: src/sli.ui:714
 msgid "Install live system"
 msgstr "Installation du système vif"
 
-#: src/sli.ui:949
+#: src/sli.ui:778
 msgid "Actions needed before proceeding with system installation.\n"
 msgstr ""
 
-#: src/sli.ui:1013
+#: src/sli.ui:842
 msgid ""
 "Set root password, define login name, choose a password to be coupled with "
 "your\n"
 "login name."
 msgstr ""
 
-#: src/sli.ui:1047
+#: src/sli.ui:876
 msgid "root password"
 msgstr ""
 
-#: src/sli.ui:1054
+#: src/sli.ui:883
 msgid "user name"
 msgstr ""
 
-#: src/sli.ui:1065
+#: src/sli.ui:894
 msgid "user password"
 msgstr ""
 
-#: src/sli.ui:1077
+#: src/sli.ui:906
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters. "
 msgstr ""
 
-#: src/sli.ui:1097
+#: src/sli.ui:926
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -190,7 +166,7 @@ msgid ""
 "(such as the @, !, and &)"
 msgstr ""
 
-#: src/sli.ui:1120
+#: src/sli.ui:949
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -199,38 +175,38 @@ msgid ""
 "letters, numbers, and even symbols (such as the @, !, and &)"
 msgstr ""
 
-#: src/sli.ui:1143
+#: src/sli.ui:972
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
 msgstr ""
 
-#: src/sli.ui:1163
+#: src/sli.ui:992
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
 msgstr ""
 
-#: src/sli.ui:1182 src/sli.ui:1199
+#: src/sli.ui:1011 src/sli.ui:1028
 msgid "visible"
 msgstr ""
 
-#: src/sli.ui:1187 src/sli.ui:1204
+#: src/sli.ui:1016 src/sli.ui:1033
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
 msgstr ""
 
-#: src/sli.ui:1242
+#: src/sli.ui:1071
 msgid "Choose installation mode"
 msgstr ""
 
-#: src/sli.ui:1267
+#: src/sli.ui:1096
 #, fuzzy
 msgid "core installation"
 msgstr "Emplacement de l'installation :"
 
-#: src/sli.ui:1272
+#: src/sli.ui:1101
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are \n"
@@ -240,12 +216,12 @@ msgid ""
 "file server etc. "
 msgstr ""
 
-#: src/sli.ui:1290
+#: src/sli.ui:1119
 #, fuzzy
 msgid "basic installation"
 msgstr "Emplacement de l'installation :"
 
-#: src/sli.ui:1295
+#: src/sli.ui:1124
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few \n"
@@ -255,12 +231,12 @@ msgid ""
 "choice of applications. "
 msgstr ""
 
-#: src/sli.ui:1313
+#: src/sli.ui:1142
 #, fuzzy
 msgid "full installation"
 msgstr "Emplacement de l'installation :"
 
-#: src/sli.ui:1318
+#: src/sli.ui:1147
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -269,7 +245,31 @@ msgid ""
 "always following the \"one application per task\" rationale. "
 msgstr ""
 
-#: src/sli.ui:1359
+#: src/sli.ui:1223
+msgid "About"
+msgstr "A propos"
+
+#: src/sli.ui:1232
+msgid "http://slackware-live.tuxfamily.org"
+msgstr ""
+
+#: src/sli.ui:1233
+msgid "CeCILL <http://www.cecill.info/licences.fr.html>"
+msgstr ""
+
+#: src/sli.ui:1269 src/sli.ui:1316
+msgid "sli"
+msgstr ""
+
+#: src/sli.ui:1279
+msgid "Error encountered."
+msgstr "Une erreur est survenue."
+
+#: src/sli.ui:1325
+msgid "Installation completed."
+msgstr "Installation terminée."
+
+#: src/sli.ui:1366
 msgid "Error: system is not live."
 msgstr "Erreur : le système n'est pas vif."
 

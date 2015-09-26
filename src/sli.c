@@ -17,10 +17,7 @@
 #include "sli.h"
 
 void do_action (gboolean copy) {
-	gchar *commandline, **command, *location, *home;
-	gint stdoutfd;
-	GtkTextView *view;
-	GtkTextBuffer *buffer;
+	gchar *commandline, **command, *output, *home;
 	GtkComboBox *listwidget;
 	GtkTreeIter iter;
 	GtkListStore *list;
@@ -70,6 +67,12 @@ void do_action (gboolean copy) {
 		//rootdirectory = g_strdup ("system");
 		}
 	
+	fullpercent = FALSE;
+	pulsebar = TRUE;
+	progressbar_handler_id = g_timeout_add(100, progressbar_handler, NULL);
+	if (location != NULL) {
+		g_free(location);
+	}
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, DW[(guint) copy]);
 	gtk_combo_box_get_active_iter(listwidget, &iter);
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
@@ -85,27 +88,29 @@ void do_action (gboolean copy) {
 	 }
 		
 	if (copy) {
+		g_spawn_command_line_sync("du -s -m /live/media", &output, NULL, NULL, NULL);
+		totalsize = g_ascii_strtoull(output, NULL, 10);
 		commandline = g_strdup_printf("build-slackware-live.sh --usb /live/media %s\n", location);
 	} else {
 			if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo"))) {
-					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, bootloader, home);			
+					g_spawn_command_line_sync("du -s -m /live/modules", &output, NULL, NULL, NULL);
+					totalsize = g_ascii_strtoull(output, NULL, 10);
+					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, bootloader,home);			
 			} 
 			else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub"))) {
-					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, bootloader, home);			
+					g_spawn_command_line_sync("du -s -m /live/modules", &output, NULL, NULL, NULL);
+					totalsize = g_ascii_strtoull(output, NULL, 10);
+					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, bootloader,home);			
 			} else { 
+					g_spawn_command_line_sync("du -s -m /live/modules", &output, NULL, NULL, NULL);
+					totalsize = g_ascii_strtoull(output, NULL, 10);
 					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -expert %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, home);
 			 }
 	       }
 
-	g_free(location);
-	view = (GtkTextView *) gtk_builder_get_object(widgetstree, "log");
-	buffer = gtk_text_view_get_buffer(view);
-	gtk_text_buffer_set_text(buffer, commandline, -1);
 	g_shell_parse_argv(commandline, NULL, &command, NULL);
 	g_free(commandline);
-	g_spawn_async_with_pipes(NULL, command, NULL, G_SPAWN_SEARCH_PATH|G_SPAWN_DO_NOT_REAP_CHILD, NULL, NULL, &pid, NULL, &stdoutfd, NULL, NULL);
-	stdoutioc = g_io_channel_unix_new(stdoutfd);
-	outputsource = g_io_add_watch(stdoutioc, G_IO_IN, progress_handler, NULL);
+	g_spawn_async(NULL, command, NULL, G_SPAWN_SEARCH_PATH|G_SPAWN_DO_NOT_REAP_CHILD, NULL, NULL, &pid, NULL);
 	g_child_watch_add(pid, on_process_end, NULL);
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "copy_btn"), FALSE);
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "install_btn"), FALSE);
@@ -275,6 +280,45 @@ void on_exit (GtkWidget *widget, gpointer user_data) {
 	gtk_main_quit();
 }
 
+gboolean progressbar_handler(gpointer data) {
+	GtkProgressBar *progressbar;
+	gchar *output;
+	guint64 installsize;
+	gdouble progressfraction;
+	gchar *s_progressfraction;
+	
+	progressbar = (GtkProgressBar *) gtk_builder_get_object(widgetstree,"progressbar");
+	
+	if (pulsebar && ! fullpercent && g_file_test("/mnt/install",  G_FILE_TEST_IS_DIR)) {
+		pulsebar = FALSE;
+		g_source_remove(progressbar_handler_id);
+		progressbar_handler_id = g_timeout_add(5000, progressbar_handler, NULL);
+	}
+	
+	if (pulsebar) {
+		gtk_progress_bar_pulse(progressbar);
+	} else {
+		g_spawn_command_line_sync("du -s -m /mnt/install", &output, NULL, NULL, NULL);
+		installsize = g_ascii_strtoull(output, NULL, 10);
+		progressfraction = installsize * 100 / totalsize;
+		if (progressfraction >= 100) {
+			gtk_progress_bar_set_text(progressbar, "100 %");
+			gtk_progress_bar_set_fraction(progressbar, 1.0);
+			fullpercent = TRUE;
+			pulsebar = TRUE;
+			g_source_remove(progressbar_handler_id);
+			progressbar_handler_id = g_timeout_add(100, progressbar_handler, NULL);
+		} else {
+			gtk_progress_bar_set_fraction(progressbar, progressfraction / 100);
+			s_progressfraction = g_strdup_printf("%2.0f %c", progressfraction, '%');
+			gtk_progress_bar_set_text(progressbar, s_progressfraction);
+			g_free(s_progressfraction);
+		}
+	}
+	return TRUE;
+}
+
+
 void initlocations() {
 	GtkComboBox *listwidget;
 	GtkTreeIter iter;
@@ -346,11 +390,16 @@ listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "homedevices");
 
 void on_process_end (GPid thepid, gint status, gpointer data) {
 	GtkWidget *dialog;
+	GtkProgressBar *progressbar;
 
-	g_source_remove(outputsource);
-	g_io_channel_shutdown(stdoutioc, FALSE, NULL);
-	g_io_channel_unref(stdoutioc);
 	pid = 0;
+g_free(location);
+	location = NULL;
+	g_source_remove(progressbar_handler_id);
+	
+	progressbar = (GtkProgressBar *) gtk_builder_get_object(widgetstree,"progressbar");
+	gtk_progress_bar_set_fraction(progressbar, 0);
+	gtk_progress_bar_set_text(progressbar, "");
 
 	if (copydevicescount != 0){
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "copy_btn"), TRUE);
@@ -376,24 +425,6 @@ void on_process_end (GPid thepid, gint status, gpointer data) {
 	}
 	
 	gtk_widget_show(dialog);
-}
-
-
-gboolean progress_handler (GIOChannel *source, GIOCondition condition, gpointer data) {
-	GtkTextView *view;
-	GtkTextBuffer *buffer;
-	GtkTextIter iter;
-	gchar *line;
-	
-	g_io_channel_read_line(stdoutioc, &line, NULL, NULL, NULL);
-	if (line != NULL) {
-		view = (GtkTextView *) gtk_builder_get_object(widgetstree, "log");
-		buffer = gtk_text_view_get_buffer(view);
-		gtk_text_buffer_get_end_iter(buffer,&iter);
-		gtk_text_buffer_insert(buffer, &iter, line, -1);
-		g_free(line);
-	}
-	return TRUE;
 }
 
 void on_about_activate (GtkWidget *widget, gpointer user_data) {
@@ -433,7 +464,8 @@ int main (int argc, char *argv[]) {
 	gtk_builder_connect_signals(widgetstree, NULL);
 	
 	pid = 0;
-	
+	location = NULL;
+		
 	mainwindow = (GtkWindow *) gtk_builder_get_object(widgetstree, "mainwindow");
 	gtk_window_set_icon_from_file(mainwindow, APP_ICON, NULL);
 	aboutdialog = (GtkAboutDialog *) gtk_builder_get_object(widgetstree, "aboutdialog");
