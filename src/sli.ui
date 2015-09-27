@@ -1232,17 +1232,7 @@ always following the "one application per task" rationale. </property>
     <property name="website_label" translatable="yes">http://slackware-live.tuxfamily.org</property>
     <property name="license" translatable="yes">CeCILL &lt;http://www.cecill.info/licences.fr.html&gt;</property>
     <property name="authors">Frank ENDRES &lt;frankendres@tuxfamily.org&gt;
-
-Dimitris Tzemos &lt;djemos@slackel.gr&gt;
-Added support for setting root password
-and user creation on installed system.
-Added partition manager connectivity.
-Added support for core, basic, full 
-installation mode.
-Added support for setting /home user directory on a
-differrent partition.
-
-</property>
+Dimitris Tzemos &lt;djemos@slackel.gr&gt;</property>
     <signal name="delete-event" handler="gtk_widget_hide" swapped="no"/>
     <signal name="delete-event" handler="gtk_true" swapped="no"/>
     <signal name="response" handler="gtk_widget_hide" swapped="no"/>
