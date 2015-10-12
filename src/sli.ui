@@ -248,6 +248,35 @@ Please verify and correct.
       <column type="gchararray"/>
     </columns>
   </object>
+  <object class="GtkListStore" id="liststore2">
+    <columns>
+      <!-- column-name Type -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">btrfs</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ext2</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ext3</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ext4</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">jfs</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">reiserfs</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">xfs</col>
+      </row>
+    </data>
+  </object>
   <object class="GtkListStore" id="model1">
     <columns>
       <!-- column-name gchararray -->
@@ -578,29 +607,12 @@ to backup important data before starting this procedure.</property>
                       <placeholder/>
                     </child>
                     <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <object class="GtkLabel" id="label6">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">Install location:</property>
-                      </object>
-                    </child>
-                    <child>
                       <object class="GtkCheckButton" id="lilo">
                         <property name="label" translatable="yes">Install (e)LiLo</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
                         <property name="tooltip_text" translatable="yes">check this if you want to install (e)Lilo boot loader</property>
-                        <property name="active">True</property>
                         <property name="draw_indicator">True</property>
                         <signal name="toggled" handler="on_lilo_toggled" swapped="no"/>
                       </object>
@@ -615,6 +627,7 @@ to backup important data before starting this procedure.</property>
                       <object class="GtkComboBox" id="installdevices">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="tooltip_text" translatable="yes">choose the Linux partition to hold the main directory tree.</property>
                         <property name="model">model2</property>
                         <child>
                           <object class="GtkCellRendererText" id="renderer2"/>
@@ -629,14 +642,70 @@ to backup important data before starting this procedure.</property>
                       </packing>
                     </child>
                     <child>
+                      <object class="GtkCheckButton" id="grub">
+                        <property name="label" translatable="yes">Install Grub</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="tooltip_text" translatable="yes">check this if you want to install Grub boot loader</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_grub_toggled" swapped="no"/>
+                        <signal name="clicked" handler="on_grub_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="top_attach">1</property>
+                        <property name="bottom_attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label6">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Install location:</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label18">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Filesystem Type:</property>
+                      </object>
+                      <packing>
+                        <property name="top_attach">4</property>
+                        <property name="bottom_attach">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkComboBox" id="filesystem">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="tooltip_text" translatable="yes">Choose the filesystem type to format partition(s).</property>
+                        <property name="model">liststore2</property>
+                        <property name="active">3</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="cellrenderertext2"/>
+                          <attributes>
+                            <attribute name="text">0</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="left_attach">1</property>
+                        <property name="right_attach">2</property>
+                        <property name="top_attach">4</property>
+                        <property name="bottom_attach">5</property>
+                      </packing>
+                    </child>
+                    <child>
                       <object class="GtkLabel" id="label17">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="label" translatable="yes">Home location:</property>
                       </object>
                       <packing>
-                        <property name="top_attach">3</property>
-                        <property name="bottom_attach">4</property>
+                        <property name="top_attach">2</property>
+                        <property name="bottom_attach">3</property>
                       </packing>
                     </child>
                     <child>
@@ -656,24 +725,23 @@ Otherwise leave it empty.</property>
                       <packing>
                         <property name="left_attach">1</property>
                         <property name="right_attach">2</property>
-                        <property name="top_attach">3</property>
-                        <property name="bottom_attach">4</property>
+                        <property name="top_attach">2</property>
+                        <property name="bottom_attach">3</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkCheckButton" id="grub">
-                        <property name="label" translatable="yes">Install Grub</property>
+                      <object class="GtkCheckButton" id="format_home">
+                        <property name="label" translatable="yes">Format Ηome</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
-                        <property name="tooltip_text" translatable="yes">check this if you want to install Grub boot loader</property>
+                        <property name="tooltip_text" translatable="yes">check this if you want to format /home partition</property>
+                        <property name="active">True</property>
                         <property name="draw_indicator">True</property>
-                        <signal name="toggled" handler="on_grub_toggled" swapped="no"/>
-                        <signal name="clicked" handler="on_grub_clicked" swapped="no"/>
                       </object>
                       <packing>
-                        <property name="top_attach">1</property>
-                        <property name="bottom_attach">2</property>
+                        <property name="top_attach">3</property>
+                        <property name="bottom_attach">4</property>
                       </packing>
                     </child>
                   </object>
@@ -1232,7 +1300,8 @@ always following the "one application per task" rationale. </property>
     <property name="website_label" translatable="yes">http://slackware-live.tuxfamily.org</property>
     <property name="license" translatable="yes">CeCILL &lt;http://www.cecill.info/licences.fr.html&gt;</property>
     <property name="authors">Frank ENDRES &lt;frankendres@tuxfamily.org&gt;
-Dimitris Tzemos &lt;djemos@slackel.gr&gt;</property>
+Dimitris Tzemos &lt;djemos@slackel.gr&gt;
+</property>
     <signal name="delete-event" handler="gtk_widget_hide" swapped="no"/>
     <signal name="delete-event" handler="gtk_true" swapped="no"/>
     <signal name="response" handler="gtk_widget_hide" swapped="no"/>

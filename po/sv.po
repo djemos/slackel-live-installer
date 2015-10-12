@@ -1,28 +1,31 @@
-# French translations for sli package
-# Traductions françaises du paquet sli.
-# Copyright (C) 2011 THE sli'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the sli package.
-#  <frankendres@tuxfamily.org>, 2011.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
+# Ingemar Karlsson <ingemar@ingk.se>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: sli 1.0.0\n"
+"Project-Id-Version: salix-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-12 00:10+0300\n"
-"PO-Revision-Date: 2014-04-11 21:59+0200\n"
-"Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
-"Language-Team: French\n"
-"Language: fr\n"
+"PO-Revision-Date: 2015-10-12 00:27+0200\n"
+"Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
+"Language-Team: Swedish (http://www.transifex.com/djemos/salix-live-installer/"
+"language/sv/)\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.7.6\n"
 
 #: src/sli.ui:12
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
+"Kan inte installera både (e)Lilo och Grub starthanterare. Vänligen "
+"kontrollera och rätta."
 
 #: src/sli.ui:63
 msgid "Your two root password entries do not match. Please verify and correct."
@@ -31,6 +34,8 @@ msgstr ""
 #: src/sli.ui:114
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr ""
+"Dina två användar lösenordsangivelser matchar inte. Vänligen kontrollera och "
+"rätta."
 
 #: src/sli.ui:165
 msgid ""
@@ -71,15 +76,15 @@ msgstr ""
 
 #: src/sli.ui:307
 msgid "_File"
-msgstr ""
+msgstr "_Arkiv"
 
 #: src/sli.ui:337
 msgid "_Help"
-msgstr ""
+msgstr "_Hjälp"
 
 #: src/sli.ui:429
 msgid "Partitions"
-msgstr ""
+msgstr "Partitioner"
 
 #: src/sli.ui:433
 msgid ""
@@ -95,35 +100,44 @@ msgid ""
 "if not performed cautiously. It is therefore highly advisable\n"
 "to backup important data before starting this procedure."
 msgstr ""
+"Viktigt!\n"
+"\n"
+"Slackel behöver åtminstone en swap-partition\n"
+"och en Linux-partition för att hålla sin huvudkatalogträd.\n"
+"\n"
+"Om du inte redan har dessa nödvändiga partitioner redo,\n"
+"bör du nu klicka på knappen \"partitioner\"\n"
+"för att skapa dem. Var medveten om att partitionera en hårddisk\n"
+"är en känslig operation som skulle kunna leda till förlust av data\n"
+"om den inte utförs försiktigt. Det är därför mycket lämpligt\n"
+"att säkerhetskopiera viktiga data innan du startar denna procedur."
 
 #: src/sli.ui:472
 msgid ""
 "<i>Warning: copy / installation wipes everything on the selected location.</"
 "i>"
 msgstr ""
-"<i>Attention : la copie ou l'installation efface complètement l'emplacement "
-"sélectionné.</i>"
+"<i>Varning: kopiera / installation radderar allt på den valda platsen.</i>"
 
 #: src/sli.ui:498
 msgid "Copy location:"
-msgstr "Emplacement de la copie :"
+msgstr "Kopiera till plats:"
 
 #: src/sli.ui:537
 msgid "click here if you want to copy system to usb"
-msgstr ""
+msgstr "klicka här om du vill kopiera systemet till usb"
 
 #: src/sli.ui:559
-#, fuzzy
 msgid "Copy live system to usb"
-msgstr "Copier le système vif"
+msgstr "Kopiera live-system till usb"
 
 #: src/sli.ui:611
 msgid "Install (e)LiLo"
-msgstr "Installer (e)LiLo"
+msgstr "Installera (e)Lilo"
 
 #: src/sli.ui:615
 msgid "check this if you want to install (e)Lilo boot loader"
-msgstr ""
+msgstr "markera den här om du vill installera (e)Lilo starthanterare"
 
 #: src/sli.ui:630
 msgid "choose the Linux partition to hold the main directory tree."
@@ -131,15 +145,15 @@ msgstr ""
 
 #: src/sli.ui:646
 msgid "Install Grub"
-msgstr ""
+msgstr "Installera Grub"
 
 #: src/sli.ui:650
 msgid "check this if you want to install Grub boot loader"
-msgstr ""
+msgstr "markera den här om du vill installera Grub starthanterare"
 
 #: src/sli.ui:665
 msgid "Install location:"
-msgstr "Emplacement de l'installation :"
+msgstr "Installationsplats:"
 
 #: src/sli.ui:672
 msgid "Filesystem Type:"
@@ -150,9 +164,8 @@ msgid "Choose the filesystem type to format partition(s)."
 msgstr ""
 
 #: src/sli.ui:704
-#, fuzzy
 msgid "Home location:"
-msgstr "Emplacement de la copie :"
+msgstr "Home Plats:"
 
 #: src/sli.ui:715
 msgid ""
@@ -160,6 +173,8 @@ msgid ""
 "here.\n"
 "Otherwise leave it empty."
 msgstr ""
+"Om du vill använda en home-partition på en annan hårddisk välj en härifrån.\n"
+"Annars lämna det tomt."
 
 #: src/sli.ui:734
 msgid "Format Ηome "
@@ -171,15 +186,15 @@ msgstr ""
 
 #: src/sli.ui:760
 msgid "click here if you want to install system on hard disk"
-msgstr ""
+msgstr "Klicka här om du vill installera systemet på hårddisk"
 
 #: src/sli.ui:782
 msgid "Install live system"
-msgstr "Installation du système vif"
+msgstr "Installera livesystemet"
 
 #: src/sli.ui:846
 msgid "Actions needed before proceeding with system installation.\n"
-msgstr ""
+msgstr "Åtgärder krävs innan du fortsätter med installationen av systemet.\n"
 
 #: src/sli.ui:910
 msgid ""
@@ -194,17 +209,19 @@ msgstr ""
 
 #: src/sli.ui:951
 msgid "user name"
-msgstr ""
+msgstr "användarnamn"
 
 #: src/sli.ui:962
 msgid "user password"
-msgstr ""
+msgstr "användarlösenord"
 
 #: src/sli.ui:974
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters. "
 msgstr ""
+"Här måste du ange ditt inloggningsnamn som bara bör omfatta\n"
+"alfanumeriska tecken utan mellanslag eller stora bokstäver."
 
 #: src/sli.ui:994
 msgid ""
@@ -213,6 +230,11 @@ msgid ""
 "of upper and lower case letters, numbers, and even symbols\n"
 "(such as the @, !, and &)"
 msgstr ""
+"Välj ett lösenord eller lösenordsfras att sammankopplas med ditt\n"
+"inloggningsnamn. Ditt lösenord eller lösenordsfras bör innehålla en "
+"blandning\n"
+"av stora och små bokstäver, siffror, och även symboler\n"
+"(t.ex. @,!, och &)"
 
 #: src/sli.ui:1017
 msgid ""
@@ -234,25 +256,28 @@ msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
 msgstr ""
+"Här måste du skriva in ditt lösenord som\n"
+"en bekräftelse på ditt val."
 
 #: src/sli.ui:1079 src/sli.ui:1096
 msgid "visible"
-msgstr ""
+msgstr "synlig"
 
 #: src/sli.ui:1084 src/sli.ui:1101
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
 msgstr ""
+"Markera den här rutan om du vill kunna se lösenordet\n"
+"du skriver."
 
 #: src/sli.ui:1139
 msgid "Choose installation mode"
-msgstr ""
+msgstr "Välj installationsläge"
 
 #: src/sli.ui:1164
-#, fuzzy
 msgid "core installation"
-msgstr "Emplacement de l'installation :"
+msgstr "core installation"
 
 #: src/sli.ui:1169
 msgid ""
@@ -263,11 +288,16 @@ msgid ""
 "installation for any specific purpose, such as a web server.\n"
 "file server etc. "
 msgstr ""
+"Core installation:\n"
+"Det minsta du behöver för ett konsol system.\n"
+"En grafisk miljö ingår inte. Detta är perfekt \n"
+"om du är en van användare och som vill anpassa\n"
+"din installationen för något speciellt ändamål,\n"
+"t.ex. en webbserver, filserver m.m."
 
 #: src/sli.ui:1187
-#, fuzzy
 msgid "basic installation"
-msgstr "Emplacement de l'installation :"
+msgstr "grundläggande installation"
 
 #: src/sli.ui:1192
 msgid ""
@@ -278,11 +308,16 @@ msgid ""
 "would like to install a lightweight system and add their own\n"
 "choice of applications. "
 msgstr ""
+"Grundläggande installation:\n"
+"Detta installerar bara ett grundläggande skrivbordsmiljö, med mycket få\n"
+"extra program installerade, till exempel en webbläsare och\n"
+"gslapt pakethanterare. Idealisk för avancerade användare\n"
+"som vill installera ett lättviktigt system och lägga till sina egna\n"
+"val av applikationer."
 
 #: src/sli.ui:1210
-#, fuzzy
 msgid "full installation"
-msgstr "Emplacement de l'installation :"
+msgstr "fullständig installation"
 
 #: src/sli.ui:1215
 msgid ""
@@ -292,35 +327,88 @@ msgid ""
 "and a complete selection of matching applications,\n"
 "always following the \"one application per task\" rationale. "
 msgstr ""
+"Fullständig installation:\n"
+"Allt som ingår i ISO installeras. Det innefattar\n"
+"en komplett skrivbordsmiljö\n"
+"och ett komplett utbud av matchande applikationer,\n"
+"alltid efter \"ett program per uppgift\" filosofin."
 
 #: src/sli.ui:1291
 msgid "About"
-msgstr "A propos"
+msgstr "Om"
 
 #: src/sli.ui:1300
 msgid "http://slackware-live.tuxfamily.org"
-msgstr ""
+msgstr "http://slackware-live.tuxfamily.org"
 
 #: src/sli.ui:1301
 msgid "CeCILL <http://www.cecill.info/licences.fr.html>"
-msgstr ""
+msgstr "CeCILL <http://www.cecill.info/licences.fr.html>"
 
 #: src/sli.ui:1328 src/sli.ui:1375
 msgid "sli"
-msgstr ""
+msgstr "sli"
 
 #: src/sli.ui:1338
 msgid "Error encountered."
-msgstr "Une erreur est survenue."
+msgstr "Fel uppstod."
 
 #: src/sli.ui:1384
 msgid "Installation completed."
-msgstr "Installation terminée."
+msgstr "Installation slutförd."
 
 #: src/sli.ui:1425
 msgid "Error: system is not live."
-msgstr "Erreur : le système n'est pas vif."
+msgstr "Fel: systemet är inte live."
 
 #: src/sli.desktop.in.h:1 src/sli-kde.desktop.in.h:1
 msgid "Slackel-Live Installation"
-msgstr ""
+msgstr "Salix-Live Installation"
+
+#~ msgid ""
+#~ "user name and user password entries \n"
+#~ "cannot be emtpy.\n"
+#~ "user password should have at least 5 characters\n"
+#~ "\n"
+#~ "Please verify and correct.\n"
+#~ msgstr ""
+#~ "användarnamn och lösenords poster\n"
+#~ "kan inte vara tom.\n"
+#~ "användarens lösenord bör ha minst 5 tecken\n"
+#~ "\n"
+#~ "Vänligen kontrollera och rätta.\n"
+
+#~ msgid ""
+#~ "Important!\n"
+#~ "\n"
+#~ "Salix needs, at the very minimum, one swap partition\n"
+#~ "and one Linux partition to hold its main directory tree.\n"
+#~ "\n"
+#~ "If you do not already have these needed partitions ready, \n"
+#~ "you should now click on the button 'Partitions'\n"
+#~ "in order to create them. Be aware that partitioning a disk\n"
+#~ "drive is a delicate operation which could lead to data loss\n"
+#~ "if not performed cautiously. It is therefore highly advisable\n"
+#~ "to backup important data before starting this procedure."
+#~ msgstr ""
+#~ "Viktigt!\n"
+#~ "\n"
+#~ "Salix behöver åtminstone en swap-partition\n"
+#~ "och en Linux-partition för att hålla sin huvudkatalogträd.\n"
+#~ "\n"
+#~ "Om du inte redan har dessa nödvändiga partitioner redo,\n"
+#~ "bör du nu klicka på knappen \"partitioner\"\n"
+#~ "för att skapa dem. Var medveten om att partitionera en hårddisk\n"
+#~ "är en känslig operation som skulle kunna leda till förlust av data\n"
+#~ "om den inte utförs försiktigt. Det är därför mycket lämpligt\n"
+#~ "att säkerhetskopiera viktiga data innan du startar denna procedur."
+
+#~ msgid ""
+#~ "Define login name, choose a password to be coupled with your\n"
+#~ "login name."
+#~ msgstr ""
+#~ "Definiera inloggningsnamn, välj ett lösenord som skall kopplas med ditt\n"
+#~ "inloggningsnamn."
+
+#~ msgid "Salix-Live Installation"
+#~ msgstr "Salix-Live Installation"

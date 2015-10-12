@@ -4,4 +4,4 @@ user + password creation at installation time, add support for partitions creati
 
 Slackware-live is a dependency for SLI.
 
-The SLKBUILD source package can be found on http://www.slackel.gr/repo/source/slackel-source/slackware-live-installer-1.2.2/
+The SLKBUILD source package can be found on http://www.slackel.gr/repo/source/slackel-source/slackware-live-installer-1.2.3/

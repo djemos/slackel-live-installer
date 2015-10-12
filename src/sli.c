@@ -17,11 +17,11 @@
 #include "sli.h"
 
 void do_action (gboolean copy) {
-	gchar *commandline, **command, *output, *home;
+	gchar *commandline, **command, *output, *home, *fstype;
 	GtkComboBox *listwidget;
 	GtkTreeIter iter;
 	GtkListStore *list;
-	char *rootpasswd,*usernam,*userpasswd, *installation_mode, *rootdirectory, *bootloader;
+	char *rootpasswd,*usernam,*userpasswd, *installation_mode, *rootdirectory, *bootloader, *format_home;
 	
 	GtkWidget *rootpassword;
 	GtkWidget *username;
@@ -50,6 +50,16 @@ void do_action (gboolean copy) {
 		g_free(home);
 		home = g_strdup(location);
 	}
+	//
+	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "filesystem");
+	gtk_combo_box_get_active_iter(listwidget, &iter);
+	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
+	gtk_tree_model_get((GtkTreeModel *) list, &iter, 0, &fstype, -1);
+	if (strlen(fstype) == 0) {
+		g_free(fstype);
+		fstype = g_strdup("ext4");
+	}
+
 	//
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (core))) {
 		installation_mode = g_strdup ("core") ;
@@ -86,7 +96,14 @@ void do_action (gboolean copy) {
 	else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub"))){
 		bootloader = g_strdup ("grub");
 	 }
-		
+	
+	if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "format_home"))) {
+		format_home = g_strdup ("yes");
+		}
+	else {
+	    format_home = g_strdup ("no");
+	   } 		
+	
 	if (copy) {
 		g_spawn_command_line_sync("du -s -m /live/media", &output, NULL, NULL, NULL);
 		totalsize = g_ascii_strtoull(output, NULL, 10);
@@ -95,16 +112,16 @@ void do_action (gboolean copy) {
 			if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo"))) {
 					g_spawn_command_line_sync("du -s -m /live/modules", &output, NULL, NULL, NULL);
 					totalsize = g_ascii_strtoull(output, NULL, 10);
-					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, bootloader,home);			
+					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, bootloader, format_home, fstype, home);			
 			} 
 			else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub"))) {
 					g_spawn_command_line_sync("du -s -m /live/modules", &output, NULL, NULL, NULL);
 					totalsize = g_ascii_strtoull(output, NULL, 10);
-					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, bootloader,home);			
+					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -auto %s %s %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, bootloader, format_home, fstype, home);			
 			} else { 
 					g_spawn_command_line_sync("du -s -m /live/modules", &output, NULL, NULL, NULL);
 					totalsize = g_ascii_strtoull(output, NULL, 10);
-					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -expert %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, home);
+					commandline = g_strdup_printf("build-slackware-live.sh --install /live/%s %s -expert %s %s %s %s %s %s %s\n", rootdirectory, location, rootpasswd, usernam, userpasswd, installation_mode, format_home, fstype, home);
 			 }
 	       }
 
@@ -366,7 +383,7 @@ void initlocations() {
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "install_btn"), TRUE);
 	}
 
-listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "homedevices");
+	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "homedevices");
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
 	homedevicescount = 0;
 	g_spawn_command_line_sync("sli-location-detection.sh home", &output, NULL, &status, NULL);

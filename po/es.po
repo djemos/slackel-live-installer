@@ -1,28 +1,31 @@
-# French translations for sli package
-# Traductions françaises du paquet sli.
-# Copyright (C) 2011 THE sli'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the sli package.
-#  <frankendres@tuxfamily.org>, 2011.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
+# Lluís Tusquellas <lutusq@gmail.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: sli 1.0.0\n"
+"Project-Id-Version: salix-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-12 00:10+0300\n"
-"PO-Revision-Date: 2014-04-11 21:59+0200\n"
-"Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
-"Language-Team: French\n"
-"Language: fr\n"
+"PO-Revision-Date: 2015-10-12 00:25+0200\n"
+"Last-Translator: Lluís Tusquellas <lutusq@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/djemos/salix-live-installer/"
+"language/es/)\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.7.6\n"
 
 #: src/sli.ui:12
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
+"No se pueden instalar a la vez los cargadores (e)Lilo y Grub. Compruébelo, "
+"por favor, y corrija."
 
 #: src/sli.ui:63
 msgid "Your two root password entries do not match. Please verify and correct."
@@ -31,6 +34,8 @@ msgstr ""
 #: src/sli.ui:114
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr ""
+"Sus dos intentos de palabra de paso no coinciden. Compruébelo, por favor, y "
+"corrija."
 
 #: src/sli.ui:165
 msgid ""
@@ -71,15 +76,15 @@ msgstr ""
 
 #: src/sli.ui:307
 msgid "_File"
-msgstr ""
+msgstr "_Fichero"
 
 #: src/sli.ui:337
 msgid "_Help"
-msgstr ""
+msgstr "_Ayuda"
 
 #: src/sli.ui:429
 msgid "Partitions"
-msgstr ""
+msgstr "Particiones"
 
 #: src/sli.ui:433
 msgid ""
@@ -95,35 +100,42 @@ msgid ""
 "if not performed cautiously. It is therefore highly advisable\n"
 "to backup important data before starting this procedure."
 msgstr ""
+"Importante!\n"
+"\n"
+"Slackel necesita, como mínimo, una partición de intercambio (swap) y una "
+"partición Linux para albergar el árbol principal de directorios.\n"
+"\n"
+"Si usted no tiene ya esas particiones disponibles, debe hacer click en el "
+"botón 'Particiones' para crearlas. Sea consciente de que hacer particiones "
+"en un disco duro es una operación delicada que puede conducir a la pérdida "
+"de datos si no se hace con cuidado. Es además altamente recomendable hacer "
+"copias de seguridad de todos los datos importantes antes de comenzar."
 
 #: src/sli.ui:472
 msgid ""
 "<i>Warning: copy / installation wipes everything on the selected location.</"
 "i>"
-msgstr ""
-"<i>Attention : la copie ou l'installation efface complètement l'emplacement "
-"sélectionné.</i>"
+msgstr "Aviso: copia /instalación borra todo en la localización seleccionada."
 
 #: src/sli.ui:498
 msgid "Copy location:"
-msgstr "Emplacement de la copie :"
+msgstr "Localización de la copia:"
 
 #: src/sli.ui:537
 msgid "click here if you want to copy system to usb"
-msgstr ""
+msgstr "Haga clic aquí si quiere copiar el sistema a usb"
 
 #: src/sli.ui:559
-#, fuzzy
 msgid "Copy live system to usb"
-msgstr "Copier le système vif"
+msgstr "Copie el systema en vivo a usb"
 
 #: src/sli.ui:611
 msgid "Install (e)LiLo"
-msgstr "Installer (e)LiLo"
+msgstr "Instalar (e)Lilo"
 
 #: src/sli.ui:615
 msgid "check this if you want to install (e)Lilo boot loader"
-msgstr ""
+msgstr "marque aquí si quiere instalar el cargador de arranque (e)Lilo."
 
 #: src/sli.ui:630
 msgid "choose the Linux partition to hold the main directory tree."
@@ -131,15 +143,15 @@ msgstr ""
 
 #: src/sli.ui:646
 msgid "Install Grub"
-msgstr ""
+msgstr "Instalar Grub"
 
 #: src/sli.ui:650
 msgid "check this if you want to install Grub boot loader"
-msgstr ""
+msgstr "marque esto si desea instalar el cargador de arranque Grub"
 
 #: src/sli.ui:665
 msgid "Install location:"
-msgstr "Emplacement de l'installation :"
+msgstr "Localización de la instalación:"
 
 #: src/sli.ui:672
 msgid "Filesystem Type:"
@@ -150,9 +162,8 @@ msgid "Choose the filesystem type to format partition(s)."
 msgstr ""
 
 #: src/sli.ui:704
-#, fuzzy
 msgid "Home location:"
-msgstr "Emplacement de la copie :"
+msgstr "Localización de home:"
 
 #: src/sli.ui:715
 msgid ""
@@ -160,6 +171,9 @@ msgid ""
 "here.\n"
 "Otherwise leave it empty."
 msgstr ""
+"Si quiere usar una partición para home en otro disco, escoja uno desde "
+"aquí.\n"
+"Si no déjelo vacío."
 
 #: src/sli.ui:734
 msgid "Format Ηome "
@@ -171,15 +185,15 @@ msgstr ""
 
 #: src/sli.ui:760
 msgid "click here if you want to install system on hard disk"
-msgstr ""
+msgstr "haga clic aquí si quiere instalar el sistema en el disco duro"
 
 #: src/sli.ui:782
 msgid "Install live system"
-msgstr "Installation du système vif"
+msgstr "Instalar el sistema en vivo"
 
 #: src/sli.ui:846
 msgid "Actions needed before proceeding with system installation.\n"
-msgstr ""
+msgstr "Acciones necesarias antes de llevar a cabo la instalación.\n"
 
 #: src/sli.ui:910
 msgid ""
@@ -194,17 +208,19 @@ msgstr ""
 
 #: src/sli.ui:951
 msgid "user name"
-msgstr ""
+msgstr "nombre de usuario"
 
 #: src/sli.ui:962
 msgid "user password"
-msgstr ""
+msgstr "palabra de paso para el usuario"
 
 #: src/sli.ui:974
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters. "
 msgstr ""
+"Aquí debe definir su nombre de usuario el cual sólo puede contener "
+"caracteres alfanuméricos si espacios ni letras mayúsculas."
 
 #: src/sli.ui:994
 msgid ""
@@ -213,6 +229,9 @@ msgid ""
 "of upper and lower case letters, numbers, and even symbols\n"
 "(such as the @, !, and &)"
 msgstr ""
+"Escoja una frase de paso para usar conjuntamente con su nombre de usuario. "
+"Su palabra o frase de paso debería incluir una mezcla de letras mayúsculas y "
+"minúsculas e incluso símbolos (como @, !, y &)"
 
 #: src/sli.ui:1017
 msgid ""
@@ -233,26 +252,26 @@ msgstr ""
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
-msgstr ""
+msgstr "Aqui tiene que volver a escribir su palabra de paso como confirmación."
 
 #: src/sli.ui:1079 src/sli.ui:1096
 msgid "visible"
-msgstr ""
+msgstr "visible"
 
 #: src/sli.ui:1084 src/sli.ui:1101
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
 msgstr ""
+"Marque esta caja si quiere poder ver la palabra de paso mientas la escribe."
 
 #: src/sli.ui:1139
 msgid "Choose installation mode"
-msgstr ""
+msgstr "Escoja el modo de instalación"
 
 #: src/sli.ui:1164
-#, fuzzy
 msgid "core installation"
-msgstr "Emplacement de l'installation :"
+msgstr "instalación mínima"
 
 #: src/sli.ui:1169
 msgid ""
@@ -263,11 +282,15 @@ msgid ""
 "installation for any specific purpose, such as a web server.\n"
 "file server etc. "
 msgstr ""
+"Instalación mínima:\n"
+"Solo se incluye lo esencial para empezar con un sistema de consola. No se "
+"proporciona un entorno gráfico. Esto es ideal si usted es un usuario "
+"experimentado y quiere personalizar su instalación para un fin concreto, "
+"como un servidor web, un servidor de ficheros, etc."
 
 #: src/sli.ui:1187
-#, fuzzy
 msgid "basic installation"
-msgstr "Emplacement de l'installation :"
+msgstr "instalación básica"
 
 #: src/sli.ui:1192
 msgid ""
@@ -278,11 +301,15 @@ msgid ""
 "would like to install a lightweight system and add their own\n"
 "choice of applications. "
 msgstr ""
+"Instalación básica:\n"
+"Esto instala tan solo un entrono gráfico con muy pocas aplicaciones extras, "
+"como un navegador web y el gestor de paquetes gslapt. Es ideal para usuarios "
+"avanzados a quienes gustaría instalar un sistema ligero y añadir las "
+"aplicaciones que después elijan. "
 
 #: src/sli.ui:1210
-#, fuzzy
 msgid "full installation"
-msgstr "Emplacement de l'installation :"
+msgstr "instalación completa"
 
 #: src/sli.ui:1215
 msgid ""
@@ -292,35 +319,85 @@ msgid ""
 "and a complete selection of matching applications,\n"
 "always following the \"one application per task\" rationale. "
 msgstr ""
+"Instalación completa:\n"
+"Se instala todo lo que se halla en el iso. Esto incluye un entorno de "
+"escritorio completo y una selección completa de aplicaciones que "
+"corresponda, siguiendo siempre el principio de \"una aplicación por taera\"."
 
 #: src/sli.ui:1291
 msgid "About"
-msgstr "A propos"
+msgstr "Acerca de "
 
 #: src/sli.ui:1300
 msgid "http://slackware-live.tuxfamily.org"
-msgstr ""
+msgstr "http://slackware-live.tuxfamily.org"
 
 #: src/sli.ui:1301
 msgid "CeCILL <http://www.cecill.info/licences.fr.html>"
-msgstr ""
+msgstr "CeCILL <http://www.cecill.info/licences.fr.html>"
 
 #: src/sli.ui:1328 src/sli.ui:1375
 msgid "sli"
-msgstr ""
+msgstr "sli"
 
 #: src/sli.ui:1338
 msgid "Error encountered."
-msgstr "Une erreur est survenue."
+msgstr "Se ha encontrado un error."
 
 #: src/sli.ui:1384
 msgid "Installation completed."
-msgstr "Installation terminée."
+msgstr "Instalación completada."
 
 #: src/sli.ui:1425
 msgid "Error: system is not live."
-msgstr "Erreur : le système n'est pas vif."
+msgstr "Error: el sistema no es en vivo."
 
 #: src/sli.desktop.in.h:1 src/sli-kde.desktop.in.h:1
 msgid "Slackel-Live Installation"
-msgstr ""
+msgstr "Instalación de "
+
+#~ msgid ""
+#~ "user name and user password entries \n"
+#~ "cannot be emtpy.\n"
+#~ "user password should have at least 5 characters\n"
+#~ "\n"
+#~ "Please verify and correct.\n"
+#~ msgstr ""
+#~ "El nombre de usuario y la palabra de paso no deben ser cadenas vacías.\n"
+#~ "La palabra de paso debe tener al menos 5 caracteres.\n"
+#~ "Compruébelo, por favor, y corrija.\n"
+
+#~ msgid ""
+#~ "Important!\n"
+#~ "\n"
+#~ "Salix needs, at the very minimum, one swap partition\n"
+#~ "and one Linux partition to hold its main directory tree.\n"
+#~ "\n"
+#~ "If you do not already have these needed partitions ready, \n"
+#~ "you should now click on the button 'Partitions'\n"
+#~ "in order to create them. Be aware that partitioning a disk\n"
+#~ "drive is a delicate operation which could lead to data loss\n"
+#~ "if not performed cautiously. It is therefore highly advisable\n"
+#~ "to backup important data before starting this procedure."
+#~ msgstr ""
+#~ "Importante!\n"
+#~ "\n"
+#~ "Salix necesita, como mínimo, una partición de intercambio (swap) y una "
+#~ "partición Linux para albergar el árbol principal de directorios.\n"
+#~ "\n"
+#~ "Si usted no tiene ya esas particiones disponibles, debe hacer click en el "
+#~ "botón 'Particiones' para crearlas. Sea consciente de que hacer "
+#~ "particiones en un disco duro es una operación delicada que puede conducir "
+#~ "a la pérdida de datos si no se hace con cuidado. Es además altamente "
+#~ "recomendable hacer copias de seguridad de todos los datos importantes "
+#~ "antes de comenzar."
+
+#~ msgid ""
+#~ "Define login name, choose a password to be coupled with your\n"
+#~ "login name."
+#~ msgstr ""
+#~ "Defina el nombre de usuario, escoja una frase de paso para usar "
+#~ "conjuntamente con su nombre de usuario."
+
+#~ msgid "Salix-Live Installation"
+#~ msgstr "Instalación de "
