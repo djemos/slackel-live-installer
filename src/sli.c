@@ -49,7 +49,11 @@ void do_action (gboolean copy) {
 	if (strlen(home) == 0) {
 		g_free(home);
 		home = g_strdup(location);
+	 //	gtk_toggle_button_set_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "format_home"),FALSE);           
 	}
+	/*else {
+		gtk_toggle_button_set_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "format_home"),TRUE);
+	}*/
 	//
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "filesystem");
 	gtk_combo_box_get_active_iter(listwidget, &iter);
