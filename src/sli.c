@@ -71,8 +71,8 @@ void do_action (gboolean copy) {
 		} 
 	
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (basic))) {
-     installation_mode = g_strdup ("basic") ;
-     rootdirectory = g_strdup ("modules");
+     		installation_mode = g_strdup ("basic") ;
+     		rootdirectory = g_strdup ("modules");
 		}
 	
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (full))) {
@@ -186,7 +186,7 @@ void clearlocations() {
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "copydevices");
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
 	gtk_list_store_clear (list) ;
-    // Clear installdevices
+	// Clear installdevices
 	gtk_list_store_clear (list) ;
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "installdevices");
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
@@ -228,7 +228,7 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 	username = (GtkWidget *) gtk_builder_get_object(widgetstree, "username");
 	userpassword = (GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword");
     
-    rootpassword1 = (GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword1");
+	rootpassword1 = (GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword1");
 	userpassword1 = (GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword1");
 	
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "filesystem");
@@ -240,23 +240,24 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 			|| (gtk_entry_get_text_length (GTK_ENTRY(userpassword)) == 0)) {
 				dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogusers");
 				gtk_widget_show(dialog);
-	       }
-	 else if (gtk_entry_get_text_length (GTK_ENTRY(rootpassword)) < 5  ||  gtk_entry_get_text_length (GTK_ENTRY(userpassword)) < 5) {
+	}
+	else if (gtk_entry_get_text_length (GTK_ENTRY(rootpassword)) < 5  ||  gtk_entry_get_text_length (GTK_ENTRY(userpassword)) < 5) {
 		 	    dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogusers");
 				gtk_widget_show(dialog);
-	       }  
+	       	}  
 	else if  ( strcmp(gtk_entry_get_text(GTK_ENTRY(rootpassword)),gtk_entry_get_text (GTK_ENTRY(rootpassword1)))!=0 ) {
 			    dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogrootpass");
 				gtk_widget_show(dialog);				
-		   }
-    else if  (strcmp(gtk_entry_get_text (GTK_ENTRY(userpassword)),gtk_entry_get_text (GTK_ENTRY(userpassword1)))!=0 ) {
+	}
+    	else if  (strcmp(gtk_entry_get_text (GTK_ENTRY(userpassword)),gtk_entry_get_text (GTK_ENTRY(userpassword1)))!=0 ) {
 				dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialoguserpass");
 				gtk_widget_show(dialog);				
-		   }
-    else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo")) 
+	}
+    	else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo")) 
 		&& gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub"))){ 
 			dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogbootloader");
-			gtk_widget_show(dialog);}
+			gtk_widget_show(dialog);
+	}
 	else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub")) && (strcmp(fstype,"xfs") == 0)){
 		dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialog_grub_xfs");
 		gtk_widget_show(dialog);}	
