@@ -413,7 +413,6 @@ void on_process_end (GPid thepid, gint status, gpointer data) {
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "checkbutton_root"), TRUE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "checkbutton_user"), TRUE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "gparted"), TRUE);
-		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "gparted"), TRUE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "grub"), TRUE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "lilo"), TRUE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "format_home"), TRUE);
