@@ -17,7 +17,7 @@
 #include "sli.h"
 
 void do_action (gboolean copy) {
-	gchar *commandline, **command, *output, *home, *fstype;
+	gchar *commandline, **command, *output, *home, *fstype, *usbfstype;
 	GtkComboBox *listwidget;
 	GtkTreeIter iter;
 	GtkListStore *list;
@@ -63,7 +63,14 @@ void do_action (gboolean copy) {
 		g_free(fstype);
 		fstype = g_strdup("ext4");
 	}
-
+	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "usbfilesystem");
+	gtk_combo_box_get_active_iter(listwidget, &iter);
+	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
+	gtk_tree_model_get((GtkTreeModel *) list, &iter, 0, &usbfstype, -1);
+	if (strlen(usbfstype) == 0) {
+		g_free(usbfstype);
+		usbfstype = g_strdup("vfat");
+	}
 	//
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (core))) {
 		installation_mode = g_strdup ("core") ;
@@ -71,8 +78,8 @@ void do_action (gboolean copy) {
 		} 
 	
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (basic))) {
-     		installation_mode = g_strdup ("basic") ;
-     		rootdirectory = g_strdup ("modules");
+     installation_mode = g_strdup ("basic") ;
+     rootdirectory = g_strdup ("modules");
 		}
 	
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (full))) {
@@ -111,7 +118,7 @@ void do_action (gboolean copy) {
 	if (copy) {
 		g_spawn_command_line_sync("du -s -m /live/media", &output, NULL, NULL, NULL);
 		totalsize = g_ascii_strtoull(output, NULL, 10);
-		commandline = g_strdup_printf("build-slackware-live.sh --usb /live/media %s\n", location);
+		commandline = g_strdup_printf("build-slackware-live.sh --usb /live/media %s\n", location, usbfstype);
 	} else {
 			if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo"))) {
 					g_spawn_command_line_sync("du -s -m /live/modules", &output, NULL, NULL, NULL);
@@ -149,6 +156,7 @@ void do_action (gboolean copy) {
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "lilo"), FALSE);
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "format_home"), FALSE);
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "filesystem"), FALSE);
+	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "usbfilesystem"), FALSE);
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "core"), FALSE);
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "basic"), FALSE);
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "full"), FALSE);
@@ -186,7 +194,7 @@ void clearlocations() {
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "copydevices");
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
 	gtk_list_store_clear (list) ;
-	// Clear installdevices
+    // Clear installdevices
 	gtk_list_store_clear (list) ;
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "installdevices");
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
@@ -219,7 +227,7 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 	GtkWidget *rootpassword1;
 	GtkWidget *userpassword1;
 	
-	gchar *fstype;
+	gchar *fstype, *usbfstype;
 	GtkComboBox *listwidget;
 	GtkTreeIter iter;
 	GtkListStore *list;
@@ -228,7 +236,7 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 	username = (GtkWidget *) gtk_builder_get_object(widgetstree, "username");
 	userpassword = (GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword");
     
-	rootpassword1 = (GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword1");
+    rootpassword1 = (GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword1");
 	userpassword1 = (GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword1");
 	
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "filesystem");
@@ -236,28 +244,32 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
 	gtk_tree_model_get((GtkTreeModel *) list, &iter, 0, &fstype, -1);
 	
+	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "usbfilesystem");
+	gtk_combo_box_get_active_iter(listwidget, &iter);
+	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
+	gtk_tree_model_get((GtkTreeModel *) list, &iter, 0, &usbfstype, -1);
+	
 	if (gtk_entry_get_text_length (GTK_ENTRY(rootpassword)) == 0  ||  gtk_entry_get_text_length (GTK_ENTRY(username)) == 0
 			|| (gtk_entry_get_text_length (GTK_ENTRY(userpassword)) == 0)) {
 				dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogusers");
 				gtk_widget_show(dialog);
-	}
-	else if (gtk_entry_get_text_length (GTK_ENTRY(rootpassword)) < 5  ||  gtk_entry_get_text_length (GTK_ENTRY(userpassword)) < 5) {
+	       }
+	 else if (gtk_entry_get_text_length (GTK_ENTRY(rootpassword)) < 5  ||  gtk_entry_get_text_length (GTK_ENTRY(userpassword)) < 5) {
 		 	    dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogusers");
 				gtk_widget_show(dialog);
-	       	}  
+	       }  
 	else if  ( strcmp(gtk_entry_get_text(GTK_ENTRY(rootpassword)),gtk_entry_get_text (GTK_ENTRY(rootpassword1)))!=0 ) {
 			    dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogrootpass");
 				gtk_widget_show(dialog);				
-	}
-    	else if  (strcmp(gtk_entry_get_text (GTK_ENTRY(userpassword)),gtk_entry_get_text (GTK_ENTRY(userpassword1)))!=0 ) {
+		   }
+    else if  (strcmp(gtk_entry_get_text (GTK_ENTRY(userpassword)),gtk_entry_get_text (GTK_ENTRY(userpassword1)))!=0 ) {
 				dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialoguserpass");
 				gtk_widget_show(dialog);				
-	}
-    	else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo")) 
+		   }
+    else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo")) 
 		&& gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub"))){ 
 			dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogbootloader");
-			gtk_widget_show(dialog);
-	}
+			gtk_widget_show(dialog);}
 	else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub")) && (strcmp(fstype,"xfs") == 0)){
 		dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialog_grub_xfs");
 		gtk_widget_show(dialog);}	
@@ -417,6 +429,7 @@ void on_process_end (GPid thepid, gint status, gpointer data) {
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "lilo"), TRUE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "format_home"), TRUE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "filesystem"), TRUE);
+		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "usbfilesystem"), TRUE);		
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "core"), TRUE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "basic"), TRUE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "full"), TRUE);

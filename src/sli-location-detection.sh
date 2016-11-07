@@ -20,7 +20,7 @@ case "$1" in
 "home") requiredsize=0 ;;
 esac
 
-disks=`cat /proc/partitions | sed 's/  */:/g' | cut -f5 -d: | sed -e /^$/d -e /[1-9]/d -e /^sr0/d -e /loop/d -e /$bootdevice/d`
+disks=`cat /proc/partitions | sed 's/  */:/g' | cut -f5 -d: | sed -e /^$/d -e /[1-9]/d -e /^sr0/d -e /loop/d -e/ram/d -e /$bootdevice/d`
 
 for disk in $disks; do
 	if [ "$1" == "copy" ]; then

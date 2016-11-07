@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.4)
 
 set (PROJECT_NAME "sli")
 project (${PROJECT_NAME})
-set (PROJECT_VERSION "1.2.3")
+set (PROJECT_VERSION "1.2.4")
 
 add_subdirectory (po)
 add_subdirectory (src)

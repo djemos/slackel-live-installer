@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salix-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-13 03:23+0300\n"
-"PO-Revision-Date: 2015-10-12 00:25+0200\n"
+"POT-Creation-Date: 2016-10-21 13:16+0300\n"
+"PO-Revision-Date: 2015-10-13 22:38+0200\n"
 "Last-Translator: Lluís Tusquellas <lutusq@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/djemos/salix-live-installer/"
 "language/es/)\n"
@@ -20,83 +20,51 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.7.6\n"
 
-#: src/sli.ui:14
-#, fuzzy
-msgid ""
-"Cannot install Grub boot loader on an xfs filesystem. System will not "
-"boot. \n"
-"Choose (e)Lilo instead. Please verify and correct."
-msgstr ""
-"No se pueden instalar a la vez los cargadores (e)Lilo y Grub. Compruébelo, "
-"por favor, y corrija."
-
-#: src/sli.ui:51
-msgid ""
-"Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
-msgstr ""
-"No se pueden instalar a la vez los cargadores (e)Lilo y Grub. Compruébelo, "
-"por favor, y corrija."
-
-#: src/sli.ui:90
-msgid "Your two root password entries do not match. Please verify and correct."
-msgstr ""
-
-#: src/sli.ui:129
-msgid "Your two user password entries do not match. Please verify and correct."
-msgstr ""
-"Sus dos intentos de palabra de paso no coinciden. Compruébelo, por favor, y "
-"corrija."
-
-#: src/sli.ui:168
-msgid ""
-"root password, user name and user password entries \n"
-"cannot be emtpy.\n"
-"root password and user password should have at least 5 characters\n"
-"\n"
-"Please verify and correct.\n"
-msgstr ""
-
-#: src/sli.ui:238
+#: src/sli.ui:40
 msgid "btrfs"
 msgstr ""
 
-#: src/sli.ui:241
+#: src/sli.ui:43
 msgid "ext2"
 msgstr ""
 
-#: src/sli.ui:244
+#: src/sli.ui:46 src/sli.ui:72
 msgid "ext3"
 msgstr ""
 
-#: src/sli.ui:247
+#: src/sli.ui:49
 msgid "ext4"
 msgstr ""
 
-#: src/sli.ui:250
+#: src/sli.ui:52
 msgid "jfs"
 msgstr ""
 
-#: src/sli.ui:253
+#: src/sli.ui:55
 msgid "reiserfs"
 msgstr ""
 
-#: src/sli.ui:256
+#: src/sli.ui:58
 msgid "xfs"
 msgstr ""
 
-#: src/sli.ui:287
+#: src/sli.ui:69
+msgid "vfat"
+msgstr ""
+
+#: src/sli.ui:103
 msgid "_File"
 msgstr "_Fichero"
 
-#: src/sli.ui:317
+#: src/sli.ui:133
 msgid "_Help"
 msgstr "_Ayuda"
 
-#: src/sli.ui:409
+#: src/sli.ui:225
 msgid "Partitions"
 msgstr "Particiones"
 
-#: src/sli.ui:413
+#: src/sli.ui:229
 msgid ""
 "Important!\n"
 "\n"
@@ -121,61 +89,65 @@ msgstr ""
 "de datos si no se hace con cuidado. Es además altamente recomendable hacer "
 "copias de seguridad de todos los datos importantes antes de comenzar."
 
-#: src/sli.ui:452
+#: src/sli.ui:268
 msgid ""
 "<i>Warning: copy / installation wipes everything on the selected location.</"
 "i>"
 msgstr "Aviso: copia /instalación borra todo en la localización seleccionada."
 
-#: src/sli.ui:478
+#: src/sli.ui:293
 msgid "Copy location:"
 msgstr "Localización de la copia:"
 
-#: src/sli.ui:517
+#: src/sli.ui:332
 msgid "click here if you want to copy system to usb"
 msgstr "Haga clic aquí si quiere copiar el sistema a usb"
 
-#: src/sli.ui:539
+#: src/sli.ui:356
 msgid "Copy live system to usb"
 msgstr "Copie el systema en vivo a usb"
 
-#: src/sli.ui:591
-msgid "Install (e)LiLo"
-msgstr "Instalar (e)Lilo"
-
-#: src/sli.ui:595
-msgid "check this if you want to install (e)Lilo boot loader"
-msgstr "marque aquí si quiere instalar el cargador de arranque (e)Lilo."
-
-#: src/sli.ui:609
-msgid "choose the Linux partition to hold the main directory tree."
+#: src/sli.ui:382 src/sli.ui:395
+msgid "Choose the filesystem type to format usb."
 msgstr ""
 
-#: src/sli.ui:625
-msgid "Install Grub"
-msgstr "Instalar Grub"
-
-#: src/sli.ui:629
-msgid "check this if you want to install Grub boot loader"
-msgstr "marque esto si desea instalar el cargador de arranque Grub"
-
-#: src/sli.ui:642
-msgid "Install location:"
-msgstr "Localización de la instalación:"
-
-#: src/sli.ui:649
+#: src/sli.ui:383 src/sli.ui:510
 msgid "Filesystem Type:"
 msgstr ""
 
-#: src/sli.ui:660
+#: src/sli.ui:452
+msgid "Install (e)LiLo"
+msgstr "Instalar (e)Lilo"
+
+#: src/sli.ui:456
+msgid "check this if you want to install (e)Lilo boot loader"
+msgstr "marque aquí si quiere instalar el cargador de arranque (e)Lilo."
+
+#: src/sli.ui:470
+msgid "choose the Linux partition to hold the main directory tree."
+msgstr ""
+
+#: src/sli.ui:486
+msgid "Install Grub"
+msgstr "Instalar Grub"
+
+#: src/sli.ui:490
+msgid "check this if you want to install Grub boot loader"
+msgstr "marque esto si desea instalar el cargador de arranque Grub"
+
+#: src/sli.ui:503
+msgid "Install location:"
+msgstr "Localización de la instalación:"
+
+#: src/sli.ui:521
 msgid "Choose the filesystem type to format partition(s)."
 msgstr ""
 
-#: src/sli.ui:681
+#: src/sli.ui:542
 msgid "Home location:"
 msgstr "Localización de home:"
 
-#: src/sli.ui:692
+#: src/sli.ui:553
 msgid ""
 "If you want to use a home partition to another disk then choose one from "
 "here.\n"
@@ -185,46 +157,46 @@ msgstr ""
 "aquí.\n"
 "Si no déjelo vacío."
 
-#: src/sli.ui:711
+#: src/sli.ui:572
 msgid "Format Ηome"
 msgstr ""
 
-#: src/sli.ui:715
+#: src/sli.ui:576
 msgid "check this if you want to format /home partition"
 msgstr ""
 
-#: src/sli.ui:737
+#: src/sli.ui:597
 msgid "click here if you want to install system on hard disk"
 msgstr "haga clic aquí si quiere instalar el sistema en el disco duro"
 
-#: src/sli.ui:759
+#: src/sli.ui:619
 msgid "Install live system"
 msgstr "Instalar el sistema en vivo"
 
-#: src/sli.ui:823
+#: src/sli.ui:683
 msgid "Actions needed before proceeding with system installation.\n"
 msgstr "Acciones necesarias antes de llevar a cabo la instalación.\n"
 
-#: src/sli.ui:887
+#: src/sli.ui:805
 msgid ""
 "Set root password, define login name, choose a password to be coupled with "
 "your\n"
 "login name."
 msgstr ""
 
-#: src/sli.ui:921
+#: src/sli.ui:839
 msgid "root password"
 msgstr ""
 
-#: src/sli.ui:928
+#: src/sli.ui:846
 msgid "user name"
 msgstr "nombre de usuario"
 
-#: src/sli.ui:939
+#: src/sli.ui:857
 msgid "user password"
 msgstr "palabra de paso para el usuario"
 
-#: src/sli.ui:951
+#: src/sli.ui:869
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters. "
@@ -232,7 +204,7 @@ msgstr ""
 "Aquí debe definir su nombre de usuario el cual sólo puede contener "
 "caracteres alfanuméricos si espacios ni letras mayúsculas."
 
-#: src/sli.ui:971
+#: src/sli.ui:889
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -243,7 +215,7 @@ msgstr ""
 "Su palabra o frase de paso debería incluir una mezcla de letras mayúsculas y "
 "minúsculas e incluso símbolos (como @, !, y &)"
 
-#: src/sli.ui:994
+#: src/sli.ui:912
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -252,38 +224,38 @@ msgid ""
 "letters, numbers, and even symbols (such as the @, !, and &)"
 msgstr ""
 
-#: src/sli.ui:1017
+#: src/sli.ui:935
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
 msgstr ""
 
-#: src/sli.ui:1037
+#: src/sli.ui:955
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
 msgstr "Aqui tiene que volver a escribir su palabra de paso como confirmación."
 
-#: src/sli.ui:1056 src/sli.ui:1073
+#: src/sli.ui:974 src/sli.ui:991
 msgid "visible"
 msgstr "visible"
 
-#: src/sli.ui:1061 src/sli.ui:1078
+#: src/sli.ui:979 src/sli.ui:996
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
 msgstr ""
 "Marque esta caja si quiere poder ver la palabra de paso mientas la escribe."
 
-#: src/sli.ui:1116
+#: src/sli.ui:1034
 msgid "Choose installation mode"
 msgstr "Escoja el modo de instalación"
 
-#: src/sli.ui:1141
+#: src/sli.ui:1059
 msgid "core installation"
 msgstr "instalación mínima"
 
-#: src/sli.ui:1146
+#: src/sli.ui:1064
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are \n"
@@ -298,11 +270,11 @@ msgstr ""
 "experimentado y quiere personalizar su instalación para un fin concreto, "
 "como un servidor web, un servidor de ficheros, etc."
 
-#: src/sli.ui:1164
+#: src/sli.ui:1082
 msgid "basic installation"
 msgstr "instalación básica"
 
-#: src/sli.ui:1169
+#: src/sli.ui:1087
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few \n"
@@ -317,11 +289,11 @@ msgstr ""
 "avanzados a quienes gustaría instalar un sistema ligero y añadir las "
 "aplicaciones que después elijan. "
 
-#: src/sli.ui:1187
+#: src/sli.ui:1105
 msgid "full installation"
 msgstr "instalación completa"
 
-#: src/sli.ui:1192
+#: src/sli.ui:1110
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -334,31 +306,64 @@ msgstr ""
 "escritorio completo y una selección completa de aplicaciones que "
 "corresponda, siguiendo siempre el principio de \"una aplicación por taera\"."
 
-#: src/sli.ui:1268
+#: src/sli.ui:1186
 msgid "About"
 msgstr "Acerca de "
 
-#: src/sli.ui:1277
+#: src/sli.ui:1195
 msgid "http://slackware-live.tuxfamily.org"
 msgstr "http://slackware-live.tuxfamily.org"
 
-#: src/sli.ui:1278
+#: src/sli.ui:1196
 msgid "CeCILL <http://www.cecill.info/licences.fr.html>"
 msgstr "CeCILL <http://www.cecill.info/licences.fr.html>"
 
-#: src/sli.ui:1305 src/sli.ui:1352
+#: src/sli.ui:1230
+msgid ""
+"Cannot install Grub boot loader on an xfs filesystem. System will not "
+"boot. \n"
+"Choose (e)Lilo instead. Please verify and correct."
+msgstr ""
+
+#: src/sli.ui:1271
+msgid ""
+"Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
+msgstr ""
+"No se pueden instalar a la vez los cargadores (e)Lilo y Grub. Compruébelo, "
+"por favor, y corrija."
+
+#: src/sli.ui:1307 src/sli.ui:1354
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:1315
+#: src/sli.ui:1317
 msgid "Error encountered."
 msgstr "Se ha encontrado un error."
 
-#: src/sli.ui:1361
+#: src/sli.ui:1363
 msgid "Installation completed."
 msgstr "Instalación completada."
 
-#: src/sli.ui:1402
+#: src/sli.ui:1407
+msgid "Your two root password entries do not match. Please verify and correct."
+msgstr ""
+
+#: src/sli.ui:1450
+msgid "Your two user password entries do not match. Please verify and correct."
+msgstr ""
+"Sus dos intentos de palabra de paso no coinciden. Compruébelo, por favor, y "
+"corrija."
+
+#: src/sli.ui:1493
+msgid ""
+"root password, user name and user password entries \n"
+"cannot be emtpy.\n"
+"root password and user password should have at least 5 characters\n"
+"\n"
+"Please verify and correct.\n"
+msgstr ""
+
+#: src/sli.ui:1538
 msgid "Error: system is not live."
 msgstr "Error: el sistema no es en vivo."
 
