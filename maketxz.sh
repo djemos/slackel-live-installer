@@ -3,7 +3,7 @@
 cd $(dirname $0)
 mkdir -p pkg
 export DESTDIR=$PWD/pkg
-VER=1.2.3
+VER=1.2.4
 ARCH=${ARCH:-i486}
 RLZ=1dj
 
