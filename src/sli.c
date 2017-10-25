@@ -1,6 +1,6 @@
 /*	- added support for setting root password on installation system by [Dimitris Tzemos <dijemos@gmail.com>]
 	- adeed support for creating a user name and user password on installation system by [Dimitris Tzemos <dijemos@gmail.com>]
-	- added partition manager connectivity in gui by [Dimitris Tzemos <ddijemos@gmail.com>]
+	- added partition manager connectivity in gui by [Dimitris Tzemos <dijemos@gmail.com>]
 	*/
 
 #include <gtk/gtk.h>
