@@ -1,6 +1,6 @@
-/*	- added support for setting root password on installation system by [Dimitris Tzemos <dijemos@gmail.com>]
-	- adeed support for creating a user name and user password on installation system by [Dimitris Tzemos <dijemos@gmail.com>]
-	- added partition manager connectivity in gui by [Dimitris Tzemos <dijemos@gmail.com>]
+/*	- added support for setting root password on installation system by [Dimitris Tzemos <djemos@slackel.gr>]
+	- adeed support for creating a user name and user password on installation system by [Dimitris Tzemos <djemos@slackel.gr>]
+	- added partition manager connectivity in gui by [Dimitris Tzemos <djemos@slackel.gr>]
 	*/
 
 #include <gtk/gtk.h>
@@ -208,8 +208,8 @@ void clearlocations() {
 }
 
 void on_gparted_clicked (GtkWidget *widget, gpointer user_data) {
-	if (g_file_test("/usr/sbin/gparted", G_FILE_TEST_EXISTS)) {
-	system("/usr/sbin/gparted");
+	if (g_file_test("/usr/bin/gparted", G_FILE_TEST_EXISTS)) {
+	system("/usr/bin/gparted");
 	clearlocations();
 	initlocations();
 	}
@@ -283,7 +283,7 @@ void on_cancel_btn_clicked (GtkWidget *widget, gpointer user_data) {
 }
 
 
-void on_exit (GtkWidget *widget, gpointer user_data) {
+void on_exitp (GtkWidget *widget, gpointer user_data) {
 	if (pid != 0) {
 		kill (pid, SIGTERM);
 	}

@@ -23,7 +23,7 @@ void on_process_end (GPid thepid, gint status, gpointer data);
 
 void do_action(gboolean save);
 
-void on_exit (GtkWidget *widget, gpointer user_data);
+void on_exitp (GtkWidget *widget, gpointer user_data);
 
 void initlocations();
 

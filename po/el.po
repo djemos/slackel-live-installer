@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sli-1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-21 13:17+0300\n"
+"POT-Creation-Date: 2017-11-15 00:31+0200\n"
 "PO-Revision-Date: 2016-10-21 13:17+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: slackel <dijemos@gmail.com>\n"
@@ -180,7 +180,7 @@ msgid "Actions needed before proceeding with system installation.\n"
 msgstr ""
 "Ενέργειες που χρειάζονται πριν προχωρήσετε στην εγκατάσταση του συστήματος.\n"
 
-#: src/sli.ui:805
+#: src/sli.ui:829
 msgid ""
 "Set root password, define login name, choose a password to be coupled with "
 "your\n"
@@ -190,19 +190,19 @@ msgstr ""
 "χρήστη\n"
 "για είσοδο στο σύστημα."
 
-#: src/sli.ui:839
+#: src/sli.ui:863
 msgid "root password"
 msgstr "Συνθηματικό διαχειριστή"
 
-#: src/sli.ui:846
+#: src/sli.ui:870
 msgid "user name"
 msgstr "Όνομα χρήστη"
 
-#: src/sli.ui:857
+#: src/sli.ui:881
 msgid "user password"
 msgstr "Συνθηματικό χρήστη"
 
-#: src/sli.ui:869
+#: src/sli.ui:893
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters. "
@@ -211,7 +211,7 @@ msgstr ""
 "περιλαμβάνει μόνο αλφαριθμητικούς χαρακτήρες χωρίς κενά\n"
 "και κεφαλαία."
 
-#: src/sli.ui:889
+#: src/sli.ui:913
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -222,7 +222,7 @@ msgstr ""
 "να περιλαμβάνει πεζά και κεφαλαία, νούμερα, ακόμα και\n"
 "σύμβολα (όπως @, ! και &)."
 
-#: src/sli.ui:912
+#: src/sli.ui:936
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -236,7 +236,7 @@ msgstr ""
 "κωδικό χρήστη. Ο κωδικός θα πρέπει να περιλαμβάνει πεζά\n"
 "και κεφαλαία, νούμερα, ακόμα και σύμβολα (όπως @, ! και &)"
 
-#: src/sli.ui:935
+#: src/sli.ui:959
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
@@ -244,17 +244,17 @@ msgstr ""
 "Εδώ πρέπει να επανεισάγετε τον κωδικό διαχειριστή (root) \n"
 "για επαλήθευση."
 
-#: src/sli.ui:955
+#: src/sli.ui:979
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
 msgstr "Εδώ πρέπει να επανεισάγετε τον κωδικό χρήστη για επαλήθευση."
 
-#: src/sli.ui:974 src/sli.ui:991
+#: src/sli.ui:998 src/sli.ui:1015
 msgid "visible"
 msgstr "Ορατό"
 
-#: src/sli.ui:979 src/sli.ui:996
+#: src/sli.ui:1003 src/sli.ui:1020
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
@@ -262,15 +262,15 @@ msgstr ""
 "Επιλέξτε το αν επιθυμείτε να εμφανίζεται ο κωδικός\n"
 "κατά την πληκτρολόγηση."
 
-#: src/sli.ui:1034
+#: src/sli.ui:1058
 msgid "Choose installation mode"
 msgstr "Επιλέξτε τρόπο εγκατάστασης"
 
-#: src/sli.ui:1059
+#: src/sli.ui:1083
 msgid "core installation"
 msgstr "Εγκατάσταση core"
 
-#: src/sli.ui:1064
+#: src/sli.ui:1088
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are \n"
@@ -286,11 +286,11 @@ msgstr ""
 "που επιθυμούν να τροποποιήσουν μια εγκατάσταση για \n"
 "οποιοδήποτε σκοπό, όπως web server, file server κλπ."
 
-#: src/sli.ui:1082
+#: src/sli.ui:1106
 msgid "basic installation"
 msgstr "Εγκατάσταση basic"
 
-#: src/sli.ui:1087
+#: src/sli.ui:1111
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few \n"
@@ -307,11 +307,11 @@ msgstr ""
 "χρήστες που θα ήθελαν να εγκαταστήσουν ένα ελαφρύ \n"
 "σύστημα και να προσθέσουν τη δική τους επιλογή εφαρμογών."
 
-#: src/sli.ui:1105
+#: src/sli.ui:1129
 msgid "full installation"
 msgstr "Εγκατάσταση full"
 
-#: src/sli.ui:1110
+#: src/sli.ui:1134
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -325,19 +325,19 @@ msgstr ""
 "πλήρη επιλογή εφαρμογών, πάντα σύμφωνα με τη λογική \n"
 "\"μία εφαρμογή για κάθε εργασία\"."
 
-#: src/sli.ui:1186
+#: src/sli.ui:1210
 msgid "About"
 msgstr "Περί"
 
-#: src/sli.ui:1195
+#: src/sli.ui:1219
 msgid "http://slackware-live.tuxfamily.org"
 msgstr "http://slackware-live.tuxfamily.org"
 
-#: src/sli.ui:1196
+#: src/sli.ui:1220
 msgid "CeCILL <http://www.cecill.info/licences.fr.html>"
 msgstr "CeCILL <http://www.cecill.info/licences.fr.html>"
 
-#: src/sli.ui:1230
+#: src/sli.ui:1254
 msgid ""
 "Cannot install Grub boot loader on an xfs filesystem. System will not "
 "boot. \n"
@@ -347,34 +347,34 @@ msgstr ""
 "σύστημα σας δεν θα μπουτάρει. \n"
 "Επιλέξτε το (e)Lilo. Παρακαλώ διορθώστε."
 
-#: src/sli.ui:1271
+#: src/sli.ui:1295
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
 "Δεν μπορείτε να εγκαταστήσετε και το (e)Lilo και το Grub. Παρακαλώ επιλέξτε "
 "μόνο ένα."
 
-#: src/sli.ui:1307 src/sli.ui:1354
+#: src/sli.ui:1331 src/sli.ui:1378
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:1317
+#: src/sli.ui:1341
 msgid "Error encountered."
 msgstr "Συνέβη σφάλμα."
 
-#: src/sli.ui:1363
+#: src/sli.ui:1387
 msgid "Installation completed."
 msgstr "Η εγκατάσταση τελείωσε."
 
-#: src/sli.ui:1407
+#: src/sli.ui:1431
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr "Οι κωδικοί διαχειριστή είναι διαφορετικοί. Παρακαλώ διορθώστε."
 
-#: src/sli.ui:1450
+#: src/sli.ui:1474
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr "Οι κωδικοί χρήστη είναι διαφορετικοί. Παρακαλώ διορθώστε."
 
-#: src/sli.ui:1493
+#: src/sli.ui:1517
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -389,13 +389,10 @@ msgstr ""
 "\n"
 "Παρακαλώ διορθώστε τα.\n"
 
-#: src/sli.ui:1538
+#: src/sli.ui:1562
 msgid "Error: system is not live."
 msgstr "Σφάλμα: Το σύστημα δεν είναι live."
 
 #: src/sli.desktop.in.h:1 src/sli-kde.desktop.in.h:1
 msgid "Slackel-Live Installation"
 msgstr "Εγκατάσταση του Slackel-Live"
-
-#~ msgid "Format Ηome "
-#~ msgstr "Διαμόρφωση του /home διαμερίσματος"

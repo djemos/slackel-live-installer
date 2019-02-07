@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salix-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-21 13:16+0300\n"
-"PO-Revision-Date: 2015-10-13 22:38+0200\n"
-"Last-Translator: Lluís Tusquellas <lutusq@gmail.com>\n"
+"POT-Creation-Date: 2017-11-15 00:31+0200\n"
+"PO-Revision-Date: 2019-02-07 16:48+0200\n"
+"Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/djemos/salix-live-installer/"
 "language/es/)\n"
 "Language: es\n"
@@ -18,39 +18,39 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: src/sli.ui:40
 msgid "btrfs"
-msgstr ""
+msgstr "btrfs"
 
 #: src/sli.ui:43
 msgid "ext2"
-msgstr ""
+msgstr "ext2"
 
 #: src/sli.ui:46 src/sli.ui:72
 msgid "ext3"
-msgstr ""
+msgstr "ext3"
 
 #: src/sli.ui:49
 msgid "ext4"
-msgstr ""
+msgstr "ext4"
 
 #: src/sli.ui:52
 msgid "jfs"
-msgstr ""
+msgstr "jfs"
 
 #: src/sli.ui:55
 msgid "reiserfs"
-msgstr ""
+msgstr "reiserfs"
 
 #: src/sli.ui:58
 msgid "xfs"
-msgstr ""
+msgstr "xfs"
 
 #: src/sli.ui:69
 msgid "vfat"
-msgstr ""
+msgstr "vfat"
 
 #: src/sli.ui:103
 msgid "_File"
@@ -177,26 +177,26 @@ msgstr "Instalar el sistema en vivo"
 msgid "Actions needed before proceeding with system installation.\n"
 msgstr "Acciones necesarias antes de llevar a cabo la instalación.\n"
 
-#: src/sli.ui:805
+#: src/sli.ui:829
 msgid ""
 "Set root password, define login name, choose a password to be coupled with "
 "your\n"
 "login name."
 msgstr ""
 
-#: src/sli.ui:839
+#: src/sli.ui:863
 msgid "root password"
 msgstr ""
 
-#: src/sli.ui:846
+#: src/sli.ui:870
 msgid "user name"
 msgstr "nombre de usuario"
 
-#: src/sli.ui:857
+#: src/sli.ui:881
 msgid "user password"
 msgstr "palabra de paso para el usuario"
 
-#: src/sli.ui:869
+#: src/sli.ui:893
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters. "
@@ -204,7 +204,7 @@ msgstr ""
 "Aquí debe definir su nombre de usuario el cual sólo puede contener "
 "caracteres alfanuméricos si espacios ni letras mayúsculas."
 
-#: src/sli.ui:889
+#: src/sli.ui:913
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -215,7 +215,7 @@ msgstr ""
 "Su palabra o frase de paso debería incluir una mezcla de letras mayúsculas y "
 "minúsculas e incluso símbolos (como @, !, y &)"
 
-#: src/sli.ui:912
+#: src/sli.ui:936
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -224,38 +224,38 @@ msgid ""
 "letters, numbers, and even symbols (such as the @, !, and &)"
 msgstr ""
 
-#: src/sli.ui:935
+#: src/sli.ui:959
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
 msgstr ""
 
-#: src/sli.ui:955
+#: src/sli.ui:979
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
 msgstr "Aqui tiene que volver a escribir su palabra de paso como confirmación."
 
-#: src/sli.ui:974 src/sli.ui:991
+#: src/sli.ui:998 src/sli.ui:1015
 msgid "visible"
 msgstr "visible"
 
-#: src/sli.ui:979 src/sli.ui:996
+#: src/sli.ui:1003 src/sli.ui:1020
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
 msgstr ""
 "Marque esta caja si quiere poder ver la palabra de paso mientas la escribe."
 
-#: src/sli.ui:1034
+#: src/sli.ui:1058
 msgid "Choose installation mode"
 msgstr "Escoja el modo de instalación"
 
-#: src/sli.ui:1059
+#: src/sli.ui:1083
 msgid "core installation"
 msgstr "instalación mínima"
 
-#: src/sli.ui:1064
+#: src/sli.ui:1088
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are \n"
@@ -270,11 +270,11 @@ msgstr ""
 "experimentado y quiere personalizar su instalación para un fin concreto, "
 "como un servidor web, un servidor de ficheros, etc."
 
-#: src/sli.ui:1082
+#: src/sli.ui:1106
 msgid "basic installation"
 msgstr "instalación básica"
 
-#: src/sli.ui:1087
+#: src/sli.ui:1111
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few \n"
@@ -289,11 +289,11 @@ msgstr ""
 "avanzados a quienes gustaría instalar un sistema ligero y añadir las "
 "aplicaciones que después elijan. "
 
-#: src/sli.ui:1105
+#: src/sli.ui:1129
 msgid "full installation"
 msgstr "instalación completa"
 
-#: src/sli.ui:1110
+#: src/sli.ui:1134
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -306,55 +306,55 @@ msgstr ""
 "escritorio completo y una selección completa de aplicaciones que "
 "corresponda, siguiendo siempre el principio de \"una aplicación por taera\"."
 
-#: src/sli.ui:1186
+#: src/sli.ui:1210
 msgid "About"
 msgstr "Acerca de "
 
-#: src/sli.ui:1195
+#: src/sli.ui:1219
 msgid "http://slackware-live.tuxfamily.org"
 msgstr "http://slackware-live.tuxfamily.org"
 
-#: src/sli.ui:1196
+#: src/sli.ui:1220
 msgid "CeCILL <http://www.cecill.info/licences.fr.html>"
 msgstr "CeCILL <http://www.cecill.info/licences.fr.html>"
 
-#: src/sli.ui:1230
+#: src/sli.ui:1254
 msgid ""
 "Cannot install Grub boot loader on an xfs filesystem. System will not "
 "boot. \n"
 "Choose (e)Lilo instead. Please verify and correct."
 msgstr ""
 
-#: src/sli.ui:1271
+#: src/sli.ui:1295
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
 "No se pueden instalar a la vez los cargadores (e)Lilo y Grub. Compruébelo, "
 "por favor, y corrija."
 
-#: src/sli.ui:1307 src/sli.ui:1354
+#: src/sli.ui:1331 src/sli.ui:1378
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:1317
+#: src/sli.ui:1341
 msgid "Error encountered."
 msgstr "Se ha encontrado un error."
 
-#: src/sli.ui:1363
+#: src/sli.ui:1387
 msgid "Installation completed."
 msgstr "Instalación completada."
 
-#: src/sli.ui:1407
+#: src/sli.ui:1431
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr ""
 
-#: src/sli.ui:1450
+#: src/sli.ui:1474
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr ""
 "Sus dos intentos de palabra de paso no coinciden. Compruébelo, por favor, y "
 "corrija."
 
-#: src/sli.ui:1493
+#: src/sli.ui:1517
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -363,56 +363,10 @@ msgid ""
 "Please verify and correct.\n"
 msgstr ""
 
-#: src/sli.ui:1538
+#: src/sli.ui:1562
 msgid "Error: system is not live."
 msgstr "Error: el sistema no es en vivo."
 
 #: src/sli.desktop.in.h:1 src/sli-kde.desktop.in.h:1
 msgid "Slackel-Live Installation"
 msgstr "Instalación de "
-
-#~ msgid ""
-#~ "user name and user password entries \n"
-#~ "cannot be emtpy.\n"
-#~ "user password should have at least 5 characters\n"
-#~ "\n"
-#~ "Please verify and correct.\n"
-#~ msgstr ""
-#~ "El nombre de usuario y la palabra de paso no deben ser cadenas vacías.\n"
-#~ "La palabra de paso debe tener al menos 5 caracteres.\n"
-#~ "Compruébelo, por favor, y corrija.\n"
-
-#~ msgid ""
-#~ "Important!\n"
-#~ "\n"
-#~ "Salix needs, at the very minimum, one swap partition\n"
-#~ "and one Linux partition to hold its main directory tree.\n"
-#~ "\n"
-#~ "If you do not already have these needed partitions ready, \n"
-#~ "you should now click on the button 'Partitions'\n"
-#~ "in order to create them. Be aware that partitioning a disk\n"
-#~ "drive is a delicate operation which could lead to data loss\n"
-#~ "if not performed cautiously. It is therefore highly advisable\n"
-#~ "to backup important data before starting this procedure."
-#~ msgstr ""
-#~ "Importante!\n"
-#~ "\n"
-#~ "Salix necesita, como mínimo, una partición de intercambio (swap) y una "
-#~ "partición Linux para albergar el árbol principal de directorios.\n"
-#~ "\n"
-#~ "Si usted no tiene ya esas particiones disponibles, debe hacer click en el "
-#~ "botón 'Particiones' para crearlas. Sea consciente de que hacer "
-#~ "particiones en un disco duro es una operación delicada que puede conducir "
-#~ "a la pérdida de datos si no se hace con cuidado. Es además altamente "
-#~ "recomendable hacer copias de seguridad de todos los datos importantes "
-#~ "antes de comenzar."
-
-#~ msgid ""
-#~ "Define login name, choose a password to be coupled with your\n"
-#~ "login name."
-#~ msgstr ""
-#~ "Defina el nombre de usuario, escoja una frase de paso para usar "
-#~ "conjuntamente con su nombre de usuario."
-
-#~ msgid "Salix-Live Installation"
-#~ msgstr "Instalación de "
