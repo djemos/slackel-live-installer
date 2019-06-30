@@ -20,8 +20,7 @@ case "$1" in
 "home") requiredsize=0 ;;
 esac
 
-disks=`cat /proc/partitions | sed 's/  */:/g' | cut -f5 -d: | sed -e /^$/d -e /[1-9]/d -e /^sr0/d -e /loop/d -e/ram/d -e /$bootdevice/d`
-
+disks=`fdisk -l 2>/dev/null | grep "^/dev/sd" | cut -c6-8 | sort -u | grep -v "$bootdevice"`
 for disk in $disks; do
 	if [ "$1" == "copy" ]; then
 		size=`cat /proc/partitions | grep "$disk$" | sed 's/  */:/g' |cut -f4 -d:`
@@ -29,14 +28,13 @@ for disk in $disks; do
 			echo "/dev/$disk"
 		fi
 	fi
-	partitions=`cat /proc/partitions | sed -n /$disk[0-9]/p | sed 's/  */:/g' | cut -f5 -d:`
-	for partition in $partitions; do
-		type=`blkid -pi /dev/$partition | grep "^TYPE=" | cut -f2 -d=`
-		if [ "$type" != "ntfs" ] && [ "$type" != "vfat" ] && [ "$type" != "swap" ]; then
+	if fdisk -l -o Type-UUID /dev/$disk 2>/dev/null | grep -q ": dos$\|21686148-6449-6E6F-744E-656564454649$\|C12A7328-F81F-11D2-BA4B-00A0C93EC93B$"; then #if partition scheme support GRUB
+		partitions=`{ fdisk -l -o Device,Type-UUID /dev/$disk; fdisk -l -o Device,Id /dev/$disk; } 2>/dev/null | grep " 0FC63DAF-8483-4772-8E79-3D69D8477DE4$\| 83$" | cut -f1 -d' ' | cut -f3 -d'/'` #linux partitions
+		for partition in $partitions; do
 			size=`cat /proc/partitions | grep "$partition$" | sed 's/  */:/g'| cut -f4 -d:`
 			if (( $size > $requiredsize )); then
 				echo "/dev/$partition"
 			fi
-		fi
-	done
+		done
+	fi
 done

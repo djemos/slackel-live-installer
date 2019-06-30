@@ -1,8 +1,12 @@
+2019-02-16: sli-1.2.4
+	- added support for choosing system Locale and Keyboard [Dimitris Tzemos <dijemos@gmail.com>]  
 2015-10-11:	sli-1.2.3
-	- add support to format partitions using different filesystems (btrfs,ext2,ext3,ext4,reiserfs,jfs,xfs) by [Dimitris Tzemos <dijemos@gmail.com>]
+	- added suport to choosing grub or lilo loader [Dimitris Tzemos <dijemos@gmail.com>] 
+    - added support for choosing vfat or ext3 filesystem format for usb [Dimitris Tzemos <dijemos@gmail.com>] 
+	- added support to format partitions using different filesystems (btrfs,ext2,ext3,ext4,reiserfs,jfs,xfs) by [Dimitris Tzemos <dijemos@gmail.com>]
 2015-09-26:	sli-1.2.2
 	- display a progress bar instead of (non user friendly) log
-	- add support for setting /home user directory on a different partition 
+	- add support for setting /home user directory on a different partition [Dimitris Tzemos <dijemos@gmail.com>] 
 	- fixed GPT disks detections for installation
 2014-04-04: sli-1.2: 
 	- added support for setting root password on installation system by [Dimitris Tzemos <dijemos@gmail.com>]

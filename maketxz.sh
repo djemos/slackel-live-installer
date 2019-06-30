@@ -3,9 +3,9 @@
 cd $(dirname $0)
 mkdir -p pkg
 export DESTDIR=$PWD/pkg
-VER=1.2.4
-ARCH=${ARCH:-i486}
-RLZ=1dj
+VER=1.2.5
+ARCH=${ARCH:-x86_64}
+RLZ=2dj
 
 	cmake -DCMAKE_INSTALL_PREFIX=/usr .
 		
@@ -32,4 +32,4 @@ EOF
 	cd ..
 rm -rf pkg
 md5sum sli-$VER-$ARCH-$RLZ.txz > sli-$VER-$ARCH-$RLZ.md5
-echo -e "atk,bzip2,cairo,cxxlibs|gcc-g++,expat,fontconfig,freetype,gcc,gdk-pixbuf2,glib2,gtk+2,harfbuzz,icu4c,libX11,libXau,libXcomposite,libXcursor,libXdamage,libXdmcp,libXext,libXfixes,libXi,libXinerama,libXrandr,libXrender,libffi,libpng,libxcb,pango,pixman,zlib" > sli-$VER-$ARCH-$RLZ.dep
+echo -e "aaa_elflibs|libpng,aaa_elflibs|pcre,aaa_elflibs|zlib,atk,bzip2,cairo,expat,fontconfig,freetype,fribidi,gdk-pixbuf2,glib2,graphite2,gtk+2,harfbuzz,libX11,libXau,libXcomposite,libXcursor,libXdamage,libXdmcp,libXext,libXfixes,libXi,libXinerama,libXrandr,libXrender,libffi,libglvnd,libxcb,pango,pixman,util-linux" > sli-$VER-$ARCH-$RLZ.dep

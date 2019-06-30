@@ -22,3 +22,9 @@ install (FILES ${PROJECT_NAME}-kde.desktop DESTINATION share/applications)
 install (FILES ${PROJECT_NAME}.png DESTINATION share/pixmaps)
 
 install (PROGRAMS sli-location-detection.sh DESTINATION sbin)
+install (PROGRAMS sli-locale_list-detection.sh DESTINATION sbin)
+
+install (PROGRAMS get_current_keybtype.sh DESTINATION sbin)
+install (PROGRAMS get_current_keymap.sh DESTINATION sbin)
+
+install (PROGRAMS get_current_zone.sh DESTINATION sbin)
