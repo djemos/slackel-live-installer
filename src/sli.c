@@ -417,6 +417,10 @@ void on_gparted_clicked (GtkWidget *widget, gpointer user_data) {
 	}
 }
 
+void on_Startup_Guide_activate (GtkWidget *widget, gpointer user_data) {
+ gtk_show_uri(NULL,"file:///usr/doc/sli-1.2.5/slackel_startup_guide.pdf",gtk_get_current_event_time (), NULL);
+}
+
 void on_keyboard_button_cancel_clicked(GtkWidget *widget, gpointer user_data) {
 }
 

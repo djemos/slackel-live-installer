@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-29 14:56+0300\n"
+"POT-Creation-Date: 2019-10-07 17:40+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,7 +126,7 @@ msgid "Slackel Startup Guide"
 msgstr ""
 
 #: src/sli.ui:774
-msgid " Read the StartupUp Guide to help you installing Slackel."
+msgid " Read the StartUp Guide to help you installing Slackel."
 msgstr ""
 
 #: src/sli.ui:775

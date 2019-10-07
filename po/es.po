@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: slackel-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-29 14:56+0300\n"
+"POT-Creation-Date: 2019-10-07 17:40+0300\n"
 "PO-Revision-Date: 2019-06-28 18:04+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/djemos/slackel-live-"
@@ -131,7 +131,7 @@ msgid "Slackel Startup Guide"
 msgstr ""
 
 #: src/sli.ui:774
-msgid " Read the StartupUp Guide to help you installing Slackel."
+msgid " Read the StartUp Guide to help you installing Slackel."
 msgstr ""
 
 #: src/sli.ui:775
