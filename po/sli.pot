@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-29 10:00+0300\n"
+"POT-Creation-Date: 2019-09-29 14:56+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,11 +121,23 @@ msgstr ""
 msgid "_Help"
 msgstr ""
 
-#: src/sli.ui:832
+#: src/sli.ui:764
+msgid "Slackel Startup Guide"
+msgstr ""
+
+#: src/sli.ui:774
+msgid " Read the StartupUp Guide to help you installing Slackel."
+msgstr ""
+
+#: src/sli.ui:775
+msgid "Startup_Guide"
+msgstr ""
+
+#: src/sli.ui:856
 msgid "Partitions"
 msgstr ""
 
-#: src/sli.ui:836
+#: src/sli.ui:860
 msgid ""
 "Important!\n"
 "\n"
@@ -140,141 +152,141 @@ msgid ""
 "to backup important data before starting this procedure."
 msgstr ""
 
-#: src/sli.ui:875
+#: src/sli.ui:899
 msgid ""
 "<i>Warning: copy / installation wipes everything on the selected location.</"
 "i>"
 msgstr ""
 
-#: src/sli.ui:900
+#: src/sli.ui:924
 msgid "Copy location:"
 msgstr ""
 
-#: src/sli.ui:939
+#: src/sli.ui:963
 msgid "click here if you want to copy system to usb"
 msgstr ""
 
-#: src/sli.ui:963
+#: src/sli.ui:987
 msgid "Copy live system to usb"
 msgstr ""
 
-#: src/sli.ui:989 src/sli.ui:1002
+#: src/sli.ui:1013 src/sli.ui:1026
 msgid "Choose the filesystem type to format usb."
 msgstr ""
 
-#: src/sli.ui:990 src/sli.ui:1117
+#: src/sli.ui:1014 src/sli.ui:1141
 msgid "Filesystem Type:"
 msgstr ""
 
-#: src/sli.ui:1059
+#: src/sli.ui:1083
 msgid "Install (e)LiLo"
 msgstr ""
 
-#: src/sli.ui:1063
+#: src/sli.ui:1087
 msgid "check this if you want to install (e)Lilo boot loader"
 msgstr ""
 
-#: src/sli.ui:1077
+#: src/sli.ui:1101
 msgid "choose the Linux partition to hold the main directory tree."
 msgstr ""
 
-#: src/sli.ui:1093
+#: src/sli.ui:1117
 msgid "Install Grub"
 msgstr ""
 
-#: src/sli.ui:1097
+#: src/sli.ui:1121
 msgid "check this if you want to install Grub boot loader"
 msgstr ""
 
-#: src/sli.ui:1110
+#: src/sli.ui:1134
 msgid "Install location:"
 msgstr ""
 
-#: src/sli.ui:1128
+#: src/sli.ui:1152
 msgid "Choose the filesystem type to format partition(s)."
 msgstr ""
 
-#: src/sli.ui:1149
+#: src/sli.ui:1173
 msgid "Home location:"
 msgstr ""
 
-#: src/sli.ui:1160
+#: src/sli.ui:1184
 msgid ""
 "If you want to use a home partition to another disk then choose one from "
 "here.\n"
 "Otherwise leave it empty."
 msgstr ""
 
-#: src/sli.ui:1179
+#: src/sli.ui:1203
 msgid "Format Ηome"
 msgstr ""
 
-#: src/sli.ui:1183
+#: src/sli.ui:1207
 msgid "check this if you want to format /home partition"
 msgstr ""
 
-#: src/sli.ui:1204
+#: src/sli.ui:1228
 msgid "click here if you want to install system on hard disk"
 msgstr ""
 
-#: src/sli.ui:1226
+#: src/sli.ui:1250
 msgid "Install live system"
 msgstr ""
 
-#: src/sli.ui:1290
+#: src/sli.ui:1314
 msgid "Actions needed before proceeding with system installation.\n"
 msgstr ""
 
-#: src/sli.ui:1316
+#: src/sli.ui:1340
 msgid "System clock"
 msgstr ""
 
-#: src/sli.ui:1320
+#: src/sli.ui:1344
 msgid "Please set the time, date and time zone:"
 msgstr ""
 
-#: src/sli.ui:1379 src/sli.ui:3150
+#: src/sli.ui:1403 src/sli.ui:3174
 msgid "Language"
 msgstr ""
 
-#: src/sli.ui:1383
+#: src/sli.ui:1407
 msgid "Select a default system locale."
 msgstr ""
 
-#: src/sli.ui:1407
+#: src/sli.ui:1431
 msgid "keyboard"
 msgstr ""
 
-#: src/sli.ui:1411
+#: src/sli.ui:1435
 msgid "Select your preferred keyboard type."
 msgstr ""
 
-#: src/sli.ui:1447
+#: src/sli.ui:1471
 msgid ""
 "Set root password, define login name, choose a password to be coupled with "
 "your\n"
 "login name."
 msgstr ""
 
-#: src/sli.ui:1481
+#: src/sli.ui:1505
 msgid "root password"
 msgstr ""
 
-#: src/sli.ui:1488
+#: src/sli.ui:1512
 msgid "user name"
 msgstr ""
 
-#: src/sli.ui:1499
+#: src/sli.ui:1523
 msgid "user password"
 msgstr ""
 
-#: src/sli.ui:1511
+#: src/sli.ui:1535
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters. "
 msgstr ""
 
-#: src/sli.ui:1531
+#: src/sli.ui:1555
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -282,7 +294,7 @@ msgid ""
 "(such as the @, !, and &)"
 msgstr ""
 
-#: src/sli.ui:1554
+#: src/sli.ui:1578
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -291,37 +303,37 @@ msgid ""
 "letters, numbers, and even symbols (such as the @, !, and &)"
 msgstr ""
 
-#: src/sli.ui:1577
+#: src/sli.ui:1601
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
 msgstr ""
 
-#: src/sli.ui:1597
+#: src/sli.ui:1621
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
 msgstr ""
 
-#: src/sli.ui:1616 src/sli.ui:1633
+#: src/sli.ui:1640 src/sli.ui:1657
 msgid "visible"
 msgstr ""
 
-#: src/sli.ui:1621 src/sli.ui:1638
+#: src/sli.ui:1645 src/sli.ui:1662
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
 msgstr ""
 
-#: src/sli.ui:1676
+#: src/sli.ui:1700
 msgid "Choose installation mode"
 msgstr ""
 
-#: src/sli.ui:1701
+#: src/sli.ui:1725
 msgid "core installation"
 msgstr ""
 
-#: src/sli.ui:1706
+#: src/sli.ui:1730
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are \n"
@@ -331,11 +343,11 @@ msgid ""
 "file server etc. "
 msgstr ""
 
-#: src/sli.ui:1724
+#: src/sli.ui:1748
 msgid "basic installation"
 msgstr ""
 
-#: src/sli.ui:1729
+#: src/sli.ui:1753
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few \n"
@@ -345,11 +357,11 @@ msgid ""
 "choice of applications. "
 msgstr ""
 
-#: src/sli.ui:1747
+#: src/sli.ui:1771
 msgid "full installation"
 msgstr ""
 
-#: src/sli.ui:1752
+#: src/sli.ui:1776
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -358,47 +370,47 @@ msgid ""
 "always following the \"one application per task\" rationale. "
 msgstr ""
 
-#: src/sli.ui:1828
+#: src/sli.ui:1852
 msgid "About"
 msgstr ""
 
-#: src/sli.ui:2515
+#: src/sli.ui:2539
 msgid "translator-credits"
 msgstr ""
 
-#: src/sli.ui:2546
+#: src/sli.ui:2570
 msgid ""
 "Cannot install Grub boot loader on an xfs filesystem. System will not "
 "boot. \n"
 "Choose (e)Lilo instead. Please verify and correct."
 msgstr ""
 
-#: src/sli.ui:2587
+#: src/sli.ui:2611
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
 
-#: src/sli.ui:2623 src/sli.ui:2670
+#: src/sli.ui:2647 src/sli.ui:2694
 msgid "sli"
 msgstr ""
 
-#: src/sli.ui:2633
+#: src/sli.ui:2657
 msgid "Error encountered."
 msgstr ""
 
-#: src/sli.ui:2679
+#: src/sli.ui:2703
 msgid "Installation completed."
 msgstr ""
 
-#: src/sli.ui:2723
+#: src/sli.ui:2747
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr ""
 
-#: src/sli.ui:2766
+#: src/sli.ui:2790
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr ""
 
-#: src/sli.ui:2809
+#: src/sli.ui:2833
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -407,27 +419,27 @@ msgid ""
 "Please verify and correct.\n"
 msgstr ""
 
-#: src/sli.ui:2886
+#: src/sli.ui:2910
 msgid "Please select your preferred keyboard type and map."
 msgstr ""
 
-#: src/sli.ui:2923
+#: src/sli.ui:2947
 msgid "keyboard type"
 msgstr ""
 
-#: src/sli.ui:2958
+#: src/sli.ui:2982
 msgid "keyboard map"
 msgstr ""
 
-#: src/sli.ui:3114
+#: src/sli.ui:3138
 msgid "Please select a default system locale."
 msgstr ""
 
-#: src/sli.ui:3162
+#: src/sli.ui:3186
 msgid "Locale"
 msgstr ""
 
-#: src/sli.ui:3194
+#: src/sli.ui:3218
 msgid "Error: system is not live."
 msgstr ""
 
