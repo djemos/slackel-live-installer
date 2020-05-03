@@ -1,7 +1,3 @@
-SLI requires the following utilities (and their dependencies) to operate:
-- rsync,
-- a GUI to ask the SSH password (SSH_ASKPASS environment variable must be set).
-
 Attention, SLI use the CMake construction system. So, the installation
 procedure is:
 1) extract the archive containing the program sources,
