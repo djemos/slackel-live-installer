@@ -1,12 +1,15 @@
-/*	- added support for setting root password on installation system by [Dimitris Tzemos <dijemos@gmail.com>]
-	- adeed support for creating a user name and user password on installation system by [Dimitris Tzemos <dijemos@gmail.com>]
-	- added support for core, basic, full mode installation by [Dimitris Tzemos <dijemos@gmail.com>]
-	- added partition manager connectivity in gui by [Dimitris Tzemos <dijemos@gmail.com>]
-	- added suport to choosing grub or lilo loader [Dimitris Tzemos <dijemos@gmail.com>] 
-	- added support for choosing vfat or ext3 filesystem format for usb [Dimitris Tzemos <dijemos@gmail.com>] 
-	- added support to format partitions using different filesystems (btrfs,ext2,ext3,ext4,reiserfs,jfs,xfs) by [Dimitris Tzemos <dijemos@gmail.com>]
-	- added support for choosing system Locale and Keyboard and set system clock date and time [Dimitris Tzemos <dijemos@gmail.com>]
-	*/
+/*
+sli.c (slackel live installer) from Slackel <http://www.slackel.gr>
+Copyright (C) 2020 Dimitris Tzemos <dijemos@gmail.com>
+This program is free software: you can redistribute it and/or modify it under the terms 
+of the GNU General Public License as published by the Free Software Foundation, 
+either version 2 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty 
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License at <http://www.gnu.org/licenses/> for more details.
+*/
+
 
 #include <gtk/gtk.h>
 #include <string.h>
