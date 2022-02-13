@@ -17,7 +17,7 @@ RLZ=8dj
 	mkdir install
 
 cat <<EOF > install/slack-desc
-sli: Slackel Live Installer(gui application for installing live system)"
+sli: Slackel Live Installer (gui application for installing live system)"
 sli: "It is  written for Slackel Linux:"
 sli: "support GPT and legacy MBR partitionned disks, UEFI and CSM"
 sli: "(legacy / BIOS) booting"
