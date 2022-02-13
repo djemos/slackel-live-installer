@@ -1,4 +1,4 @@
-Slackware-live is a dependency for SLI.
+SLI (Slackel-Live installer) is a GUI to install on internal or external SSD disk or USB stick or copy the live system  on a USB stick (frugal installation) (based on GTK+2).
 It is written in C, glade and gtk.
 Slackware-live is a dependency for SLI.
 
