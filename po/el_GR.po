@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sli-1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-07 17:40+0300\n"
+"POT-Creation-Date: 2022-11-09 00:52+0200\n"
 "PO-Revision-Date: 2019-10-07 17:41+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: slackel <dijemos@gmail.com>\n"
@@ -181,53 +181,53 @@ msgstr "Αντιγραφή σε:"
 msgid "click here if you want to copy system to usb"
 msgstr "Κάντε κλικ εδώ αν θέλετε να αντιγράψετε το σύστημα σε usb"
 
-#: src/sli.ui:987
+#: src/sli.ui:986
 msgid "Copy live system to usb"
 msgstr "Αντιγραφή live συστήματος σε usb"
 
-#: src/sli.ui:1013 src/sli.ui:1026
+#: src/sli.ui:1012 src/sli.ui:1025
 msgid "Choose the filesystem type to format usb."
 msgstr "Επιλέξτε τον τύπο του συστήματος αρχείων για τη διαμόρφωση του USB"
 
-#: src/sli.ui:1014 src/sli.ui:1141
+#: src/sli.ui:1013 src/sli.ui:1140
 msgid "Filesystem Type:"
 msgstr "Τύπος Συστήματος Αρχείων:"
 
-#: src/sli.ui:1083
+#: src/sli.ui:1082
 msgid "Install (e)LiLo"
 msgstr "Εγκατάσταση (e)LiLo"
 
-#: src/sli.ui:1087
+#: src/sli.ui:1086
 msgid "check this if you want to install (e)Lilo boot loader"
 msgstr "Κάντε κλικ εδώ αν θέλετε να εγκαταστήσετε το (e)Lilo boot loader"
 
-#: src/sli.ui:1101
+#: src/sli.ui:1100
 msgid "choose the Linux partition to hold the main directory tree."
 msgstr "Επιλέξτε το διαμέρισμα για την εγκατάσταση του κυρίως συστήματος."
 
-#: src/sli.ui:1117
+#: src/sli.ui:1116
 msgid "Install Grub"
 msgstr "Εγκατάσταση Grub"
 
-#: src/sli.ui:1121
+#: src/sli.ui:1120
 msgid "check this if you want to install Grub boot loader"
 msgstr "Κάντε κλικ εδώ αν θέλετε να εγκαταστήσετε το Grub boot loader"
 
-#: src/sli.ui:1134
+#: src/sli.ui:1133
 msgid "Install location:"
 msgstr "Εγκατάσταση σε:"
 
-#: src/sli.ui:1152
+#: src/sli.ui:1151
 msgid "Choose the filesystem type to format partition(s)."
 msgstr ""
 "Επιλέξτε τον τύπο του συστήματος αρχείων για τη διαμόρφωση των διαμερισμάτων "
 "δίσκου."
 
-#: src/sli.ui:1173
+#: src/sli.ui:1172
 msgid "Home location:"
 msgstr "Home διαμέρισμα:"
 
-#: src/sli.ui:1184
+#: src/sli.ui:1183
 msgid ""
 "If you want to use a home partition to another disk then choose one from "
 "here.\n"
@@ -237,52 +237,52 @@ msgstr ""
 "χρήστη, επιλέξτε ένα από εδώ\n"
 "διαφορετικά αφήστε το πεδίο κενό."
 
-#: src/sli.ui:1203
+#: src/sli.ui:1202
 msgid "Format Ηome"
 msgstr "Διαμόρφωση του Ηome"
 
-#: src/sli.ui:1207
+#: src/sli.ui:1206
 msgid "check this if you want to format /home partition"
 msgstr "Κάντε κλικ εδώ αν θέλετε να διαμορφώσετε το /home διαμέρισμα"
 
-#: src/sli.ui:1228
+#: src/sli.ui:1227
 msgid "click here if you want to install system on hard disk"
 msgstr "Κάντε κλικ εδώ αν θέλετε να εγκαταστήσετε το σύστημα στο σκληρό δίσκο"
 
-#: src/sli.ui:1250
+#: src/sli.ui:1249
 msgid "Install live system"
 msgstr "Εγκατάσταση live συστήματος"
 
-#: src/sli.ui:1314
+#: src/sli.ui:1313
 msgid "Actions needed before proceeding with system installation.\n"
 msgstr ""
 "Ενέργειες που χρειάζονται πριν προχωρήσετε στην εγκατάσταση του συστήματος.\n"
 
-#: src/sli.ui:1340
+#: src/sli.ui:1339
 msgid "System clock"
 msgstr "Ρολόι συστήματος"
 
-#: src/sli.ui:1344
+#: src/sli.ui:1343
 msgid "Please set the time, date and time zone:"
 msgstr "Παρακαλώ ρυθμίστε την ώρα, ημερομηνία και τη ζώνη ώρας:"
 
-#: src/sli.ui:1403 src/sli.ui:3174
+#: src/sli.ui:1402 src/sli.ui:3173
 msgid "Language"
 msgstr "Γλώσσα συστήματος"
 
-#: src/sli.ui:1407
+#: src/sli.ui:1406
 msgid "Select a default system locale."
 msgstr "Επιλέξτε τη γλώσσα συστήματος."
 
-#: src/sli.ui:1431
+#: src/sli.ui:1430
 msgid "keyboard"
 msgstr "Πληκτρολόγιο συστήματος"
 
-#: src/sli.ui:1435
+#: src/sli.ui:1434
 msgid "Select your preferred keyboard type."
 msgstr "Επιλέξτε τον επιθυμητό τύπο πληκτρολογίου."
 
-#: src/sli.ui:1471
+#: src/sli.ui:1470
 msgid ""
 "Set root password, define login name, choose a password to be coupled with "
 "your\n"
@@ -292,19 +292,19 @@ msgstr ""
 "χρήστη\n"
 "για είσοδο στο σύστημα."
 
-#: src/sli.ui:1505
+#: src/sli.ui:1504
 msgid "root password"
 msgstr "Συνθηματικό διαχειριστή"
 
-#: src/sli.ui:1512
+#: src/sli.ui:1511
 msgid "user name"
 msgstr "Όνομα χρήστη"
 
-#: src/sli.ui:1523
+#: src/sli.ui:1522
 msgid "user password"
 msgstr "Συνθηματικό χρήστη"
 
-#: src/sli.ui:1535
+#: src/sli.ui:1534
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters. "
@@ -313,7 +313,7 @@ msgstr ""
 "περιλαμβάνει μόνο αλφαριθμητικούς χαρακτήρες χωρίς κενά\n"
 "και κεφαλαία."
 
-#: src/sli.ui:1555
+#: src/sli.ui:1554
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -324,7 +324,7 @@ msgstr ""
 "να περιλαμβάνει πεζά και κεφαλαία, νούμερα, ακόμα και\n"
 "σύμβολα (όπως @, ! και &)."
 
-#: src/sli.ui:1578
+#: src/sli.ui:1577
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -338,7 +338,7 @@ msgstr ""
 "κωδικό χρήστη. Ο κωδικός θα πρέπει να περιλαμβάνει πεζά\n"
 "και κεφαλαία, νούμερα, ακόμα και σύμβολα (όπως @, ! και &)"
 
-#: src/sli.ui:1601
+#: src/sli.ui:1600
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
@@ -346,17 +346,17 @@ msgstr ""
 "Εδώ πρέπει να επανεισάγετε τον κωδικό διαχειριστή (root) \n"
 "για επαλήθευση."
 
-#: src/sli.ui:1621
+#: src/sli.ui:1620
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
 msgstr "Εδώ πρέπει να επανεισάγετε τον κωδικό χρήστη για επαλήθευση."
 
-#: src/sli.ui:1640 src/sli.ui:1657
+#: src/sli.ui:1639 src/sli.ui:1656
 msgid "visible"
 msgstr "Ορατό"
 
-#: src/sli.ui:1645 src/sli.ui:1662
+#: src/sli.ui:1644 src/sli.ui:1661
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
@@ -364,15 +364,15 @@ msgstr ""
 "Επιλέξτε το αν επιθυμείτε να εμφανίζεται ο κωδικός\n"
 "κατά την πληκτρολόγηση."
 
-#: src/sli.ui:1700
+#: src/sli.ui:1699
 msgid "Choose installation mode"
 msgstr "Επιλέξτε τρόπο εγκατάστασης"
 
-#: src/sli.ui:1725
+#: src/sli.ui:1724
 msgid "core installation"
 msgstr "Εγκατάσταση core"
 
-#: src/sli.ui:1730
+#: src/sli.ui:1729
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are \n"
@@ -388,11 +388,11 @@ msgstr ""
 "που επιθυμούν να τροποποιήσουν μια εγκατάσταση για \n"
 "οποιοδήποτε σκοπό, όπως web server, file server κλπ."
 
-#: src/sli.ui:1748
+#: src/sli.ui:1747
 msgid "basic installation"
 msgstr "Εγκατάσταση basic"
 
-#: src/sli.ui:1753
+#: src/sli.ui:1752
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few \n"
@@ -409,11 +409,11 @@ msgstr ""
 "χρήστες που θα ήθελαν να εγκαταστήσουν ένα ελαφρύ \n"
 "σύστημα και να προσθέσουν τη δική τους επιλογή εφαρμογών."
 
-#: src/sli.ui:1771
+#: src/sli.ui:1770
 msgid "full installation"
 msgstr "Εγκατάσταση full"
 
-#: src/sli.ui:1776
+#: src/sli.ui:1775
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -427,15 +427,15 @@ msgstr ""
 "πλήρη επιλογή εφαρμογών, πάντα σύμφωνα με τη λογική \n"
 "\"μία εφαρμογή για κάθε εργασία\"."
 
-#: src/sli.ui:1852
+#: src/sli.ui:1851
 msgid "About"
 msgstr "Περί"
 
-#: src/sli.ui:2539
+#: src/sli.ui:2538
 msgid "translator-credits"
 msgstr "Δημήτρης Τζέμος <dijemos~at~gmail~dot~com>"
 
-#: src/sli.ui:2570
+#: src/sli.ui:2569
 msgid ""
 "Cannot install Grub boot loader on an xfs filesystem. System will not "
 "boot. \n"
@@ -445,34 +445,34 @@ msgstr ""
 "σύστημα σας δεν θα μπουτάρει. \n"
 "Επιλέξτε το (e)Lilo. Παρακαλώ διορθώστε."
 
-#: src/sli.ui:2611
+#: src/sli.ui:2610
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
 "Δεν μπορείτε να εγκαταστήσετε και το (e)Lilo και το Grub. Παρακαλώ επιλέξτε "
 "μόνο ένα."
 
-#: src/sli.ui:2647 src/sli.ui:2694
+#: src/sli.ui:2646 src/sli.ui:2693
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:2657
+#: src/sli.ui:2656
 msgid "Error encountered."
 msgstr "Συνέβη σφάλμα."
 
-#: src/sli.ui:2703
+#: src/sli.ui:2702
 msgid "Installation completed."
 msgstr "Η εγκατάσταση τελείωσε."
 
-#: src/sli.ui:2747
+#: src/sli.ui:2746
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr "Οι κωδικοί διαχειριστή είναι διαφορετικοί. Παρακαλώ διορθώστε."
 
-#: src/sli.ui:2790
+#: src/sli.ui:2789
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr "Οι κωδικοί χρήστη είναι διαφορετικοί. Παρακαλώ διορθώστε."
 
-#: src/sli.ui:2833
+#: src/sli.ui:2832
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -487,27 +487,27 @@ msgstr ""
 "\n"
 "Παρακαλώ διορθώστε τα.\n"
 
-#: src/sli.ui:2910
+#: src/sli.ui:2909
 msgid "Please select your preferred keyboard type and map."
 msgstr "Παρακαλώ επιλέξτε τον επιθυμητό τύπο πληκτρολογίου."
 
-#: src/sli.ui:2947
+#: src/sli.ui:2946
 msgid "keyboard type"
 msgstr "Τύπος πληκτρολογίου"
 
-#: src/sli.ui:2982
+#: src/sli.ui:2981
 msgid "keyboard map"
 msgstr "Διάταξη πληκτρολογίου"
 
-#: src/sli.ui:3138
+#: src/sli.ui:3137
 msgid "Please select a default system locale."
 msgstr "Παρακαλώ επιλέξτε τη γλώσσα συστήματος."
 
-#: src/sli.ui:3186
+#: src/sli.ui:3185
 msgid "Locale"
 msgstr "Τοπικότητα"
 
-#: src/sli.ui:3218
+#: src/sli.ui:3217
 msgid "Error: system is not live."
 msgstr "Σφάλμα: Το σύστημα δεν είναι live."
 
