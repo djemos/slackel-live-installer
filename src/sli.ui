@@ -1857,7 +1857,7 @@ always following the "one application per task" rationale. </property>
     <property name="skip_taskbar_hint">True</property>
     <property name="transient_for">mainwindow</property>
     <property name="program_name">Slackel live Installer</property>
-    <property name="copyright">Copyright © 2014-2020  Dimitris Tzemos</property>
+    <property name="copyright">Copyright © 2014-2022  Dimitris Tzemos</property>
     <property name="license">         GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
