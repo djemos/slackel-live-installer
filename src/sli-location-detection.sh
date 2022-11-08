@@ -20,7 +20,12 @@ case "$1" in
 "home") requiredsize=0 ;;
 esac
 
-disks=`fdisk -l 2>/dev/null | grep "^/dev/sd" | cut -c6-8 | sort -u | grep -v "$bootdevice"`
+#disks=`fdisk -l 2>/dev/null | grep "^/dev/sd" | cut -c6-8 | sort -u | grep -v "$bootdevice"`
+for disks in sda sdb sdc sdd sde sdf sdg sdh sdi sdj sdk sdl sdm sdn sdo sdp sd \
+     nvme0n1 nvme1n1 nvme2n1 nvme3n1 nvme4n1 nvme5n1 nvme6n1 nvme7n1 nvme8n1 nvme9n1 \
+     nvme0n2 nvme1n2 nvme2n2 nvme3n2 nvme4n2 nvme5n2 nvme6n2 nvme7n2 nvme8n2 nvme9n2 \
+     nvme0n3 nvme1n3 nvme2n3 nvme3n3 nvme4n3 nvme5n3 nvme6n3 nvme7n3 nvme8n3 nvme9n3 \
+     nvme0n4 nvme1n4 nvme2n4 nvme3n4 nvme4n4 nvme5n4 nvme6n4 nvme7n4 nvme8n4 nvme9n4  ; do
 for disk in $disks; do
 	if [ "$1" == "copy" ]; then
 		size=`cat /proc/partitions | grep "$disk$" | sed 's/  */:/g' |cut -f4 -d:`
@@ -37,4 +42,5 @@ for disk in $disks; do
 			fi
 		done
 	fi
+done
 done

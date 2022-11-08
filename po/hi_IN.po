@@ -1,0 +1,487 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Panwar108 <caspian7pena@gmail.com>, 2020
+msgid ""
+msgstr ""
+"Project-Id-Version: slackel-live-installer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-07 17:40+0300\n"
+"PO-Revision-Date: 2020-10-05 21:14+0300\n"
+"Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
+"Language-Team: Hindi (India) (http://www.transifex.com/djemos/slackel-live-installer/"
+"language/hi_IN/)\n"
+"Language: hi_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: src/sli.ui:133
+msgid "Keep clock synchronized with internet servers"
+msgstr "घड़ी को इंटरनेट सर्वर से समकालीन रखें"
+
+#: src/sli.ui:159
+msgid "Synchronize now"
+msgstr "अभी समकालीन करें"
+
+#: src/sli.ui:188
+msgid "Time Zone:"
+msgstr "समय क्षेत्र :"
+
+#: src/sli.ui:222
+msgid "Select time zone..."
+msgstr "समय क्षेत्र चुनें..."
+
+#: src/sli.ui:244
+msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
+msgstr "हार्डवेयर घड़ी समन्वित सर्वत्र समय (UTC) पर सेट है"
+
+#: src/sli.ui:267
+msgid "Time:"
+msgstr "समय :"
+
+#: src/sli.ui:280
+msgid "Date:"
+msgstr "दिनांक :"
+
+#: src/sli.ui:423
+msgid "azerty"
+msgstr "azerty"
+
+#: src/sli.ui:426
+msgid "dvorak"
+msgstr "dvorak"
+
+#: src/sli.ui:429
+msgid "olpc"
+msgstr "olpc"
+
+#: src/sli.ui:432
+msgid "qwerty"
+msgstr "qwerty"
+
+#: src/sli.ui:435
+msgid "qwertz"
+msgstr "qwertz"
+
+#: src/sli.ui:458
+msgid "btrfs"
+msgstr "btrfs"
+
+#: src/sli.ui:461
+msgid "ext2"
+msgstr "ext2"
+
+#: src/sli.ui:464 src/sli.ui:490
+msgid "ext3"
+msgstr "ext3"
+
+#: src/sli.ui:467
+msgid "ext4"
+msgstr "ext4"
+
+#: src/sli.ui:470
+msgid "jfs"
+msgstr "jfs"
+
+#: src/sli.ui:473
+msgid "reiserfs"
+msgstr "reiserfs"
+
+#: src/sli.ui:476
+msgid "xfs"
+msgstr "xfs"
+
+#: src/sli.ui:487
+msgid "vfat"
+msgstr "vfat"
+
+#: src/sli.ui:511
+msgid "Select time zone"
+msgstr "समय क्षेत्र चयन"
+
+#: src/sli.ui:534
+msgid "Please select your time zone:"
+msgstr "कृपया अपना समय क्षेत्र चुनें :"
+
+#: src/sli.ui:572
+msgid "General area"
+msgstr "सामान्य क्षेत्र"
+
+#: src/sli.ui:607
+msgid "Location"
+msgstr "फोल्डर :"
+
+#: src/sli.ui:710
+msgid "_File"
+msgstr "फाइल (_F)"
+
+#: src/sli.ui:740
+msgid "_Help"
+msgstr "सहायता (_H)"
+
+#: src/sli.ui:764
+msgid "Slackel Startup Guide"
+msgstr "स्लैकल आरंभ गाइड"
+
+#: src/sli.ui:774
+msgid " Read the StartUp Guide to help you installing Slackel."
+msgstr "स्लैकल इंस्टॉल करने हेतु स्लैकल आरंभ गाइड पढ़ें।"
+
+#: src/sli.ui:775
+msgid "Startup_Guide"
+msgstr "आरंभ गाइड (G)"
+
+#: src/sli.ui:856
+msgid "Partitions"
+msgstr "विभाजन"
+
+#: src/sli.ui:860
+msgid ""
+"Important!\n"
+"\n"
+"Slackel needs, at the very minimum, one swap partition\n"
+"and one Linux partition to hold its main directory tree.\n"
+"\n"
+"If you do not already have these needed partitions ready, \n"
+"you should now click on the button 'Partitions'\n"
+"in order to create them. Be aware that partitioning a disk\n"
+"drive is a delicate operation which could lead to data loss\n"
+"if not performed cautiously. It is therefore highly advisable\n"
+"to backup important data before starting this procedure."
+msgstr ""
+"आवश्यक सूचना!\n"
+"\n"
+"स्लैकल हेतु कम-से-कम एक स्वैप विभाजन व मुख्य\n"
+"डायरेक्टरी संरचना हेतु एक लिनक्स विभाजन आवश्यक है।\n"
+"\n"
+"ये विभाजन न होने की स्थिति में अभी 'विभाजन' बटन पर\n"
+"क्लिक कर इन्हें बनाएँ। ध्यान रहें कि डिस्क ड्राइव विभाजन\n"
+"एक संवेदशील प्रक्रिया है व सावधानी के अभाव में त्रुटि होने\n"
+"पर डाटा नष्ट हो सकता है। अतः हम आपको प्रक्रिया आरंभ\n"
+"पूर्व अहम डेटा बैकअप करने का परामर्श देते हैं।"
+
+#: src/sli.ui:899
+msgid "<i>Warning: copy / installation wipes everything on the selected location.</i>"
+msgstr "<i>चेतावनी : कॉपी/इंस्टॉल प्रक्रिया से चयनित ड्राइव पर पहले से मौजूद डाटा नष्ट हो जाएगा।</i>"
+
+#: src/sli.ui:924
+msgid "Copy location:"
+msgstr "कॉपी हेतु फोल्डर :"
+
+#: src/sli.ui:963
+msgid "click here if you want to copy system to usb"
+msgstr "यहाँ क्लिक कर सिस्टम को यूएसबी पर कॉपी करें"
+
+#: src/sli.ui:987
+msgid "Copy live system to usb"
+msgstr "लाइव सिस्टम को यूएसबी पर कॉपी करें"
+
+#: src/sli.ui:1013 src/sli.ui:1026
+msgid "Choose the filesystem type to format usb."
+msgstr "यूएसबी फॉर्मेट हेतु फाइल सिस्टम प्रकार चुनें।"
+
+#: src/sli.ui:1014 src/sli.ui:1141
+msgid "Filesystem Type:"
+msgstr "फाइल सिस्टम प्रकार :"
+
+#: src/sli.ui:1083
+msgid "Install (e)LiLo"
+msgstr "(ई)लीलो इंस्टॉल करें "
+
+#: src/sli.ui:1087
+msgid "check this if you want to install (e)Lilo boot loader"
+msgstr "इसे चिन्हित कर (ई)लीलो बूट लोड साधन इंस्टॉल करें"
+
+#: src/sli.ui:1101
+msgid "choose the Linux partition to hold the main directory tree."
+msgstr "मुख्य डायरेक्टरी संरचना हेतु लिनक्स विभाजन चुनें।"
+
+#: src/sli.ui:1117
+msgid "Install Grub"
+msgstr "Grub इंस्टॉल करें"
+
+#: src/sli.ui:1121
+msgid "check this if you want to install Grub boot loader"
+msgstr "इसे चिन्हित कर Grub बूट लोड साधन इंस्टॉल करें"
+
+#: src/sli.ui:1134
+msgid "Install location:"
+msgstr "इंस्टॉल हेतु फोल्डर :"
+
+#: src/sli.ui:1152
+msgid "Choose the filesystem type to format partition(s)."
+msgstr "विभाजन फॉर्मेट हेतु फाइल सिस्टम प्रकार चुनें।"
+
+#: src/sli.ui:1173
+msgid "Home location:"
+msgstr "होम हेतु फोल्डर :"
+
+#: src/sli.ui:1184
+msgid ""
+"If you want to use a home partition to another disk then choose one from here.\n"
+"Otherwise leave it empty."
+msgstr ""
+"अन्य डिस्क से होम विभाजन चयन करने हेतु यहाँ से चुनें।\n"
+"अन्यथा इसे रिक्त रखें।"
+
+#: src/sli.ui:1203
+msgid "Format Ηome"
+msgstr "होम फॉर्मेट करें"
+
+#: src/sli.ui:1207
+msgid "check this if you want to format /home partition"
+msgstr "इसे चिन्हित कर /home विभाजन फॉर्मेट करें"
+
+#: src/sli.ui:1228
+msgid "click here if you want to install system on hard disk"
+msgstr "यहाँ क्लिक कर सिस्टम को हार्ड डिस्क पर इंस्टॉल करें"
+
+#: src/sli.ui:1250
+msgid "Install live system"
+msgstr "लाइव सिस्टम इंस्टॉल करें"
+
+#: src/sli.ui:1314
+msgid "Actions needed before proceeding with system installation.\n"
+msgstr "सिस्टम इंस्टॉल प्रक्रिया पूर्व आवश्यक कार्य।\n"
+
+#: src/sli.ui:1340
+msgid "System clock"
+msgstr "सिस्टम घड़ी"
+
+#: src/sli.ui:1344
+msgid "Please set the time, date and time zone:"
+msgstr "कृपया समय, दिनांक व समय क्षेत्र सेट करें :"
+
+#: src/sli.ui:1403 src/sli.ui:3174
+msgid "Language"
+msgstr "भाषा"
+
+#: src/sli.ui:1407
+msgid "Select a default system locale."
+msgstr "सिस्टम हेतु डिफ़ॉल्ट स्थानिकी चुनें।"
+
+#: src/sli.ui:1431
+msgid "keyboard"
+msgstr "कुंजीपटल"
+
+#: src/sli.ui:1435
+msgid "Select your preferred keyboard type."
+msgstr "इच्छित कुंजीपटल प्रकार चुनें।"
+
+#: src/sli.ui:1471
+msgid ""
+"Set root password, define login name, choose a password to be coupled with your\n"
+"login name."
+msgstr "रुट कूटशब्द सेट करें, लॉगिन नाम दर्ज करें व लॉगिन नाम हेतु कूटशब्द चुनें।"
+
+#: src/sli.ui:1505
+msgid "root password"
+msgstr "रुट कूटशब्द"
+
+#: src/sli.ui:1512
+msgid "user name"
+msgstr "उपयोक्ता नाम"
+
+#: src/sli.ui:1523
+msgid "user password"
+msgstr "उपयोक्ता कूटशब्द"
+
+#: src/sli.ui:1535
+msgid ""
+"Here you must define your login name which should only include\n"
+"alphanumerical characters with no space or upper case letters. "
+msgstr ""
+"लॉगिन नाम पूर्णतया अक्षरांकीय युक्त हो व इसमें रिक्त स्थान या\n"
+"अपरकेस अक्षर नहीं होने चाहिए।"
+
+#: src/sli.ui:1555
+msgid ""
+"Choose a password or passphrase to be coupled with your\n"
+"login name. Your password or passprase should include a mix\n"
+"of upper and lower case letters, numbers, and even symbols\n"
+"(such as the @, !, and &)"
+msgstr ""
+"अपने लॉगिन नाम हेतु कूटशब्द चुनें। कूटशब्द में अपरकेस व लोअरकेस\n"
+"अक्षर, अंक व चिन्ह (जैसे @, ! व &) का मिश्रण होना आवश्यक है ।"
+
+#: src/sli.ui:1578
+msgid ""
+"On Linux systems, the superuser, or root, is a special user\n"
+"account used for system administration. Here you must set\n"
+"its password or passphrase. Remember, this password or\n"
+"passphrase should include a mix of upper and lower case\n"
+"letters, numbers, and even symbols (such as the @, !, and &)"
+msgstr ""
+"लिनक्स में, सिस्टम प्रशासन हेतु विशिष्ट उपयोक्ता अकाउंट\n"
+"को रुट कहते हैं। यहाँ पर इस हेतु कूटशब्द सेट करें। ध्यान\n"
+"रहें कि इस कूटशब्द में अपरकेस व लोअरकेस अक्षर, अंक\n"
+"व चिन्ह (जैसे @, ! व &) का मिश्रण होना आवश्यक है।"
+
+#: src/sli.ui:1601
+msgid ""
+"Here you must retype the superuser (root) password as a\n"
+"confirmation of your choice."
+msgstr "कृपया पुष्टिकरण हेतु रुट कूटशब्द पुनः दर्ज करें।"
+
+#: src/sli.ui:1621
+msgid ""
+"Here you must retype your password as\n"
+"a confirmation of your choice."
+msgstr "कृपया पुष्टिकरण हेतु कूटशब्द पुनः दर्ज करें।"
+
+#: src/sli.ui:1640 src/sli.ui:1657
+msgid "visible"
+msgstr "दृश्यमान"
+
+#: src/sli.ui:1645 src/sli.ui:1662
+msgid ""
+"Check this box if you want to be able to see the password\n"
+"you are typing."
+msgstr ""
+"यदि आप दर्ज किया गया कूटशब्द दृश्यमान\n"
+"रखना चाहते हैं तो इसे चिन्हित करें।"
+
+#: src/sli.ui:1700
+msgid "Choose installation mode"
+msgstr "इंस्टॉल मोड चयन"
+
+#: src/sli.ui:1725
+msgid "core installation"
+msgstr "कोर इंस्टॉल"
+
+#: src/sli.ui:1730
+msgid ""
+"Core installation:\n"
+"Only the minimum essentials for a console system to start are \n"
+"included. A graphical environment is not provided. This is ideal \n"
+"if you are an experienced user and want to customize your \n"
+"installation for any specific purpose, such as a web server.\n"
+"file server etc. "
+msgstr ""
+"कोर इंस्टॉल :\n"
+"केवल कंसोल सिस्टम हेतु आवश्यक न्यूनतम पैकेज सम्मिलित होते हैं।\n"
+"इसमें चित्रात्मक वातावरण नहीं होता है। यह अनुभवी उपयोक्ता एवं\n"
+"वेब सर्वर, फाइल सर्वर जैसे विशिष्ट उद्देश्यों हेतु अनुकूलन के लिए उपयुक्त है।"
+
+#: src/sli.ui:1748
+msgid "basic installation"
+msgstr "सामान्य इंस्टॉल"
+
+#: src/sli.ui:1753
+msgid ""
+"Basic installation:\n"
+"This installs only a basic desktop environment, with very few \n"
+"extra applications installed on top, such as a web browser and\n"
+"the gslapt package manager. Ideal for advanced users that \n"
+"would like to install a lightweight system and add their own\n"
+"choice of applications. "
+msgstr ""
+"सामान्य इंस्टॉल :\n"
+"इसमें केवल एक सामान्य डेस्कटॉप वातावरण इंस्टॉल होता है\n"
+"व वेब ब्राउज़र, पैकेज प्रबंधक इत्यादि के अतिरिक्त कोई अनावश्यक\n"
+"पैकेज सम्मिलित नहीं होते हैं। यह एक सरल सिस्टम व स्वयं अनुप्रयोग\n"
+"इंस्टॉल करने के इच्छुक उपयोक्ताओं हेतु उपयुक्त है।"
+
+#: src/sli.ui:1771
+msgid "full installation"
+msgstr "पूर्ण इंस्टॉल"
+
+#: src/sli.ui:1776
+msgid ""
+"Full installation:\n"
+"Everything that is included in the iso is installed. That includes \n"
+"a complete desktop environment\n"
+"and a complete selection of matching applications,\n"
+"always following the \"one application per task\" rationale. "
+msgstr ""
+"पूर्ण इंस्टॉल :\n"
+"आईएसओ में सम्मिलित सभी कुछ इंस्टॉल होता है।\n"
+"इसमें एक परिपूर्ण डेस्कटॉप वातावरण व\n"
+"'प्रति कार्य एकल अनुप्रयोग' तर्काधार पर संबंधित अनुप्रयोग होते हैं।"
+
+#: src/sli.ui:1852
+msgid "About"
+msgstr "बारे में"
+
+#: src/sli.ui:2539
+msgid "translator-credits"
+msgstr "Panwar108 <caspian7pena@gmail.com>"
+
+#: src/sli.ui:2570
+msgid ""
+"Cannot install Grub boot loader on an xfs filesystem. System will not boot. \n"
+"Choose (e)Lilo instead. Please verify and correct."
+msgstr ""
+"सिस्टम आरंभ विफलता के कारण फाइल सिस्टम पर Grub बूट लोड साधन इंस्टॉल करना संभव नहीं है।\n"
+"इसके स्थान पर (ई)लीलो चुनें। कृपया जाँचकर सुधारें।"
+
+#: src/sli.ui:2611
+msgid "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
+msgstr "दोनों (ई)लीलो व Grub बूट लोड साधन इंस्टॉल करना संभव नहीं है। कृपया जाँचकर सुधारें।"
+
+#: src/sli.ui:2647 src/sli.ui:2694
+msgid "sli"
+msgstr "sli"
+
+#: src/sli.ui:2657
+msgid "Error encountered."
+msgstr "त्रुटि हुई।"
+
+#: src/sli.ui:2703
+msgid "Installation completed."
+msgstr "इंस्टॉल प्रक्रिया पूर्ण।"
+
+#: src/sli.ui:2747
+msgid "Your two root password entries do not match. Please verify and correct."
+msgstr "रुट कूटशब्द प्रविष्टियाँ मेल नहीं खाती हैं। कृपया जाँचकर सुधारें।"
+
+#: src/sli.ui:2790
+msgid "Your two user password entries do not match. Please verify and correct."
+msgstr "उपयोक्ता कूटशब्द प्रविष्टियाँ मेल नहीं खाती हैं। कृपया जाँचकर सुधारें।"
+
+#: src/sli.ui:2833
+msgid ""
+"root password, user name and user password entries \n"
+"cannot be emtpy.\n"
+"root password and user password should have at least 5 characters\n"
+"\n"
+"Please verify and correct.\n"
+msgstr ""
+"उपयोक्ता नाम व उपयोक्ता कूटशब्द प्रविष्टियाँ\n"
+"रिक्त नहीं होनी चाहिए।\n"
+"रुट कूटशब्द व उपयोक्ता कूटशब्द में कम-से-कम 5 अक्षर होना आवश्यक है।\n"
+"\n"
+"कृपया जाँचकर सुधारें।\n"
+
+#: src/sli.ui:2910
+msgid "Please select your preferred keyboard type and map."
+msgstr "कृपया इच्छित कुंजीपटल प्रकार व अभिन्यास चुनें।"
+
+#: src/sli.ui:2947
+msgid "keyboard type"
+msgstr "कुंजीपटल प्रकार"
+
+#: src/sli.ui:2982
+msgid "keyboard map"
+msgstr "कुंजीपटल अभिन्यास"
+
+#: src/sli.ui:3138
+msgid "Please select a default system locale."
+msgstr "कृपया सिस्टम हेतु डिफ़ॉल्ट स्थानिकी चुनें।"
+
+#: src/sli.ui:3186
+msgid "Locale"
+msgstr "स्थानिकी"
+
+#: src/sli.ui:3218
+msgid "Error: system is not live."
+msgstr "त्रुटि : सिस्टम लाइव नहीं है।"
+
+#: src/sli.desktop.in.h:1 src/sli-kde.desktop.in.h:1
+msgid "Slackel-Live Installation"
+msgstr "स्लैकल-लाइव इंस्टॉल"

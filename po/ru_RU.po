@@ -4,13 +4,14 @@
 #
 # Translators:
 # Dimitris Tzemos <dijemos@gmail.com>, 2019
+# Irina Fedulova <istartlin@gmail.com>, 2020
 # Serg Bormant <bormant@mail.ru>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: slackel-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-09 00:52+0200\n"
-"PO-Revision-Date: 2019-06-28 18:08+0300\n"
+"POT-Creation-Date: 2019-10-07 17:40+0300\n"
+"PO-Revision-Date: 2020-10-05 21:09+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/djemos/slackel-live-"
 "installer/language/ru/)\n"
@@ -21,35 +22,35 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: src/sli.ui:133
 msgid "Keep clock synchronized with internet servers"
-msgstr ""
+msgstr "Синхронизировать время с временем интернета"
 
 #: src/sli.ui:159
 msgid "Synchronize now"
-msgstr ""
+msgstr "Синхронизировать сейчас"
 
 #: src/sli.ui:188
 msgid "Time Zone:"
-msgstr ""
+msgstr "Часовой пояс:"
 
 #: src/sli.ui:222
 msgid "Select time zone..."
-msgstr ""
+msgstr "Выбрать часовой пояс..."
 
 #: src/sli.ui:244
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr ""
+msgstr "Часы компьютера настроены на Всемирное координированное время (UTC)"
 
 #: src/sli.ui:267
 msgid "Time:"
-msgstr ""
+msgstr "Время:"
 
 #: src/sli.ui:280
 msgid "Date:"
-msgstr ""
+msgstr "Дата:"
 
 #: src/sli.ui:423
 msgid "azerty"
@@ -105,19 +106,19 @@ msgstr "vfat"
 
 #: src/sli.ui:511
 msgid "Select time zone"
-msgstr ""
+msgstr "Выбрать часовой пояс"
 
 #: src/sli.ui:534
 msgid "Please select your time zone:"
-msgstr ""
+msgstr "Пожалуйста, выберите ваш часовой пояс:"
 
 #: src/sli.ui:572
 msgid "General area"
-msgstr ""
+msgstr "Общая зона"
 
 #: src/sli.ui:607
 msgid "Location"
-msgstr ""
+msgstr "Местоположение"
 
 #: src/sli.ui:710
 msgid "_File"
@@ -129,15 +130,15 @@ msgstr "_Справка"
 
 #: src/sli.ui:764
 msgid "Slackel Startup Guide"
-msgstr ""
+msgstr "Руководство Slackel Startup"
 
 #: src/sli.ui:774
 msgid " Read the StartUp Guide to help you installing Slackel."
-msgstr ""
+msgstr "Прочтите Руководство Slackel Startup, чтобы установить Slackel."
 
 #: src/sli.ui:775
 msgid "Startup_Guide"
-msgstr ""
+msgstr "Startup_Guide"
 
 #: src/sli.ui:856
 msgid "Partitions"
@@ -183,51 +184,51 @@ msgstr "Копировать в:"
 msgid "click here if you want to copy system to usb"
 msgstr "щёлкните здесь, чтобы скопировать систему на флешку"
 
-#: src/sli.ui:986
+#: src/sli.ui:987
 msgid "Copy live system to usb"
 msgstr "Скопировать 'живую' систему на USB"
 
-#: src/sli.ui:1012 src/sli.ui:1025
+#: src/sli.ui:1013 src/sli.ui:1026
 msgid "Choose the filesystem type to format usb."
 msgstr "Файловая система для форматирования USB."
 
-#: src/sli.ui:1013 src/sli.ui:1140
+#: src/sli.ui:1014 src/sli.ui:1141
 msgid "Filesystem Type:"
 msgstr "Файловая система:"
 
-#: src/sli.ui:1082
+#: src/sli.ui:1083
 msgid "Install (e)LiLo"
 msgstr "Установить (e)LiLo"
 
-#: src/sli.ui:1086
+#: src/sli.ui:1087
 msgid "check this if you want to install (e)Lilo boot loader"
 msgstr "отметьте для установки загрузчика (e)LiLo"
 
-#: src/sli.ui:1100
+#: src/sli.ui:1101
 msgid "choose the Linux partition to hold the main directory tree."
 msgstr "выберите раздел Linux для корневого каталога."
 
-#: src/sli.ui:1116
+#: src/sli.ui:1117
 msgid "Install Grub"
 msgstr "Установить GRUB"
 
-#: src/sli.ui:1120
+#: src/sli.ui:1121
 msgid "check this if you want to install Grub boot loader"
 msgstr "отметьте для установки загрузчика GRUB"
 
-#: src/sli.ui:1133
+#: src/sli.ui:1134
 msgid "Install location:"
 msgstr "Установить в:"
 
-#: src/sli.ui:1151
+#: src/sli.ui:1152
 msgid "Choose the filesystem type to format partition(s)."
 msgstr "Файловая система для форматирования разделов."
 
-#: src/sli.ui:1172
+#: src/sli.ui:1173
 msgid "Home location:"
 msgstr "Раздел домашних каталогов:"
 
-#: src/sli.ui:1183
+#: src/sli.ui:1184
 msgid ""
 "If you want to use a home partition to another disk then choose one from "
 "here.\n"
@@ -236,51 +237,51 @@ msgstr ""
 "Выберите отдельный раздел для домашних каталогов.\n"
 "Либо оставьте поле пустым."
 
-#: src/sli.ui:1202
+#: src/sli.ui:1203
 msgid "Format Ηome"
 msgstr "Форматировать домашний раздел"
 
-#: src/sli.ui:1206
+#: src/sli.ui:1207
 msgid "check this if you want to format /home partition"
 msgstr "отметьте для форматирования раздела /home"
 
-#: src/sli.ui:1227
+#: src/sli.ui:1228
 msgid "click here if you want to install system on hard disk"
 msgstr "щёлкните для установки системы на жёсткий диск"
 
-#: src/sli.ui:1249
+#: src/sli.ui:1250
 msgid "Install live system"
 msgstr "Установить 'живую' систему"
 
-#: src/sli.ui:1313
+#: src/sli.ui:1314
 msgid "Actions needed before proceeding with system installation.\n"
 msgstr "Прежде чем приступить к установке системы.\n"
 
-#: src/sli.ui:1339
+#: src/sli.ui:1340
 msgid "System clock"
-msgstr ""
+msgstr "Системные часы"
 
-#: src/sli.ui:1343
+#: src/sli.ui:1344
 msgid "Please set the time, date and time zone:"
-msgstr ""
+msgstr "Пожалуйста, установите время, дату и часовой пояс:"
 
-#: src/sli.ui:1402 src/sli.ui:3173
+#: src/sli.ui:1403 src/sli.ui:3174
 msgid "Language"
 msgstr "Язык"
 
-#: src/sli.ui:1406
+#: src/sli.ui:1407
 msgid "Select a default system locale."
 msgstr "Выберите системную локаль."
 
-#: src/sli.ui:1430
+#: src/sli.ui:1431
 msgid "keyboard"
 msgstr "Клавиатура"
 
-#: src/sli.ui:1434
+#: src/sli.ui:1435
 msgid "Select your preferred keyboard type."
 msgstr "Выберите тип клавиатуры."
 
-#: src/sli.ui:1470
+#: src/sli.ui:1471
 msgid ""
 "Set root password, define login name, choose a password to be coupled with "
 "your\n"
@@ -289,19 +290,19 @@ msgstr ""
 "Задайте пароль для root, \n"
 "имя пользователя и пароль для него."
 
-#: src/sli.ui:1504
+#: src/sli.ui:1505
 msgid "root password"
 msgstr "пароль root"
 
-#: src/sli.ui:1511
+#: src/sli.ui:1512
 msgid "user name"
 msgstr "имя пользователя"
 
-#: src/sli.ui:1522
+#: src/sli.ui:1523
 msgid "user password"
 msgstr "пароль пользователя"
 
-#: src/sli.ui:1534
+#: src/sli.ui:1535
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters. "
@@ -309,7 +310,7 @@ msgstr ""
 "Здесь необходимо задать имя пользователя только из \n"
 "строчных латинских букв, цифр и без пробелов."
 
-#: src/sli.ui:1554
+#: src/sli.ui:1555
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -320,7 +321,7 @@ msgstr ""
 "содержать строчные и заглавные буквы, цифры и\n"
 "символы (например, @, !, &)."
 
-#: src/sli.ui:1577
+#: src/sli.ui:1578
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -334,7 +335,7 @@ msgstr ""
 "пароль. Пароль должен содержать строчные и\n"
 "заглавные буквы, цифры и символы (например, @, !, &)."
 
-#: src/sli.ui:1600
+#: src/sli.ui:1601
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
@@ -342,7 +343,7 @@ msgstr ""
 "Здесь нужно повторить пароль суперпользователя (root)\n"
 "для исключения опечаток при наборе."
 
-#: src/sli.ui:1620
+#: src/sli.ui:1621
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
@@ -350,25 +351,25 @@ msgstr ""
 "Здесь нужно повторить пароль пользователя\n"
 "для исключения опечаток при наборе."
 
-#: src/sli.ui:1639 src/sli.ui:1656
+#: src/sli.ui:1640 src/sli.ui:1657
 msgid "visible"
 msgstr "показать"
 
-#: src/sli.ui:1644 src/sli.ui:1661
+#: src/sli.ui:1645 src/sli.ui:1662
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
 msgstr "Отметьте, если хотите видеть введённые пароли."
 
-#: src/sli.ui:1699
+#: src/sli.ui:1700
 msgid "Choose installation mode"
 msgstr "Выберите режим установки"
 
-#: src/sli.ui:1724
+#: src/sli.ui:1725
 msgid "core installation"
 msgstr "урезанная установка"
 
-#: src/sli.ui:1729
+#: src/sli.ui:1730
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are \n"
@@ -384,11 +385,11 @@ msgstr ""
 "систему для конкретных целей, например, в качестве\n"
 "вебсервера, файлового сервера и т.п."
 
-#: src/sli.ui:1747
+#: src/sli.ui:1748
 msgid "basic installation"
 msgstr "базовая установка"
 
-#: src/sli.ui:1752
+#: src/sli.ui:1753
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few \n"
@@ -404,11 +405,11 @@ msgstr ""
 "желающим установить облегчённую систему и добавить\n"
 "приложения по своему выбору."
 
-#: src/sli.ui:1770
+#: src/sli.ui:1771
 msgid "full installation"
 msgstr "полная установка"
 
-#: src/sli.ui:1775
+#: src/sli.ui:1776
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -421,15 +422,15 @@ msgstr ""
 "окружение рабочего стола и полный набор приложений,\n"
 "следующих принципу 'одно приложение на задачу'."
 
-#: src/sli.ui:1851
+#: src/sli.ui:1852
 msgid "About"
 msgstr "О программе"
 
-#: src/sli.ui:2538
+#: src/sli.ui:2539
 msgid "translator-credits"
 msgstr "Serg Bormant"
 
-#: src/sli.ui:2569
+#: src/sli.ui:2570
 msgid ""
 "Cannot install Grub boot loader on an xfs filesystem. System will not "
 "boot. \n"
@@ -438,33 +439,33 @@ msgstr ""
 "Невозможно установить загрузчик GRUB на xfs. Система не загрузится.\n"
 "Выберите (e)LiLo. Проверьте и исправьте."
 
-#: src/sli.ui:2610
+#: src/sli.ui:2611
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
 "Невозможно установить (e)LiLo и GRUB одновременно. Проверьте и исправьте."
 
-#: src/sli.ui:2646 src/sli.ui:2693
+#: src/sli.ui:2647 src/sli.ui:2694
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:2656
+#: src/sli.ui:2657
 msgid "Error encountered."
 msgstr "Обнаружена ошибка."
 
-#: src/sli.ui:2702
+#: src/sli.ui:2703
 msgid "Installation completed."
 msgstr "Установка завершена."
 
-#: src/sli.ui:2746
+#: src/sli.ui:2747
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr "Пароли root не совпадают. Проверьте и исправьте."
 
-#: src/sli.ui:2789
+#: src/sli.ui:2790
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr "Пароли пользователя не совпадают. Проверьте и исправьте."
 
-#: src/sli.ui:2832
+#: src/sli.ui:2833
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -478,27 +479,27 @@ msgstr ""
 "\n"
 "Поверьте и исправьте.\n"
 
-#: src/sli.ui:2909
+#: src/sli.ui:2910
 msgid "Please select your preferred keyboard type and map."
 msgstr "Выберите тип и раскладку клавиатуры."
 
-#: src/sli.ui:2946
+#: src/sli.ui:2947
 msgid "keyboard type"
 msgstr "тип клавиатуры"
 
-#: src/sli.ui:2981
+#: src/sli.ui:2982
 msgid "keyboard map"
 msgstr "раскладка клавиатуры"
 
-#: src/sli.ui:3137
+#: src/sli.ui:3138
 msgid "Please select a default system locale."
 msgstr "Выберите системную локаль по умолчанию."
 
-#: src/sli.ui:3185
+#: src/sli.ui:3186
 msgid "Locale"
 msgstr "Локаль"
 
-#: src/sli.ui:3217
+#: src/sli.ui:3218
 msgid "Error: system is not live."
 msgstr "Ошибка: система не 'живая'."
 

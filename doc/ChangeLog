@@ -13,3 +13,14 @@
 	- added support for creating a user name and user password on installation system by [Dimitris Tzemos <dijemos@gmail.com>]
 	- added partition manager connectivity in gui by [Dimitris Tzemos <dijemos@gmail.com>]
 	- added support for core, basic, full mode installation by [Dimitris Tzemos <dijemos@gmail.com>]
+2014-01-25: sli-1.1: 
+	- added support for GPT disks
+	- added support for GTK-3 (defaults to GTK-2)
+2013-07-01: sli-1.0.2: fixed available installation / copy partitions list when live system is over NFS
+2012-01-12: sli-1.0.1:
+	- fixed sli installation path (bin -> sbin)
+	- fixed FAT32 partition detection for live system copy
+	- add "/sbin:/usr/sbin:/usr/local/sbin" to PATH when running (bugfix)
+	- show an error message when the system is not live
+	- fixed some french translations
+	- removed ktsuss call from desktop file
