@@ -15,7 +15,7 @@ git clone https://github.com/djemos/slackel-live-installer.git
 2) cd slackel-live-installer
 3) sh maketxz.sh
 4) Install the package
-sudo spkg sli-1.2.5-x86_64-10dj.txz or sudo installpkg sli-1.2.5-x86_64-10dj.txz
+sudo spkg sli-1.2.5-x86_64-11dj.txz or sudo installpkg sli-1.2.5-x86_64-11dj.txz
 
 Copyright (C) 2014-2022 Dimitris Tzemos <dijemos@gmail.com>
 This program is free software: you can redistribute it and/or modify it under the terms 
