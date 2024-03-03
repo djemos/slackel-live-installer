@@ -4,7 +4,7 @@ Slackware-live is a dependency for SLI.
 
 The SLKBUILD source package and binary can be found on http://www.slackel.gr/repo/source/slackel-source/slackware-live-installer-1.2.5/
 To build the package fakeroor slkbuild -X
-To install the package sudo spkg sli-1.2.5-x86_64-10dj.txz or sudo installpkg sli-1.2.5-x86_64-10dj.txz
+To install the package sudo spkg sli-1.2.5-x86_64-11dj.txz or sudo installpkg sli-1.2.5-x86_64-11dj.txz
 
 If you want to build from the source in hrere in git:
 SLI use the CMake construction system. So, cmake has to be installed if it is not ( sudo slapt-get -u && sudo slapt-get -i cmake)
