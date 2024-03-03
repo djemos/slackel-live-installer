@@ -5,7 +5,7 @@ mkdir -p pkg
 export DESTDIR=$PWD/pkg
 VER=1.2.5
 ARCH=${ARCH:-x86_64}
-RLZ=10dj
+RLZ=11dj
 
 	cmake -DCMAKE_INSTALL_PREFIX=/usr .
 
