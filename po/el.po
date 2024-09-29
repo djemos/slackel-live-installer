@@ -1,0 +1,550 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sli-1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-07 17:40+0300\n"
+"PO-Revision-Date: 2019-10-07 17:41+0300\n"
+"Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
+"Language-Team: slackel <dijemos@gmail.com>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+
+#: src/sli.ui:133
+msgid "Keep clock synchronized with internet servers"
+msgstr "Το ρολόι να συγχρονίζεται αυτόματα με διακομιστές του διαδικτύου"
+
+#: src/sli.ui:159
+msgid "Synchronize now"
+msgstr "Συγχρονισμός τώρα"
+
+#: src/sli.ui:188
+msgid "Time Zone:"
+msgstr "Ζώνη ώρας:"
+
+#: src/sli.ui:222
+msgid "Select time zone..."
+msgstr "Επιλογή ζώνης ώρας..."
+
+#: src/sli.ui:244
+msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
+msgstr "Το ρολόι συστήματος είναι ρυθμισμένο σε Παγκόσμια Ώρα (UTC)"
+
+#: src/sli.ui:267
+msgid "Time:"
+msgstr "Ώρα:"
+
+#: src/sli.ui:280
+msgid "Date:"
+msgstr "Ημερομηνία:"
+
+#: src/sli.ui:423
+msgid "azerty"
+msgstr "azerty"
+
+#: src/sli.ui:426
+msgid "dvorak"
+msgstr "dvorak"
+
+#: src/sli.ui:429
+msgid "olpc"
+msgstr "olpc"
+
+#: src/sli.ui:432
+msgid "qwerty"
+msgstr "qwerty"
+
+#: src/sli.ui:435
+msgid "qwertz"
+msgstr "qwertz"
+
+#: src/sli.ui:458
+msgid "btrfs"
+msgstr "btrfs"
+
+#: src/sli.ui:461
+msgid "ext2"
+msgstr "ext2"
+
+#: src/sli.ui:464 src/sli.ui:490
+msgid "ext3"
+msgstr "ext3"
+
+#: src/sli.ui:467
+msgid "ext4"
+msgstr "ext4"
+
+#: src/sli.ui:470
+msgid "jfs"
+msgstr "jfs"
+
+#: src/sli.ui:473
+msgid "reiserfs"
+msgstr "reiserfs"
+
+#: src/sli.ui:476
+msgid "xfs"
+msgstr "xfs"
+
+#: src/sli.ui:487
+msgid "vfat"
+msgstr "vfat"
+
+#: src/sli.ui:511
+msgid "Select time zone"
+msgstr "Επιλογή ζώνης ώρας"
+
+#: src/sli.ui:534
+msgid "Please select your time zone:"
+msgstr "Παρακαλούμε επιλέξτε ζώνη ώρας:"
+
+#: src/sli.ui:572
+msgid "General area"
+msgstr "Γενική περιοχή"
+
+#: src/sli.ui:607
+msgid "Location"
+msgstr "Τοποθεσία"
+
+#: src/sli.ui:710
+msgid "_File"
+msgstr "_Αρχείο"
+
+#: src/sli.ui:740
+msgid "_Help"
+msgstr "_Βοήθεια"
+
+#: src/sli.ui:764
+msgid "Slackel Startup Guide"
+msgstr "Οδηγός εγκατάστασης του Slackel"
+
+#: src/sli.ui:774
+msgid " Read the StartUp Guide to help you installing Slackel."
+msgstr ""
+" Διαβάστε τον Οδηγό Εγκατάστασης για να σας βοηθήσει να εγκαταστήσετε το "
+"Slackel."
+
+#: src/sli.ui:775
+msgid "Startup_Guide"
+msgstr "Οδηγός εγκατάστασης"
+
+#: src/sli.ui:856
+msgid "Partitions"
+msgstr "Διαχειριστής κατατμήσεων"
+
+#: src/sli.ui:860
+msgid ""
+"Important!\n"
+"\n"
+"Slackel needs, at the very minimum, one swap partition\n"
+"and one Linux partition to hold its main directory tree.\n"
+"\n"
+"If you do not already have these needed partitions ready, \n"
+"you should now click on the button 'Partitions'\n"
+"in order to create them. Be aware that partitioning a disk\n"
+"drive is a delicate operation which could lead to data loss\n"
+"if not performed cautiously. It is therefore highly advisable\n"
+"to backup important data before starting this procedure."
+msgstr ""
+"Σημαντικό!\n"
+"Το Slackel χρειάζεται, το ελάχιστο, ένα διαμέρισμα swap και\n"
+"ένα διαμέρισμα Linux για να κρατήσει τη κύρια δενδρική \n"
+"δομή καταλόγου.\n"
+"\n"
+"Αν δεν έχετε ήδη αυτές τις απαραίτητες\n"
+"κατατμήσεις έτοιμες, κάντε τώρα κλικ στο κουμπί \n"
+"'Διαχειριστής κατατμήσεων' για να τα δημιουργήσετε.\n"
+"Θα πρέπει να γνωρίζετε ότι η κατάτμηση μιας μονάδας\n"
+"δίσκου είναι μια λεπτή πράξη που θα μπορούσε να οδηγήσει\n"
+"σε απώλεια δεδομένων εάν δεν εκτελείται με προσοχή. \n"
+"Επομένως, συνιστάται να δημιουργήσετε αντίγραφα\n"
+"ασφαλείας των σημαντικών δεδομένων πριν από την\n"
+"έναρξη αυτής της διαδικασίας."
+
+#: src/sli.ui:899
+msgid ""
+"<i>Warning: copy / installation wipes everything on the selected location.</"
+"i>"
+msgstr ""
+"<i>Προειδοποίηση: Η αντιγραφή / εγκατάσταση διαγράφει τα πάντα στην "
+"επιλεγμένη τοποθεσία.</i>"
+
+#: src/sli.ui:924
+msgid "Copy location:"
+msgstr "Αντιγραφή σε:"
+
+#: src/sli.ui:963
+msgid "click here if you want to copy system to usb"
+msgstr "Κάντε κλικ εδώ αν θέλετε να αντιγράψετε το σύστημα σε usb"
+
+#: src/sli.ui:987
+msgid "Copy live system to usb"
+msgstr "Αντιγραφή live συστήματος σε usb"
+
+#: src/sli.ui:1013 src/sli.ui:1026
+msgid "Choose the filesystem type to format usb."
+msgstr "Επιλέξτε τον τύπο του συστήματος αρχείων για τη διαμόρφωση του USB"
+
+#: src/sli.ui:1014 src/sli.ui:1141
+msgid "Filesystem Type:"
+msgstr "Τύπος Συστήματος Αρχείων:"
+
+#: src/sli.ui:1083
+msgid "Install (e)LiLo"
+msgstr "Εγκατάσταση (e)LiLo"
+
+#: src/sli.ui:1087
+msgid "check this if you want to install (e)Lilo boot loader"
+msgstr "Κάντε κλικ εδώ αν θέλετε να εγκαταστήσετε το (e)Lilo boot loader"
+
+#: src/sli.ui:1101
+msgid "choose the Linux partition to hold the main directory tree."
+msgstr "Επιλέξτε το διαμέρισμα για την εγκατάσταση του κυρίως συστήματος."
+
+#: src/sli.ui:1117
+msgid "Install Grub"
+msgstr "Εγκατάσταση Grub"
+
+#: src/sli.ui:1121
+msgid "check this if you want to install Grub boot loader"
+msgstr "Κάντε κλικ εδώ αν θέλετε να εγκαταστήσετε το Grub boot loader"
+
+#: src/sli.ui:1134
+msgid "Install location:"
+msgstr "Εγκατάσταση σε:"
+
+#: src/sli.ui:1152
+msgid "Choose the filesystem type to format partition(s)."
+msgstr ""
+"Επιλέξτε τον τύπο του συστήματος αρχείων για τη διαμόρφωση των διαμερισμάτων "
+"δίσκου."
+
+#: src/sli.ui:1173
+msgid "Home location:"
+msgstr "Home διαμέρισμα:"
+
+#: src/sli.ui:1184
+msgid ""
+"If you want to use a home partition to another disk then choose one from "
+"here.\n"
+"Otherwise leave it empty."
+msgstr ""
+"Αν θέλετε να χρησιμοποιήσετε ένα διαφορετικό διαμέρισμα για το κατάλογο "
+"χρήστη, επιλέξτε ένα από εδώ\n"
+"διαφορετικά αφήστε το πεδίο κενό."
+
+#: src/sli.ui:1203
+msgid "Format Ηome"
+msgstr "Διαμόρφωση του Ηome"
+
+#: src/sli.ui:1207
+msgid "check this if you want to format /home partition"
+msgstr "Κάντε κλικ εδώ αν θέλετε να διαμορφώσετε το /home διαμέρισμα"
+
+#: src/sli.ui:1228
+msgid "click here if you want to install system on hard disk"
+msgstr "Κάντε κλικ εδώ αν θέλετε να εγκαταστήσετε το σύστημα στο σκληρό δίσκο"
+
+#: src/sli.ui:1250
+msgid "Install live system"
+msgstr "Εγκατάσταση live συστήματος"
+
+#: src/sli.ui:1314
+msgid "Actions needed before proceeding with system installation.\n"
+msgstr ""
+"Ενέργειες που χρειάζονται πριν προχωρήσετε στην εγκατάσταση του συστήματος.\n"
+
+#: src/sli.ui:1340
+msgid "System clock"
+msgstr "Ρολόι συστήματος"
+
+#: src/sli.ui:1344
+msgid "Please set the time, date and time zone:"
+msgstr "Παρακαλώ ρυθμίστε την ώρα, ημερομηνία και τη ζώνη ώρας:"
+
+#: src/sli.ui:1403 src/sli.ui:3174
+msgid "Language"
+msgstr "Γλώσσα συστήματος"
+
+#: src/sli.ui:1407
+msgid "Select a default system locale."
+msgstr "Επιλέξτε τη γλώσσα συστήματος."
+
+#: src/sli.ui:1431
+msgid "keyboard"
+msgstr "Πληκτρολόγιο συστήματος"
+
+#: src/sli.ui:1435
+msgid "Select your preferred keyboard type."
+msgstr "Επιλέξτε τον επιθυμητό τύπο πληκτρολογίου."
+
+#: src/sli.ui:1471
+msgid ""
+"Set root password, define login name, choose a password to be coupled with "
+"your\n"
+"login name."
+msgstr ""
+"Ορισμός κωδικού διαχειριστή, ορισμός ονόματος χρήστη, ορισμός κωδικού "
+"χρήστη\n"
+"για είσοδο στο σύστημα."
+
+#: src/sli.ui:1505
+msgid "root password"
+msgstr "Συνθηματικό διαχειριστή"
+
+#: src/sli.ui:1512
+msgid "user name"
+msgstr "Όνομα χρήστη"
+
+#: src/sli.ui:1523
+msgid "user password"
+msgstr "Συνθηματικό χρήστη"
+
+#: src/sli.ui:1535
+msgid ""
+"Here you must define your login name which should only include\n"
+"alphanumerical characters with no space or upper case letters. "
+msgstr ""
+"Εδώ πρέπει να εισάγετε το όνομα χρήστη το οποίο πρέπει να\n"
+"περιλαμβάνει μόνο αλφαριθμητικούς χαρακτήρες χωρίς κενά\n"
+"και κεφαλαία."
+
+#: src/sli.ui:1555
+msgid ""
+"Choose a password or passphrase to be coupled with your\n"
+"login name. Your password or passprase should include a mix\n"
+"of upper and lower case letters, numbers, and even symbols\n"
+"(such as the @, !, and &)"
+msgstr ""
+"Εισάγετε έναν κωδικό χρήστη. Ο κωδικός χρήστη θα πρέπει\n"
+"να περιλαμβάνει πεζά και κεφαλαία, νούμερα, ακόμα και\n"
+"σύμβολα (όπως @, ! και &)."
+
+#: src/sli.ui:1578
+msgid ""
+"On Linux systems, the superuser, or root, is a special user\n"
+"account used for system administration. Here you must set\n"
+"its password or passphrase. Remember, this password or\n"
+"passphrase should include a mix of upper and lower case\n"
+"letters, numbers, and even symbols (such as the @, !, and &)"
+msgstr ""
+"Στα συστήματα Linux, ο διαχειριστής συστήματος, ή root,\n"
+"αποτελεί ένα ειδικό λογαριασμό χρήστη που χρησιμοποιείται\n"
+"για τη διαχείρηση συστήματος. Πρέπει να εισάγετε ένα\n"
+"κωδικό χρήστη. Ο κωδικός θα πρέπει να περιλαμβάνει πεζά\n"
+"και κεφαλαία, νούμερα, ακόμα και σύμβολα (όπως @, ! και &)"
+
+#: src/sli.ui:1601
+msgid ""
+"Here you must retype the superuser (root) password as a\n"
+"confirmation of your choice."
+msgstr ""
+"Εδώ πρέπει να επανεισάγετε τον κωδικό διαχειριστή (root) \n"
+"για επαλήθευση."
+
+#: src/sli.ui:1621
+msgid ""
+"Here you must retype your password as\n"
+"a confirmation of your choice."
+msgstr "Εδώ πρέπει να επανεισάγετε τον κωδικό χρήστη για επαλήθευση."
+
+#: src/sli.ui:1640 src/sli.ui:1657
+msgid "visible"
+msgstr "Ορατό"
+
+#: src/sli.ui:1645 src/sli.ui:1662
+msgid ""
+"Check this box if you want to be able to see the password\n"
+"you are typing."
+msgstr ""
+"Επιλέξτε το αν επιθυμείτε να εμφανίζεται ο κωδικός\n"
+"κατά την πληκτρολόγηση."
+
+#: src/sli.ui:1700
+msgid "Choose installation mode"
+msgstr "Επιλέξτε τρόπο εγκατάστασης"
+
+#: src/sli.ui:1725
+msgid "core installation"
+msgstr "Εγκατάσταση core"
+
+#: src/sli.ui:1730
+msgid ""
+"Core installation:\n"
+"Only the minimum essentials for a console system to start are \n"
+"included. A graphical environment is not provided. This is ideal \n"
+"if you are an experienced user and want to customize your \n"
+"installation for any specific purpose, such as a web server.\n"
+"file server etc. "
+msgstr ""
+"Εγκατάσταση Core:\n"
+"Μόνο τα ελάχιστα για τη λειτουργία ενός συστήματος\n"
+"κονσόλας Linux θα εγκατασταθούν. Δεν περιλαμβάνεται\n"
+"κανένα γραφικό περιβάλλον. Ιδανικό για έμπειρους χρήστες\n"
+"που επιθυμούν να τροποποιήσουν μια εγκατάσταση για \n"
+"οποιοδήποτε σκοπό, όπως web server, file server κλπ."
+
+#: src/sli.ui:1748
+msgid "basic installation"
+msgstr "Εγκατάσταση basic"
+
+#: src/sli.ui:1753
+msgid ""
+"Basic installation:\n"
+"This installs only a basic desktop environment, with very few \n"
+"extra applications installed on top, such as a web browser and\n"
+"the gslapt package manager. Ideal for advanced users that \n"
+"would like to install a lightweight system and add their own\n"
+"choice of applications. "
+msgstr ""
+"Βασική εγκατάσταση: \n"
+"Εγκαθιστά μόνο ένα βασικό περιβάλλον εργασίας, με πολύ\n"
+"λίγες επιπλέον εφαρμογές που είναι εγκατεστημένες στην \n"
+"κορυφή, όπως ένα πρόγραμμα περιήγησης στο Web και το \n"
+"Gslapt διαχειριστή πακέτων. Ιδανικό για προχωρημένους \n"
+"χρήστες που θα ήθελαν να εγκαταστήσουν ένα ελαφρύ \n"
+"σύστημα και να προσθέσουν τη δική τους επιλογή εφαρμογών."
+
+#: src/sli.ui:1771
+msgid "full installation"
+msgstr "Εγκατάσταση full"
+
+#: src/sli.ui:1776
+msgid ""
+"Full installation:\n"
+"Everything that is included in the iso is installed. That includes \n"
+"a complete desktop environment\n"
+"and a complete selection of matching applications,\n"
+"always following the \"one application per task\" rationale. "
+msgstr ""
+"Πλήρης εγκατάσταση:\n"
+"Ό, τι περιλαμβάνεται στο πρότυπο ISO θα εγκατασταθεί.\n"
+"Αυτό περιλαμβάνει ένα πλήρες περιβάλλον desktop και μια\n"
+"πλήρη επιλογή εφαρμογών, πάντα σύμφωνα με τη λογική \n"
+"\"μία εφαρμογή για κάθε εργασία\"."
+
+#: src/sli.ui:1852
+msgid "About"
+msgstr "Περί"
+
+#: src/sli.ui:2539
+msgid "translator-credits"
+msgstr "Δημήτρης Τζέμος <dijemos~at~gmail~dot~com>"
+
+#: src/sli.ui:2570
+msgid ""
+"Cannot install Grub boot loader on an xfs filesystem. System will not "
+"boot. \n"
+"Choose (e)Lilo instead. Please verify and correct."
+msgstr ""
+"Ο Grub boot loader δεν μπορεί να εγκατασταθεί σε xfs σύστημα αρχείων. Το "
+"σύστημα σας δεν θα μπουτάρει. \n"
+"Επιλέξτε το (e)Lilo. Παρακαλώ διορθώστε."
+
+#: src/sli.ui:2611
+msgid ""
+"Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
+msgstr ""
+"Δεν μπορείτε να εγκαταστήσετε και το (e)Lilo και το Grub. Παρακαλώ επιλέξτε "
+"μόνο ένα."
+
+#: src/sli.ui:2647 src/sli.ui:2694
+msgid "sli"
+msgstr "sli"
+
+#: src/sli.ui:2657
+msgid "Error encountered."
+msgstr "Συνέβη σφάλμα."
+
+#: src/sli.ui:2703
+msgid "Installation completed."
+msgstr "Η εγκατάσταση τελείωσε."
+
+#: src/sli.ui:2747
+msgid "Your two root password entries do not match. Please verify and correct."
+msgstr "Οι κωδικοί διαχειριστή είναι διαφορετικοί. Παρακαλώ διορθώστε."
+
+#: src/sli.ui:2790
+msgid "Your two user password entries do not match. Please verify and correct."
+msgstr "Οι κωδικοί χρήστη είναι διαφορετικοί. Παρακαλώ διορθώστε."
+
+#: src/sli.ui:2833
+msgid ""
+"root password, user name and user password entries \n"
+"cannot be emtpy.\n"
+"root password and user password should have at least 5 characters\n"
+"\n"
+"Please verify and correct.\n"
+msgstr ""
+"Ο κωδικός διαχειριστή, το όνομα χρήστη και ο κωδικός χρήστη \n"
+"δεν μπορεί να είναι κενά.\n"
+"Ο κωδικός διαχειριστή και  ο κωδικός χρήστη πρέπει να είναι τουλάχιστον  5 "
+"χαρακτήρες\n"
+"\n"
+"Παρακαλώ διορθώστε τα.\n"
+
+#: src/sli.ui:2910
+msgid "Please select your preferred keyboard type and map."
+msgstr "Παρακαλώ επιλέξτε τον επιθυμητό τύπο πληκτρολογίου."
+
+#: src/sli.ui:2947
+msgid "keyboard type"
+msgstr "Τύπος πληκτρολογίου"
+
+#: src/sli.ui:2982
+msgid "keyboard map"
+msgstr "Διάταξη πληκτρολογίου"
+
+#: src/sli.ui:3138
+msgid "Please select a default system locale."
+msgstr "Παρακαλώ επιλέξτε τη γλώσσα συστήματος."
+
+#: src/sli.ui:3186
+msgid "Locale"
+msgstr "Τοπικότητα"
+
+#: src/sli.ui:3218
+msgid "Error: system is not live."
+msgstr "Σφάλμα: Το σύστημα δεν είναι live."
+
+#: src/sli.desktop.in.h:1 src/sli-kde.desktop.in.h:1
+msgid "Slackel-Live Installation"
+msgstr "Εγκατάσταση του Slackel-Live"
+
+#~ msgid " Read the StartupUp Guide to help you installing Slackel."
+#~ msgstr ""
+#~ " Διαβάστε τον Οδηγό Εγκατάστασης για να σας βοηθήσει να εγκαταστήσετε το "
+#~ "Slackel."
+
+#~ msgid "continent"
+#~ msgstr "Τοποθεσία"
+
+#~ msgid "location"
+#~ msgstr "Αντιγραφή σε"
+
+#~ msgid "Please double click on a row to select a default system locale."
+#~ msgstr ""
+#~ "Παρακαλώ κάντε διπλό κλικ σε μια σειρά για να επιλέξετε τη γλώσσα "
+#~ "συστήματος."
+
+#~ msgid "http://slackware-live.tuxfamily.org"
+#~ msgstr "http://slackware-live.tuxfamily.org"
+
+#~ msgid "CeCILL <http://www.cecill.info/licences.fr.html>"
+#~ msgstr "CeCILL <http://www.cecill.info/licences.fr.html>"
+
+#~ msgid "keymap"
+#~ msgstr "keymap"
+
+#~ msgid "Sample"
+#~ msgstr "Δείγμα"
+
+#~ msgid "el_GR.utf8"
+#~ msgstr "el_GR.utf8"
+
+#~ msgid "Select a default system keyboard."
+#~ msgstr "Επιλέξτε ένα πληκτρολόγιο για το σύστημα."

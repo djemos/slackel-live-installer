@@ -1,10 +1,10 @@
 SLI (Slackel-Live installer) is a GUI to install on internal or external SSD disk or USB stick or copy the live system  on a USB stick (frugal installation) (based on GTK+2).
-It is written in C, glade and gtk.
+It is written in C, glade and gtk+3.
 Slackware-live is a dependency for SLI.
 
-The SLKBUILD source package and binary can be found on http://www.slackel.gr/repo/source/slackel-source/slackware-live-installer-1.2.5
+The SLKBUILD source package and binary can be found on http://www.slackel.gr/repo/source/slackel-source/slackware-live-installer-1.2.5/3/
 To build the package fakeroor slkbuild -X
-To install the package sudo spkg sli-1.2.5-x86_64-10dj.txz or sudo installpkg sli-1.2.5-x86_64-10dj.txz
+To install the package sudo spkg sli-1.2.6-x86_64-1dj.txz or sudo installpkg sli-1.2.6-x86_64-1dj.txz
 
 If you want to build from the source in hrere in git:
 SLI use the CMake construction system. So, cmake has to be installed if it is not ( sudo slapt-get -u && sudo slapt-get -i cmake)
@@ -15,9 +15,9 @@ git clone https://github.com/djemos/slackel-live-installer.git
 2) cd slackel-live-installer
 3) sh maketxz.sh
 4) Install the package
-sudo spkg sli-1.2.5-x86_64-10dj.txz or sudo installpkg sli-1.2.5-x86_64-10dj.txz
+sudo spkg sli-1.2.6-x86_64-1dj.txz or sudo installpkg sli-1.2.6-x86_64-1dj.txz
 
-Copyright (C) 2014-2022 Dimitris Tzemos <dijemos@gmail.com>
+Copyright (C) 2014-2024 Dimitris Tzemos <dijemos@gmail.com>
 This program is free software: you can redistribute it and/or modify it under the terms 
 of the GNU General Public License as published by the Free Software Foundation, 
 either version 2 of the License, or (at your option) any later version.
