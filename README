@@ -6,7 +6,7 @@ The SLKBUILD source package and binary can be found on http://www.slackel.gr/rep
 To build the package fakeroot slkbuild -X
 To install the package sudo spkg sli-1.2.6-x86_64-1dj.txz or sudo installpkg sli-1.2.6-x86_64-1dj.txz
 
-If you want to build from the source in git:
+If you want to build from the source in here in git:
 SLI use the CMake construction system. So, cmake has to be installed if it is not (sudo slapt-get -u && sudo slapt-get -i cmake)
 
 The installation procedure is:
