@@ -2,7 +2,7 @@ SLI (Slackel-Live installer) is a GUI to install on internal or external SSD dis
 It is written in C, glade and gtk+3.
 Slackware-live is a dependency for SLI.
 
-The SLKBUILD source package and binary can be found on http://www.slackel.gr/repo/source/slackel-source/slackware-live-installer-1.2.6/3/
+The SLKBUILD source package and binary can be found on http://www.slackel.gr/repo/source/slackel-source/slackware-live-installer-1.2.6/
 To build the package fakeroor slkbuild -X
 To install the package sudo spkg sli-1.2.6-x86_64-1dj.txz or sudo installpkg sli-1.2.6-x86_64-1dj.txz
 
