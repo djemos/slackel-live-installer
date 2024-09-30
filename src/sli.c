@@ -1328,7 +1328,7 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 				dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogusers");
 				gtk_widget_show(dialog);
 	       }
-	 else if (gtk_entry_get_text_length (GTK_ENTRY(rootpassword)) < 5  ||  gtk_entry_get_text_length (GTK_ENTRY(userpassword)) < 5) {
+	else if (gtk_entry_get_text_length (GTK_ENTRY(rootpassword)) < 5  ||  gtk_entry_get_text_length (GTK_ENTRY(userpassword)) < 5) {
 		 	    dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogusers");
 				gtk_widget_show(dialog);
 	       }  
@@ -1336,11 +1336,11 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 			    dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogrootpass");
 				gtk_widget_show(dialog);				
 		   }
-    else if  (strcmp(gtk_entry_get_text (GTK_ENTRY(userpassword)),gtk_entry_get_text (GTK_ENTRY(userpassword1)))!=0 ) {
+        else if  (strcmp(gtk_entry_get_text (GTK_ENTRY(userpassword)),gtk_entry_get_text (GTK_ENTRY(userpassword1)))!=0 ) {
 				dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialoguserpass");
 				gtk_widget_show(dialog);				
 		   }
-    else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo")) 
+        else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo")) 
 		&& gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub"))){ 
 			dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogbootloader");
 			gtk_widget_show(dialog);}
