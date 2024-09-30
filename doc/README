@@ -1,5 +1,5 @@
-SLI (Slackel-Live installer) is a GUI to install on internal or external SSD disk or USB stick or copy the live system  on a USB stick (frugal installation) (based on GTK+3).
-It is written in C, glade and gtk+3.
+SLI (Slackel-Live installer) is a GUI to install to internal or external SSD disk or USB stick or copy the live system to a USB stick (frugal installation) (based on GTK+3).
+It is written in C, glade and GTK+3.
 Slackware-live is a dependency for SLI.
 
 The SLKBUILD source package and binary can be found on http://www.slackel.gr/repo/source/slackel-source/slackware-live-installer-1.2.6/
@@ -7,7 +7,7 @@ To build the package fakeroot slkbuild -X
 To install the package sudo spkg sli-1.2.6-x86_64-1dj.txz or sudo installpkg sli-1.2.6-x86_64-1dj.txz
 
 If you want to build from the source in here in git:
-SLI use the CMake construction system. So, cmake has to be installed if it is not ( sudo slapt-get -u && sudo slapt-get -i cmake)
+SLI use the CMake construction system. So, cmake has to be installed if it is not (sudo slapt-get -u && sudo slapt-get -i cmake)
 
 The installation procedure is:
 1) download the sources
