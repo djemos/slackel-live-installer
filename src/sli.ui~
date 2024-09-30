@@ -769,9 +769,10 @@
                     <property name="can-focus">False</property>
                     <child>
                       <object class="GtkImageMenuItem" id="Startup_Guide">
-                        <property name="label" translatable="yes">Startup_Guide</property>
+                        <property name="label">S_tartup_Guide</property>
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="use-underline">True</property>
                         <property name="image">image13</property>
                         <property name="use-stock">False</property>
                         <signal name="activate" handler="on_Startup_Guide_activate" swapped="no"/>

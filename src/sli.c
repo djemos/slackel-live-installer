@@ -108,14 +108,14 @@ void get_current_zone(gchar dest[2][30])
 	gint status, i;
 	g_spawn_command_line_sync("sh get_current_zone.sh kzone", &output, NULL, &status, NULL);
 	if (status == 0) {
-		dummy = g_strsplit(output, "\n", 0);
-		lines = g_strsplit(dummy[0], "/", 0);
-		for (i=0; lines[i] != NULL && strlen(lines[i])>0; i++) {
+	    dummy = g_strsplit(output, "\n", 0);
+	    lines = g_strsplit(dummy[0], "/", 0);
+	    for (i=0; lines[i] != NULL && strlen(lines[i])>0; i++) {
 		strcpy(dest[0],lines[0]);
 		strcpy(dest[1],lines[1]);
+	    }
+	    g_strfreev(lines);
 	}
-	g_strfreev(lines);
- }
 	g_free(output); 
 	system("rm zone");
 }
@@ -123,10 +123,10 @@ void get_current_zone(gchar dest[2][30])
 void settimezone(gchar *name, gchar *continent, gchar *location){
 	gchar current_zone[2][30];
 	get_current_zone(current_zone);
-			if (symlink(name, "/etc/localtime")!=0){
-				unlink("/etc/localtime");
-				symlink(name, "/etc/localtime");
-				}
+	if (symlink(name, "/etc/localtime")!=0){
+	    unlink("/etc/localtime");
+	    symlink(name, "/etc/localtime");
+	}
 }
 
 void setutc(int utc) {
@@ -134,7 +134,7 @@ void setutc(int utc) {
 	if (utc) strcpy(time,"UTC"); else strcpy(time,"localtime");
 	FILE *fp;
 	fp = fopen("/etc/hardwareclock", "w+");
-        fprintf(fp,"# /etc/hardwareclock\n");
+	fprintf(fp,"# /etc/hardwareclock\n");
 	fprintf(fp,"#\n");
 	fprintf(fp,"# Tells how the hardware clock time is stored.\n");
 	fprintf(fp,"# You should run (gtk)clocksetup or timeconfig to edit this file.\n\n");
@@ -146,7 +146,7 @@ void setutc(int utc) {
 void setkeymap(gchar *keymap) {
 	FILE *fp;
 	fp = fopen("set_keymap.sh", "w+");
-        fprintf(fp,"#/bin/bash\n");
+	fprintf(fp,"#/bin/bash\n");
 	fprintf(fp,"#\n");
 	fprintf(fp,"/usr/sbin/keyboardsetup -k ");
 	fprintf(fp,keymap);
@@ -157,7 +157,7 @@ void setkeymap(gchar *keymap) {
 void set_locale(gchar *locale) {
 	FILE *fp;
 	fp = fopen("set_locale.sh", "w+");
-        fprintf(fp,"#/bin/bash\n");
+	fprintf(fp,"#/bin/bash\n");
 	fprintf(fp,"#\n");
 	fprintf(fp,"localesetup ");
 	fprintf(fp,locale);
@@ -240,34 +240,34 @@ void do_action (gboolean copy) {
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
 	gtk_tree_model_get((GtkTreeModel *) list, &iter, 0, &home, -1);
 	if (strlen(home) == 0) {
-		g_free(home);
-		home = g_strdup(location);         
+	    g_free(home);
+	    home = g_strdup(location);         
 	}
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "filesystem");
 	gtk_combo_box_get_active_iter(listwidget, &iter);
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
 	gtk_tree_model_get((GtkTreeModel *) list, &iter, 0, &fstype, -1);
 	if (strlen(fstype) == 0) {
-		g_free(fstype);
-		fstype = g_strdup("ext4");
+	    g_free(fstype);
+	    fstype = g_strdup("ext4");
 	}
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "usbfilesystem");
 	gtk_combo_box_get_active_iter(listwidget, &iter);
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
 	gtk_tree_model_get((GtkTreeModel *) list, &iter, 0, &usbfstype, -1);
 	if (strlen(usbfstype) == 0) {
-		g_free(usbfstype);
-		usbfstype = g_strdup("vfat");
+	    g_free(usbfstype);
+	    usbfstype = g_strdup("vfat");
 	}
 
 	label = (GtkWidget *) gtk_builder_get_object(widgetstree, "label20"); 
-        locale = g_strdup(gtk_label_get_text(GTK_LABEL(label)));
+	locale = g_strdup(gtk_label_get_text(GTK_LABEL(label)));
 	if (strlen(locale) == 0) {
 		locale = g_strdup("");
 	}
 	
 	label = (GtkWidget *) gtk_builder_get_object(widgetstree, "label21"); 
-        keyboard = g_strdup(gtk_label_get_text(GTK_LABEL(label)));
+	keyboard = g_strdup(gtk_label_get_text(GTK_LABEL(label)));
 	if (strlen(keyboard) == 0) {
 		keyboard = g_strdup("");
 	}
@@ -278,8 +278,8 @@ void do_action (gboolean copy) {
 		} 
 	
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (basic))) {
-                installation_mode = g_strdup ("basic") ;
-                rootdirectory = g_strdup ("modules");
+		installation_mode = g_strdup ("basic") ;
+		rootdirectory = g_strdup ("modules");
 		}
 	
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (full))) {
@@ -370,23 +370,26 @@ void do_action (gboolean copy) {
 }
 
 void on_checkbutton_root_toggled (GtkWidget *widget, gpointer user_data) {
- 	if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "checkbutton_root"))) {
-		gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword")), TRUE);
-		gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword1")), TRUE);
-	} else {
-		gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword")), FALSE);
-		gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword1")), FALSE);
-		}
+    if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "checkbutton_root"))) {
+	gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword")), TRUE);
+	gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword1")), TRUE);
+	} 
+    else {
+	gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword")), FALSE);
+	gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword1")), FALSE);
+	}
 }
 
 void on_checkbutton_user_toggled (GtkWidget *widget, gpointer user_data) {
- 	if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "checkbutton_user"))) {
-		gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword")), TRUE);
-		gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword1")), TRUE);
-	} else {
-		gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword")), FALSE);
-		gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword1")), FALSE);
-		}	
+    if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "checkbutton_user"))) {
+	gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword")), TRUE);
+	gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword1")), TRUE);
+	} 
+    else 
+	{
+	gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword")), FALSE);
+	gtk_entry_set_visibility (GTK_ENTRY ((GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword1")), FALSE);
+	}	
 }                           
 
 void clearlocations() {
@@ -396,7 +399,7 @@ void clearlocations() {
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "copydevices");
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
 	gtk_list_store_clear (list) ;
-        // Clear installdevices
+	// Clear installdevices
 	gtk_list_store_clear (list) ;
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "installdevices");
 	list = (GtkListStore *) gtk_combo_box_get_model(listwidget);
@@ -410,7 +413,7 @@ void clearlocations() {
 }
 
 void on_gparted_clicked (GtkWidget *widget, gpointer user_data) {
-	if (g_file_test("/usr/bin/gparted", G_FILE_TEST_EXISTS)) {
+    if (g_file_test("/usr/bin/gparted", G_FILE_TEST_EXISTS)) {
 	system("/usr/bin/gparted");
 	clearlocations();
 	initlocations();
@@ -418,14 +421,14 @@ void on_gparted_clicked (GtkWidget *widget, gpointer user_data) {
 }
 
 void on_Startup_Guide_activate (GtkWidget *widget, gpointer user_data) {
- gtk_show_uri_on_window(NULL,"file:///usr/doc/sli-1.2.6/slackel_startup_guide.pdf",gtk_get_current_event_time (), NULL);
+    gtk_show_uri_on_window(NULL,"file:///usr/doc/sli-1.2.6/slackel_startup_guide.pdf",gtk_get_current_event_time (), NULL);
 }
 
 void on_keyboard_button_cancel_clicked(GtkWidget *widget, gpointer user_data) {
 }
 
 void on_button_sync_now_clicked(GtkWidget *widget, gpointer user_data) {
-	ntp_sync_now();
+    ntp_sync_now();
 }
 
 void on_keyboard_button_ok_clicked(GtkWidget *widget, gpointer user_data) {
@@ -472,13 +475,13 @@ if (f == NULL)
     exit(1);
 }
 
- int i;
+int i;
 char *lines[5] = {"#!/bin/sh\n#\n", "ls  /usr/share/zoneinfo/",
 					locationlist,"/ > locationlist\n",
 					"cat locationlist\n"
 					};
   for (i=0 ; i<5; i++) {
-			fprintf(f, "%s", lines[i]);
+	fprintf(f, "%s", lines[i]);
 		}
 
 fclose(f);
@@ -529,7 +532,7 @@ void get_system_locale(gchar *dest)
 { 
 	gchar *output,*locale,**lines;
 	gint status, i,count;
-        count=0;
+	count=0;
 	system_locale("get_system_locale.sh");
 	g_spawn_command_line_sync("sh get_system_locale.sh locale", &output, NULL, &status, NULL);
 	if (status == 0) {
@@ -547,7 +550,7 @@ void get_keymap(gchar *dest)
 { 
 	gchar *output,*kmap,**lines;
 	gint status, i,count;
-        count=0;
+	count=0;
 	memset(dest, '\0', sizeof(dest));
 	g_spawn_command_line_sync("sh get_current_keymap.sh kmap", &output, NULL, &status, NULL);
 	if (status == 0) {
@@ -582,25 +585,25 @@ void on_keyboard_clicked (GtkWidget *widget, gpointer user_data) {
 	GtkTreeView *keybtypelistwidget, *keymaplistwidget;
 	GtkListStore *keybtypeliststore, *keymapliststore;
 	gchar *keytypelist, keymaplist,currentkeymap[30] ;
-        GtkWidget *scrolledwindow1,*scrolledwindow2;
+	GtkWidget *scrolledwindow1,*scrolledwindow2;
     
-        GtkTreeIter iter;
+	GtkTreeIter iter;
 	gchar currentkeybtype[30];
-        gboolean valid;
-        gint row_count = 0;
+	gboolean valid;
+	gint row_count = 0;
 	//
 	GtkTreePath *path;
 	GtkTreeModel *model;
 	GtkTreeViewColumn *column;
 	// 
        
-        keyboardwindow = (GtkWidget *) gtk_builder_get_object(widgetstree, "keyboardwindow");
+	keyboardwindow = (GtkWidget *) gtk_builder_get_object(widgetstree, "keyboardwindow");
 	scrolledwindow1 = (GtkWidget *) gtk_builder_get_object(widgetstree, "scrolledwindow1");    
-        keybtypelistwidget = (GtkTreeView *) gtk_builder_get_object(widgetstree, "keybtypelist");
+	keybtypelistwidget = (GtkTreeView *) gtk_builder_get_object(widgetstree, "keybtypelist");
 	keybtypeliststore = (GtkListStore *) gtk_tree_view_get_model(keybtypelistwidget);
 	
-        scrolledwindow2 = (GtkWidget *) gtk_builder_get_object(widgetstree, "scrolledwindow2");    
-        keymaplistwidget = (GtkTreeView *) gtk_builder_get_object(widgetstree, "keymaplist");
+	scrolledwindow2 = (GtkWidget *) gtk_builder_get_object(widgetstree, "scrolledwindow2");    
+	keymaplistwidget = (GtkTreeView *) gtk_builder_get_object(widgetstree, "keymaplist");
 	keymapliststore = (GtkListStore *) gtk_tree_view_get_model(keymaplistwidget);
  	gtk_widget_show(keyboardwindow);
  	
@@ -626,12 +629,12 @@ void on_keyboard_clicked (GtkWidget *widget, gpointer user_data) {
 			
            row_count ++;
            valid = gtk_tree_model_iter_next (model, &iter);
-         } 	
+         }	
          
-           model = gtk_tree_view_get_model(keymaplistwidget);
-           get_keymap(currentkeymap);
-	   valid = gtk_tree_model_get_iter_first (model, &iter);
-	   while (valid)
+	model = gtk_tree_view_get_model(keymaplistwidget);
+	get_keymap(currentkeymap);
+	valid = gtk_tree_model_get_iter_first (model, &iter);
+	while (valid)
          {
            gchar *keymap;
            gtk_tree_model_get (model, &iter,
@@ -671,11 +674,11 @@ void readfile(gchar registered_keymaplist[131][30]){
 				strcpy(registered_keymaplist[i-3],dest1[i]);
 							}
 		fclose ( file );
-   }
-   else
-   {
-      perror ( filename ); 
-   }
+	}
+	else
+	{
+	    perror ( filename ); 
+	}
 }
 
 
@@ -684,10 +687,11 @@ int is_registered_keymap(char *keymap) {
 	int i,found=0;
 	readfile(registered_keymaplist);
 	for (i=0;i<131;i++) {
-		 if (strcmp(keymap,registered_keymaplist[i])==0) {
-							found=1;return found;
-							}
-						}
+	    if (strcmp(keymap,registered_keymaplist[i])==0) 
+		{
+		found=1;return found;
+		    }
+	    }
 	return found;
 }
 	
@@ -743,27 +747,27 @@ void on_keybtypelist_cursor_changed(GtkTreeView       *treeview,
 		}
 		localecount = i;
 		g_strfreev(lines);
-	}
+	    }
 		g_free(output);
 		system("rm sli-keymap_list-detection.sh");
 		system("rm keymaplist");  
-	 }
+	    }
 	 
-	 //keymap focus
+	    //keymap focus
 	
-		model = gtk_tree_view_get_model(keymaplistwidget); 
+	    model = gtk_tree_view_get_model(keymaplistwidget); 
       
-		get_keymap(currentkeymap);
+	    get_keymap(currentkeymap);
      
 	    valid = gtk_tree_model_get_iter_first (model, &iter);
 	    path = gtk_tree_model_get_path (model, &iter);
-		column=gtk_tree_view_get_column(keymaplistwidget , 0);
+	    column=gtk_tree_view_get_column(keymaplistwidget , 0);
 	    gtk_tree_view_set_cursor (keymaplistwidget , path, column, FALSE);
 	    
-	   while (valid)
-         {
-           gchar *keymap;
-           gtk_tree_model_get (model, &iter,
+	    while (valid)
+	    {
+		gchar *keymap;
+		gtk_tree_model_get (model, &iter,
                                0, &keymap,
                                -1);
 				path = gtk_tree_model_get_path (model, &iter);
@@ -777,11 +781,11 @@ void on_keybtypelist_cursor_changed(GtkTreeView       *treeview,
 				}
 			}
 			
-           row_count ++;
-           valid = gtk_tree_model_iter_next (model, &iter);
-         }
+	    row_count ++;
+	    valid = gtk_tree_model_iter_next (model, &iter);
+	    }
           
-     system("rm currentkeymap");     
+	    system("rm currentkeymap");     
 }
 
 void on_continentlist_cursor_changed(GtkTreeView       *treeview, 
@@ -796,10 +800,10 @@ void on_continentlist_cursor_changed(GtkTreeView       *treeview,
 	gchar **lines, *output,*locale,*location;
 	gint i;
 	gint status;
-        GtkWidget *scrolledwindow4;
+	GtkWidget *scrolledwindow4;
     
 	gboolean valid;
-        gint row_count = 0;
+	gint row_count = 0;
     
 	GtkTreeIter iter;
 	GtkTreeSortable *sortable;
@@ -836,7 +840,7 @@ void on_continentlist_cursor_changed(GtkTreeView       *treeview,
 		system("rm locationlist");  
 	}
 	 
-	 //location focus
+		//location focus
 	
 		model = gtk_tree_view_get_model(locationlistwidget); 
       
@@ -847,14 +851,14 @@ void on_continentlist_cursor_changed(GtkTreeView       *treeview,
 		column=gtk_tree_view_get_column(locationlistwidget , 0);
 		gtk_tree_view_set_cursor (locationlistwidget , path, column, FALSE);
 		while (valid)
-         {
+		{
 			gchar *klocation;
 			gtk_tree_model_get (model, &iter,
                                0, &klocation,
                                -1);
 				path = gtk_tree_model_get_path (model, &iter);
 				column=gtk_tree_view_get_column(locationlistwidget , 0);
-           	if  (strncmp(current_zone[1],klocation,strlen(current_zone[1]))==0) { 
+		    if  (strncmp(current_zone[1],klocation,strlen(current_zone[1]))==0) { 
 				path = gtk_tree_model_get_path (model, &iter);
 				column=gtk_tree_view_get_column(locationlistwidget , 0);
 				gtk_tree_view_set_cursor (locationlistwidget , path, column, FALSE);
@@ -863,8 +867,8 @@ void on_continentlist_cursor_changed(GtkTreeView       *treeview,
 				}
 			}
 			
-           row_count ++;
-           valid = gtk_tree_model_iter_next (model, &iter);
+		row_count ++;
+		valid = gtk_tree_model_iter_next (model, &iter);
 		}  
 }
 
@@ -988,11 +992,11 @@ void on_timezonebutton_clicked(GtkWidget *widget, gpointer user_data) {
 	GtkTreeIter iter;
 	GtkListStore *list,*locationliststore;
 	gchar *continentlist,*locationlist, current_zone[2][30];
-        GtkWidget *scrolledwindow3,*scrolledwindow4;
-        GtkWidget *label;
-        GtkTreeSortable *sortable;
-        gboolean valid;
-        gint i, row_count = 0;
+	GtkWidget *scrolledwindow3,*scrolledwindow4;
+	GtkWidget *label;
+	GtkTreeSortable *sortable;
+	gboolean valid;
+	gint i, row_count = 0;
 	//
 	GtkTreePath *path;
 	GtkTreeModel *model;
@@ -1000,12 +1004,12 @@ void on_timezonebutton_clicked(GtkWidget *widget, gpointer user_data) {
 	//  
 	timezonewindow = (GtkWidget *) gtk_builder_get_object(widgetstree, "timezonewindow");
 	scrolledwindow3 = (GtkWidget *) gtk_builder_get_object(widgetstree, "scrolledwindow3");    
-        listwidget = (GtkTreeView *) gtk_builder_get_object(widgetstree, "continentlist");
+	listwidget = (GtkTreeView *) gtk_builder_get_object(widgetstree, "continentlist");
 	list = (GtkListStore *) gtk_tree_view_get_model(listwidget);
 	model = gtk_tree_view_get_model(listwidget);
 	
 	scrolledwindow4 = (GtkWidget *) gtk_builder_get_object(widgetstree, "scrolledwindow4");    
-        locationlistwidget = (GtkTreeView *) gtk_builder_get_object(widgetstree, "locationlist");
+	locationlistwidget = (GtkTreeView *) gtk_builder_get_object(widgetstree, "locationlist");
 	locationliststore = (GtkListStore *) gtk_tree_view_get_model(locationlistwidget);
 	
 	gtk_list_store_clear(list) ;
@@ -1038,11 +1042,11 @@ void on_timezonebutton_clicked(GtkWidget *widget, gpointer user_data) {
            valid = gtk_tree_model_iter_next (model, &iter);
          } 
          
-         //location time
-         model = gtk_tree_view_get_model(locationlistwidget);
-	 valid = gtk_tree_model_get_iter_first (model, &iter);
+	//location time
+	model = gtk_tree_view_get_model(locationlistwidget);
+	valid = gtk_tree_model_get_iter_first (model, &iter);
 		 
-	   while (valid)
+	while (valid)
          {
 			gchar *klocation;
 			gtk_tree_model_get (model, &iter,
@@ -1090,7 +1094,7 @@ void on_clist_cursor_changed(GtkTreeView       *treeview,
    GtkTreeSelection *selection;
    selection = gtk_tree_view_get_selection(treeview);
   
-  /* if (gtk_tree_selection_get_selected(GTK_TREE_SELECTION(selection), &model, &iter)) {
+   /* if (gtk_tree_selection_get_selected(GTK_TREE_SELECTION(selection), &model, &iter)) {
 	  gtk_tree_model_get (model, &iter, 1, &locale, -1);
 	  label = (GtkWidget *) gtk_builder_get_object(widgetstree, "label20"); 
 	  }  */
@@ -1114,7 +1118,7 @@ void on_clist_row_activated(GtkTreeView       *treeview,
 	gtk_tree_model_get (model, &iter, 0, &language, 1, &locale, -1);
     label = (GtkWidget *) gtk_builder_get_object(widgetstree, "label20"); 
     gtk_label_set_text(GTK_LABEL(label),locale);
-    //  g_free (language);
+    // g_free (language);
     // g_free(locale);
    }
 }
@@ -1150,7 +1154,7 @@ void on_location_clicked (GtkWidget *widget, gpointer user_data) {
 		
 		get_current_zone(current_zone);
 		strcpy(timezonelabel_text,current_zone[0]);
-	        strcat(timezonelabel_text,"/");
+		strcat(timezonelabel_text,"/");
 		strcat(timezonelabel_text,current_zone[1]);
 		label = (GtkWidget *) gtk_builder_get_object(widgetstree, "label25"); 	  
 		gtk_label_set_text(GTK_LABEL(label),timezonelabel_text);
@@ -1169,9 +1173,9 @@ void on_location_clicked (GtkWidget *widget, gpointer user_data) {
 		gtk_calendar_select_day (GTK_CALENDAR (calendar),tm.tm_mday);
 		gtk_calendar_select_month (GTK_CALENDAR (calendar),tm.tm_mon,tm.tm_year+1900);
 		//	printf("%d/%d/%d\n", month + 1, year, day);
-	        gtk_spin_button_set_value (GTK_SPIN_BUTTON(spinbutton_hrs),tm.tm_hour);
-	        gtk_spin_button_set_value (GTK_SPIN_BUTTON(spinbutton_min),tm.tm_min);
-	        gtk_spin_button_set_value (GTK_SPIN_BUTTON(spinbutton_sec),tm.tm_sec);
+		gtk_spin_button_set_value (GTK_SPIN_BUTTON(spinbutton_hrs),tm.tm_hour);
+		gtk_spin_button_set_value (GTK_SPIN_BUTTON(spinbutton_min),tm.tm_min);
+		gtk_spin_button_set_value (GTK_SPIN_BUTTON(spinbutton_sec),tm.tm_sec);
 		gtk_calendar_get_date (GTK_CALENDAR (calendar),&year, &month, &day);
 		//printf("day=%02d month=%02d year=%04d\n", day, month+1, year);
 		utccheckbutton = (GtkWidget *) gtk_builder_get_object(widgetstree, "utccheckbutton");
@@ -1192,27 +1196,27 @@ void on_Language_clicked (GtkWidget *widget, gpointer user_data) {
 	GtkListStore *list;
 	gchar *clist;
 	gchar current_locale[10];
-        GtkWidget *scrolledwindow;
-        GtkWidget *label;
-        GtkTreeSortable *sortable;
-        gboolean valid;
-        gint row_count = 0;
+	GtkWidget *scrolledwindow;
+	GtkWidget *label;
+	GtkTreeSortable *sortable;
+	gboolean valid;
+	gint row_count = 0;
 	//
 	GtkTreePath *path;
 	GtkTreeModel *model;
 	GtkTreeViewColumn *column;
 	// 
 	label = (GtkWidget *) gtk_builder_get_object(widgetstree, "label20");
-        localewindow = (GtkWidget *) gtk_builder_get_object(widgetstree, "localewindow");
+	localewindow = (GtkWidget *) gtk_builder_get_object(widgetstree, "localewindow");
 	scrolledwindow = (GtkWidget *) gtk_builder_get_object(widgetstree, "scrolledwindow");    
-        listwidget = (GtkTreeView *) gtk_builder_get_object(widgetstree, "clist");
+	listwidget = (GtkTreeView *) gtk_builder_get_object(widgetstree, "clist");
 	list = (GtkListStore *) gtk_tree_view_get_model(listwidget);
 	model = gtk_tree_view_get_model(listwidget);
 	
 	//sortable = GTK_TREE_SORTABLE(list);
 	//gtk_tree_sortable_set_sort_column_id(sortable, 0, GTK_SORT_ASCENDING);
 	
-		gtk_widget_show(localewindow);
+	gtk_widget_show(localewindow);
 	if (strlen(gtk_label_get_text(GTK_LABEL(label)))==0){
 		get_system_locale(current_locale);
 		system("rm get_system_locale.sh");
@@ -1223,11 +1227,11 @@ void on_Language_clicked (GtkWidget *widget, gpointer user_data) {
 		}
 
 	valid = gtk_tree_model_get_iter_first (model, &iter);
-        path = gtk_tree_model_get_path (model, &iter);
+	path = gtk_tree_model_get_path (model, &iter);
 	column=gtk_tree_view_get_column(listwidget , 0);
 	gtk_tree_view_set_cursor (listwidget , path, column, FALSE);
 	while (valid)
-     {
+	    {
 		gchar *str_data0;
 		gchar   *str_data1;
 		gtk_tree_model_get (model, &iter,
@@ -1245,7 +1249,7 @@ void on_Language_clicked (GtkWidget *widget, gpointer user_data) {
 				}
 			}		
 		row_count ++;
-        valid = gtk_tree_model_iter_next (model, &iter);
+		valid = gtk_tree_model_iter_next (model, &iter);
       }         
 }
 
@@ -1260,16 +1264,16 @@ void init_locale_list()
 	gchar locale_name[10];
 	
 	GtkTreePath *path;
-    GtkTreeModel *model;
-    GtkTreeViewColumn *column;
+	GtkTreeModel *model;
+	GtkTreeViewColumn *column;
 	gint i;
 	gint status;
 	listwidget = (GtkTreeView *) gtk_builder_get_object(widgetstree, "clist");
 	list = (GtkListStore *) gtk_tree_view_get_model(listwidget);
-        model = gtk_tree_view_get_model(listwidget);
-        localecount = 0;
+	model = gtk_tree_view_get_model(listwidget);
+	localecount = 0;
     
-        get_system_locale(locale_name);
+	get_system_locale(locale_name);
     
 	g_spawn_command_line_sync("sli-locale_list-detection.sh locale", &output, NULL, &status, NULL);
 	if (status == 0) {
@@ -1310,7 +1314,7 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 	username = (GtkWidget *) gtk_builder_get_object(widgetstree, "username");
 	userpassword = (GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword");
     
-        rootpassword1 = (GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword1");
+	rootpassword1 = (GtkWidget *) gtk_builder_get_object(widgetstree, "rootpassword1");
 	userpassword1 = (GtkWidget *) gtk_builder_get_object(widgetstree, "userpassword1");
 	
 	listwidget = (GtkComboBox *) gtk_builder_get_object(widgetstree, "filesystem");
@@ -1336,11 +1340,11 @@ void on_install_btn_clicked (GtkWidget *widget, gpointer user_data) {
 			    dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogrootpass");
 				gtk_widget_show(dialog);				
 		   }
-        else if  (strcmp(gtk_entry_get_text (GTK_ENTRY(userpassword)),gtk_entry_get_text (GTK_ENTRY(userpassword1)))!=0 ) {
+	else if  (strcmp(gtk_entry_get_text (GTK_ENTRY(userpassword)),gtk_entry_get_text (GTK_ENTRY(userpassword1)))!=0 ) {
 				dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialoguserpass");
 				gtk_widget_show(dialog);				
 		   }
-        else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo")) 
+	else if (gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "lilo")) 
 		&& gtk_toggle_button_get_active((GtkToggleButton*) gtk_builder_get_object(widgetstree, "grub"))){ 
 			dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogbootloader");
 			gtk_widget_show(dialog);}
@@ -1359,7 +1363,7 @@ void on_cancel_btn_clicked (GtkWidget *widget, gpointer user_data) {
 
 void on_exitp (GtkWidget *widget, gpointer user_data) {
 	if (pid != 0) {
-		kill (pid, SIGTERM);
+	    kill (pid, SIGTERM);
 	}
 	gtk_main_quit();
 }
@@ -1380,7 +1384,7 @@ gboolean progressbar_handler(gpointer data) {
 	}
 	
 	if (pulsebar) {
-		gtk_progress_bar_pulse(progressbar);
+	    gtk_progress_bar_pulse(progressbar);
 	} else {
 		g_spawn_command_line_sync("du -s -m /mnt/install", &output, NULL, NULL, NULL);
 		installsize = g_ascii_strtoull(output, NULL, 10);
@@ -1418,8 +1422,8 @@ void initlocations() {
 	if (status == 0) {
 		lines = g_strsplit(output, "\n", 0);
 		for (i=0; lines[i] != NULL && strlen(lines[i])>0; i++) {
-			gtk_list_store_append(list, &iter);
-			gtk_list_store_set(list, &iter, 0, lines[i], -1);
+		    gtk_list_store_append(list, &iter);
+		    gtk_list_store_set(list, &iter, 0, lines[i], -1);
 		}
 		copydevicescount = i;
 		g_strfreev(lines);
@@ -1438,8 +1442,8 @@ void initlocations() {
 	if (status == 0) {
 		lines = g_strsplit(output, "\n", 0);
 		for (i=0; lines[i] != NULL && strlen(lines[i])>0; i++) {
-			gtk_list_store_append(list, &iter);
-			gtk_list_store_set(list, &iter, 0, lines[i], -1);
+		    gtk_list_store_append(list, &iter);
+		    gtk_list_store_set(list, &iter, 0, lines[i], -1);
 		}
 		installdevicescount = i;
 		g_strfreev(lines);
@@ -1511,8 +1515,8 @@ void on_process_end (GPid thepid, gint status, gpointer data) {
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "installdevices"), TRUE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "homedevices"), TRUE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "Language"), TRUE);
-	    gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "keyboard"), TRUE);
-	    gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "location"), TRUE);
+		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "keyboard"), TRUE);
+		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "location"), TRUE);
 	}
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "cancel_btn"), FALSE);
 	
@@ -1535,7 +1539,7 @@ void on_about_activate (GtkWidget *widget, gpointer user_data) {
 
 void on_quit_activate (GtkWidget *widget, gpointer user_data) {
 	if (pid != 0) {
-		kill (pid, SIGTERM);
+	    kill (pid, SIGTERM);
 	}
 	gtk_main_quit();
 }
