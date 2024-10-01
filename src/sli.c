@@ -421,13 +421,8 @@ void on_gparted_clicked (GtkWidget *widget, gpointer user_data) {
 }
 
 void on_Startup_Guide_activate (GtkWidget *widget, gpointer user_data) {
-	GError *error = NULL;
 	if (g_file_test("/usr/doc/sli-1.2.6/slackel_startup_guide.pdf", G_FILE_TEST_EXISTS)) {
-		gtk_show_uri_on_window(NULL,"file:///usr/doc/sli-1.2.6/slackel_startup_guide.pdf",gtk_get_current_event_time (), &error);
-		if (error != NULL) {
-			fprintf (stderr, "Error: %s\n", error->message);
-			g_error_free (error); 
-		}
+		gtk_show_uri_on_window(NULL,"file:///usr/doc/sli-1.2.6/slackel_startup_guide.pdf",gtk_get_current_event_time (), NULL);
 	}
 }
 
