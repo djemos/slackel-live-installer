@@ -693,7 +693,7 @@
   <object class="GtkWindow" id="mainwindow">
     <property name="can-focus">False</property>
     <property name="window-position">center</property>
-    <property name="icon">sli.png</property>
+    <property name="icon-name">sli</property>
     <signal name="delete-event" handler="on_exitp" swapped="no"/>
     <child>
       <object class="GtkVBox" id="vbox1">
