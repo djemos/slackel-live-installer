@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: slackel-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-30 22:16+0300\n"
-"PO-Revision-Date: 2024-09-30 22:20+0300\n"
+"POT-Creation-Date: 2024-10-20 12:01+0300\n"
+"PO-Revision-Date: 2024-10-20 12:08+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/djemos/slackel-live-"
 "installer/language/pt/)\n"
@@ -127,12 +127,10 @@ msgid "_Help"
 msgstr "_Ajuda"
 
 #: src/sli.ui:764
-#, fuzzy
 msgid "_Slackel Startup Guide"
 msgstr "Guia de iniciação do Slackel"
 
 #: src/sli.ui:772
-#, fuzzy
 msgid "S_tartup_Guide"
 msgstr "_Guia de iniciação"
 
@@ -243,14 +241,12 @@ msgid "check this if you want to format /home partition"
 msgstr "marque aqui se deseja formatar a partição /home"
 
 #: src/sli.ui:1228
-#, fuzzy
 msgid ""
 "click here if you want to install system to internal or external ssd disk or "
 "a USB stick "
 msgstr "clique aqui se quiser instalar o sistema no disco rígido"
 
 #: src/sli.ui:1250
-#, fuzzy
 msgid "Install live system"
 msgstr "Instalar o sistema live"
 
@@ -266,7 +262,7 @@ msgstr "Relógio do sistema"
 msgid "Please set the time, date and time zone:"
 msgstr "Por favor, defina a hora, a data e o fuso horário:"
 
-#: src/sli.ui:1403 src/sli.ui:3176
+#: src/sli.ui:1403 src/sli.ui:3166
 msgid "Language"
 msgstr "Idioma"
 
@@ -304,15 +300,15 @@ msgstr "nome do utilizador"
 msgid "user password"
 msgstr "palavra-passe do utilizador"
 
-#: src/sli.ui:1535
+#: src/sli.ui:1534
 msgid ""
 "Here you must define your login name which should only include\n"
-"alphanumerical characters with no space or upper case letters. "
+"alphanumerical characters with no space or upper case letters."
 msgstr ""
 "Aqui deve definir seu nome de início de sessão, que deve incluir apenas\n"
 "caracteres alfanuméricos sem espaço ou letras maiúsculas. "
 
-#: src/sli.ui:1553
+#: src/sli.ui:1551
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -325,7 +321,7 @@ msgstr ""
 "de letras maiúsculas e minúsculas, números e até símbolos\n"
 "(tais como o @, ! e &)"
 
-#: src/sli.ui:1574
+#: src/sli.ui:1571
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -339,7 +335,7 @@ msgstr ""
 "a frase secreta deve incluir uma mistura de letras maiúsculas e minúsculas\n"
 "letras, números e até símbolos (tais como o @, ! e &)"
 
-#: src/sli.ui:1594
+#: src/sli.ui:1590
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
@@ -348,7 +344,7 @@ msgstr ""
 "como\n"
 "confirmação da sua escolha."
 
-#: src/sli.ui:1611
+#: src/sli.ui:1606
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
@@ -356,11 +352,11 @@ msgstr ""
 "Aqui você deve escrever novamente a sua palavra-passe como\n"
 "uma confirmação da sua escolha."
 
-#: src/sli.ui:1627 src/sli.ui:1644
+#: src/sli.ui:1622 src/sli.ui:1638
 msgid "visible"
 msgstr "visível"
 
-#: src/sli.ui:1632 src/sli.ui:1649
+#: src/sli.ui:1626 src/sli.ui:1642
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
@@ -368,20 +364,20 @@ msgstr ""
 "Marque esta caixa se quiser ver a palavra-passe\n"
 "que está a escrever."
 
-#: src/sli.ui:1687
+#: src/sli.ui:1680
 msgid "Choose installation mode"
 msgstr "Escolha o modo de instalação"
 
-#: src/sli.ui:1712
+#: src/sli.ui:1705
 msgid "core installation"
 msgstr "instalação de núcleo"
 
-#: src/sli.ui:1717
+#: src/sli.ui:1709
 msgid ""
 "Core installation:\n"
-"Only the minimum essentials for a console system to start are \n"
-"included. A graphical environment is not provided. This is ideal \n"
-"if you are an experienced user and want to customize your \n"
+"Only the minimum essentials for a console system to start are\n"
+"included. A graphical environment is not provided. This is ideal\n"
+"if you are an experienced user and want to customize your\n"
 "installation for any specific purpose, such as a web server.\n"
 "file server etc. "
 msgstr ""
@@ -392,18 +388,18 @@ msgstr ""
 "instalação para qualquer finalidade específica, como um servidor da Web.\n"
 "servidor de ficheiros etc. "
 
-#: src/sli.ui:1735
+#: src/sli.ui:1727
 msgid "basic installation"
 msgstr "instalação básica"
 
-#: src/sli.ui:1740
+#: src/sli.ui:1731
 msgid ""
 "Basic installation:\n"
-"This installs only a basic desktop environment, with very few \n"
+"This installs only a basic desktop environment, with very few\n"
 "extra applications installed on top, such as a web browser and\n"
-"the gslapt package manager. Ideal for advanced users that \n"
+"the gslapt package manager. Ideal for advanced users that\n"
 "would like to install a lightweight system and add their own\n"
-"choice of applications. "
+"choice of applications."
 msgstr ""
 "Instalação básica:\n"
 "Isto instala apenas um ambiente de trabalho básico, com muito poucas\n"
@@ -412,17 +408,17 @@ msgstr ""
 "gostariam de instalar um sistema leve e adicionar as suas próprias\n"
 "escolhas de aplicações. "
 
-#: src/sli.ui:1758
+#: src/sli.ui:1749
 msgid "full installation"
 msgstr "instalação completa"
 
-#: src/sli.ui:1763
+#: src/sli.ui:1753
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
 "a complete desktop environment\n"
 "and a complete selection of matching applications,\n"
-"always following the \"one application per task\" rationale. "
+"always following the \\\"one application per task\\ rationale. "
 msgstr ""
 "Instalação completa:\n"
 "Tudo o que está incluído na iso é instalado. Isso inclui\n"
@@ -430,15 +426,15 @@ msgstr ""
 "e uma seleção completa de aplicações correspondentes\n"
 "sempre seguindo o raciocínio \"uma aplicação por tarefa\". "
 
-#: src/sli.ui:1839
+#: src/sli.ui:1829
 msgid "About"
 msgstr "Acerca"
 
-#: src/sli.ui:2526
+#: src/sli.ui:2516
 msgid "translator-credits"
 msgstr "Hugo Carvalho <hugokarvalho@gmail.com>"
 
-#: src/sli.ui:2559
+#: src/sli.ui:2549
 msgid ""
 "Cannot install Grub boot loader on an xfs filesystem. System will not "
 "boot. \n"
@@ -448,38 +444,38 @@ msgstr ""
 "ficheiros xfs. O sistema não arranca.\n"
 "Escolha o (e)Lilo em seu lugar. Por favor, verifique e corrija."
 
-#: src/sli.ui:2601
+#: src/sli.ui:2591
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
 "Não é possível instalar os carregadores de arranque (e)Lilo e Grub. Por "
 "favor, verifique e corrija."
 
-#: src/sli.ui:2638 src/sli.ui:2686
+#: src/sli.ui:2628 src/sli.ui:2676
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:2648
+#: src/sli.ui:2638
 msgid "Error encountered."
 msgstr "Erro encontrado."
 
-#: src/sli.ui:2695
+#: src/sli.ui:2685
 msgid "Installation completed."
 msgstr "Instalação Concluída."
 
-#: src/sli.ui:2740
+#: src/sli.ui:2730
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr ""
 "As suas palavras-passe de root não correspondem. Por favor, verifique e "
 "corrija."
 
-#: src/sli.ui:2784
+#: src/sli.ui:2774
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr ""
 "As suas palavras-passe de utilizador não correspondem. Por favor, verifique "
 "e corrija."
 
-#: src/sli.ui:2828
+#: src/sli.ui:2818
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -494,27 +490,27 @@ msgstr ""
 "\n"
 "Por favor, verifique e corrija.\n"
 
-#: src/sli.ui:2949
+#: src/sli.ui:2939
 msgid "Please select your preferred keyboard type and map."
 msgstr "Por favor, selecione o seu tipo de teclado e mapa preferido."
 
-#: src/sli.ui:2987
+#: src/sli.ui:2977
 msgid "keyboard type"
 msgstr "tipo de teclado"
 
-#: src/sli.ui:3023
+#: src/sli.ui:3013
 msgid "keyboard map"
 msgstr "mapa de teclado"
 
-#: src/sli.ui:3139
+#: src/sli.ui:3129
 msgid "Please select a default system locale."
 msgstr "Selecione a localização predefinida do sistema."
 
-#: src/sli.ui:3188
+#: src/sli.ui:3178
 msgid "Locale"
 msgstr "Localização"
 
-#: src/sli.ui:3220
+#: src/sli.ui:3210
 msgid "Error: system is not live."
 msgstr "Erro: o sistema não é live."
 

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: slackel-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-30 22:16+0300\n"
-"PO-Revision-Date: 2024-09-30 22:19+0300\n"
+"POT-Creation-Date: 2024-10-20 12:01+0300\n"
+"PO-Revision-Date: 2024-10-20 12:07+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/djemos/slackel-live-"
 "installer/language/fr/)\n"
@@ -242,14 +242,12 @@ msgid "check this if you want to format /home partition"
 msgstr "Cochez ceci si vous voulez formater une partition /home"
 
 #: src/sli.ui:1228
-#, fuzzy
 msgid ""
 "click here if you want to install system to internal or external ssd disk or "
 "a USB stick "
 msgstr "cliquez ici si vous voulez installer le système sur disque dur"
 
 #: src/sli.ui:1250
-#, fuzzy
 msgid "Install live system"
 msgstr "Installer le système vivant"
 
@@ -265,7 +263,7 @@ msgstr ""
 msgid "Please set the time, date and time zone:"
 msgstr ""
 
-#: src/sli.ui:1403 src/sli.ui:3176
+#: src/sli.ui:1403 src/sli.ui:3166
 msgid "Language"
 msgstr ""
 
@@ -302,15 +300,15 @@ msgstr "Nom d'utilisateur"
 msgid "user password"
 msgstr "mot de passe de l'utilisateur"
 
-#: src/sli.ui:1535
+#: src/sli.ui:1534
 msgid ""
 "Here you must define your login name which should only include\n"
-"alphanumerical characters with no space or upper case letters. "
+"alphanumerical characters with no space or upper case letters."
 msgstr ""
 "Définissez ici votre identifiant de connexion, contenant seulement\n"
 "des caractères alphanumériques sans espace ni lettres capitales."
 
-#: src/sli.ui:1553
+#: src/sli.ui:1551
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -321,7 +319,7 @@ msgstr ""
 "votre identifiant ce connexion, mélange de lettres capitales\n"
 "ou non, de chiffres et même de symboles, comme @, !, ou &"
 
-#: src/sli.ui:1574
+#: src/sli.ui:1571
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -335,7 +333,7 @@ msgstr ""
 " mélange de lettres capitales ou non, de chiffres et\n"
 "de symboles comme @, !, ou &."
 
-#: src/sli.ui:1594
+#: src/sli.ui:1590
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
@@ -343,7 +341,7 @@ msgstr ""
 "Retapez ici le mot de passe de \"root\" pour confirmer\n"
 "votre choix."
 
-#: src/sli.ui:1611
+#: src/sli.ui:1606
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
@@ -351,11 +349,11 @@ msgstr ""
 "Retapez ici votre mot de passe pour confirmer\n"
 "votre choix."
 
-#: src/sli.ui:1627 src/sli.ui:1644
+#: src/sli.ui:1622 src/sli.ui:1638
 msgid "visible"
 msgstr "visible"
 
-#: src/sli.ui:1632 src/sli.ui:1649
+#: src/sli.ui:1626 src/sli.ui:1642
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
@@ -363,20 +361,20 @@ msgstr ""
 "Cochez cette boite si vous voulez voir le mot de passe\n"
 "que vous tapez."
 
-#: src/sli.ui:1687
+#: src/sli.ui:1680
 msgid "Choose installation mode"
 msgstr "Choisir le mode d'installation"
 
-#: src/sli.ui:1712
+#: src/sli.ui:1705
 msgid "core installation"
 msgstr "installation de l'essentiel"
 
-#: src/sli.ui:1717
+#: src/sli.ui:1709
 msgid ""
 "Core installation:\n"
-"Only the minimum essentials for a console system to start are \n"
-"included. A graphical environment is not provided. This is ideal \n"
-"if you are an experienced user and want to customize your \n"
+"Only the minimum essentials for a console system to start are\n"
+"included. A graphical environment is not provided. This is ideal\n"
+"if you are an experienced user and want to customize your\n"
 "installation for any specific purpose, such as a web server.\n"
 "file server etc. "
 msgstr ""
@@ -387,18 +385,18 @@ msgstr ""
 "leur installation pour une usage spécifique comme un serveur\n"
 "Internet ou un serveur de fichiers, par exemple."
 
-#: src/sli.ui:1735
+#: src/sli.ui:1727
 msgid "basic installation"
 msgstr "installation basique"
 
-#: src/sli.ui:1740
+#: src/sli.ui:1731
 msgid ""
 "Basic installation:\n"
-"This installs only a basic desktop environment, with very few \n"
+"This installs only a basic desktop environment, with very few\n"
 "extra applications installed on top, such as a web browser and\n"
-"the gslapt package manager. Ideal for advanced users that \n"
+"the gslapt package manager. Ideal for advanced users that\n"
 "would like to install a lightweight system and add their own\n"
-"choice of applications. "
+"choice of applications."
 msgstr ""
 "Installation basique :\n"
 "Installe seulement un environnement de bureau avec très peu\n"
@@ -407,17 +405,17 @@ msgstr ""
 "avancés voulant un système léger auquel ajouter leur propre\n"
 "choix d'applications."
 
-#: src/sli.ui:1758
+#: src/sli.ui:1749
 msgid "full installation"
 msgstr "installation complète"
 
-#: src/sli.ui:1763
+#: src/sli.ui:1753
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
 "a complete desktop environment\n"
 "and a complete selection of matching applications,\n"
-"always following the \"one application per task\" rationale. "
+"always following the \\\"one application per task\\ rationale. "
 msgstr ""
 "Installation complète :\n"
 "Tous les logiciels inclus dans l'image ISO sont installés.\n"
@@ -425,15 +423,15 @@ msgstr ""
 "sélection étendue d'applications associées, selon le\n"
 "principe d'une application  par tâche."
 
-#: src/sli.ui:1839
+#: src/sli.ui:1829
 msgid "About"
 msgstr "À propos"
 
-#: src/sli.ui:2526
+#: src/sli.ui:2516
 msgid "translator-credits"
 msgstr ""
 
-#: src/sli.ui:2559
+#: src/sli.ui:2549
 msgid ""
 "Cannot install Grub boot loader on an xfs filesystem. System will not "
 "boot. \n"
@@ -442,38 +440,38 @@ msgstr ""
 "Impossible d'installer l'amorceur GRUB sur un système de fichiers XFS.\n"
 "Choisissez (e)LiLo à la place. Merci de vérifier et corriger."
 
-#: src/sli.ui:2601
+#: src/sli.ui:2591
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
 "Impossible d'installer à la fois les amorceurs (e)LiLo et Grub. Merci de "
 "vérifier et corriger."
 
-#: src/sli.ui:2638 src/sli.ui:2686
+#: src/sli.ui:2628 src/sli.ui:2676
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:2648
+#: src/sli.ui:2638
 msgid "Error encountered."
 msgstr "Une erreur s'est produite."
 
-#: src/sli.ui:2695
+#: src/sli.ui:2685
 msgid "Installation completed."
 msgstr "Installation terminée."
 
-#: src/sli.ui:2740
+#: src/sli.ui:2730
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr ""
 "Vos deux frappes de mot de passe root diffèrent. Merci de de vérifier et "
 "corriger."
 
-#: src/sli.ui:2784
+#: src/sli.ui:2774
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr ""
 "Vos deux frappes du mot de passe utilisateur diffèrent. Merci de de vérifier "
 "et corriger."
 
-#: src/sli.ui:2828
+#: src/sli.ui:2818
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -488,27 +486,27 @@ msgstr ""
 "Merci de vérifier et de corriger.\n"
 "\n"
 
-#: src/sli.ui:2949
+#: src/sli.ui:2939
 msgid "Please select your preferred keyboard type and map."
 msgstr ""
 
-#: src/sli.ui:2987
+#: src/sli.ui:2977
 msgid "keyboard type"
 msgstr ""
 
-#: src/sli.ui:3023
+#: src/sli.ui:3013
 msgid "keyboard map"
 msgstr ""
 
-#: src/sli.ui:3139
+#: src/sli.ui:3129
 msgid "Please select a default system locale."
 msgstr ""
 
-#: src/sli.ui:3188
+#: src/sli.ui:3178
 msgid "Locale"
 msgstr ""
 
-#: src/sli.ui:3220
+#: src/sli.ui:3210
 msgid "Error: system is not live."
 msgstr "Erreur: il ne s'agit pas d'un système vivant."
 

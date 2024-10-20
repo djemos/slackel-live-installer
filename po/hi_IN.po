@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: slackel-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-30 22:16+0300\n"
-"PO-Revision-Date: 2024-09-30 22:20+0300\n"
+"POT-Creation-Date: 2024-10-20 12:01+0300\n"
+"PO-Revision-Date: 2024-10-20 12:07+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: Hindi (India) (http://www.transifex.com/djemos/slackel-live-installer/"
 "language/hi_IN/)\n"
@@ -125,12 +125,10 @@ msgid "_Help"
 msgstr "सहायता (_H)"
 
 #: src/sli.ui:764
-#, fuzzy
 msgid "_Slackel Startup Guide"
 msgstr "स्लैकल आरंभ गाइड"
 
 #: src/sli.ui:772
-#, fuzzy
 msgid "S_tartup_Guide"
 msgstr "आरंभ गाइड (G)"
 
@@ -236,7 +234,6 @@ msgid "check this if you want to format /home partition"
 msgstr "इसे चिन्हित कर /home विभाजन फॉर्मेट करें"
 
 #: src/sli.ui:1228
-#, fuzzy
 msgid ""
 "click here if you want to install system to internal or external ssd disk or a USB stick "
 msgstr "यहाँ क्लिक कर सिस्टम को हार्ड डिस्क पर इंस्टॉल करें"
@@ -258,7 +255,7 @@ msgstr "सिस्टम घड़ी"
 msgid "Please set the time, date and time zone:"
 msgstr "कृपया समय, दिनांक व समय क्षेत्र सेट करें :"
 
-#: src/sli.ui:1403 src/sli.ui:3176
+#: src/sli.ui:1403 src/sli.ui:3166
 msgid "Language"
 msgstr "भाषा"
 
@@ -292,15 +289,15 @@ msgstr "उपयोक्ता नाम"
 msgid "user password"
 msgstr "उपयोक्ता कूटशब्द"
 
-#: src/sli.ui:1535
+#: src/sli.ui:1534
 msgid ""
 "Here you must define your login name which should only include\n"
-"alphanumerical characters with no space or upper case letters. "
+"alphanumerical characters with no space or upper case letters."
 msgstr ""
 "लॉगिन नाम पूर्णतया अक्षरांकीय युक्त हो व इसमें रिक्त स्थान या\n"
 "अपरकेस अक्षर नहीं होने चाहिए।"
 
-#: src/sli.ui:1553
+#: src/sli.ui:1551
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -310,7 +307,7 @@ msgstr ""
 "अपने लॉगिन नाम हेतु कूटशब्द चुनें। कूटशब्द में अपरकेस व लोअरकेस\n"
 "अक्षर, अंक व चिन्ह (जैसे @, ! व &) का मिश्रण होना आवश्यक है ।"
 
-#: src/sli.ui:1574
+#: src/sli.ui:1571
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -323,23 +320,23 @@ msgstr ""
 "रहें कि इस कूटशब्द में अपरकेस व लोअरकेस अक्षर, अंक\n"
 "व चिन्ह (जैसे @, ! व &) का मिश्रण होना आवश्यक है।"
 
-#: src/sli.ui:1594
+#: src/sli.ui:1590
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
 msgstr "कृपया पुष्टिकरण हेतु रुट कूटशब्द पुनः दर्ज करें।"
 
-#: src/sli.ui:1611
+#: src/sli.ui:1606
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
 msgstr "कृपया पुष्टिकरण हेतु कूटशब्द पुनः दर्ज करें।"
 
-#: src/sli.ui:1627 src/sli.ui:1644
+#: src/sli.ui:1622 src/sli.ui:1638
 msgid "visible"
 msgstr "दृश्यमान"
 
-#: src/sli.ui:1632 src/sli.ui:1649
+#: src/sli.ui:1626 src/sli.ui:1642
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
@@ -347,20 +344,20 @@ msgstr ""
 "यदि आप दर्ज किया गया कूटशब्द दृश्यमान\n"
 "रखना चाहते हैं तो इसे चिन्हित करें।"
 
-#: src/sli.ui:1687
+#: src/sli.ui:1680
 msgid "Choose installation mode"
 msgstr "इंस्टॉल मोड चयन"
 
-#: src/sli.ui:1712
+#: src/sli.ui:1705
 msgid "core installation"
 msgstr "कोर इंस्टॉल"
 
-#: src/sli.ui:1717
+#: src/sli.ui:1709
 msgid ""
 "Core installation:\n"
-"Only the minimum essentials for a console system to start are \n"
-"included. A graphical environment is not provided. This is ideal \n"
-"if you are an experienced user and want to customize your \n"
+"Only the minimum essentials for a console system to start are\n"
+"included. A graphical environment is not provided. This is ideal\n"
+"if you are an experienced user and want to customize your\n"
 "installation for any specific purpose, such as a web server.\n"
 "file server etc. "
 msgstr ""
@@ -369,18 +366,18 @@ msgstr ""
 "इसमें चित्रात्मक वातावरण नहीं होता है। यह अनुभवी उपयोक्ता एवं\n"
 "वेब सर्वर, फाइल सर्वर जैसे विशिष्ट उद्देश्यों हेतु अनुकूलन के लिए उपयुक्त है।"
 
-#: src/sli.ui:1735
+#: src/sli.ui:1727
 msgid "basic installation"
 msgstr "सामान्य इंस्टॉल"
 
-#: src/sli.ui:1740
+#: src/sli.ui:1731
 msgid ""
 "Basic installation:\n"
-"This installs only a basic desktop environment, with very few \n"
+"This installs only a basic desktop environment, with very few\n"
 "extra applications installed on top, such as a web browser and\n"
-"the gslapt package manager. Ideal for advanced users that \n"
+"the gslapt package manager. Ideal for advanced users that\n"
 "would like to install a lightweight system and add their own\n"
-"choice of applications. "
+"choice of applications."
 msgstr ""
 "सामान्य इंस्टॉल :\n"
 "इसमें केवल एक सामान्य डेस्कटॉप वातावरण इंस्टॉल होता है\n"
@@ -388,32 +385,32 @@ msgstr ""
 "पैकेज सम्मिलित नहीं होते हैं। यह एक सरल सिस्टम व स्वयं अनुप्रयोग\n"
 "इंस्टॉल करने के इच्छुक उपयोक्ताओं हेतु उपयुक्त है।"
 
-#: src/sli.ui:1758
+#: src/sli.ui:1749
 msgid "full installation"
 msgstr "पूर्ण इंस्टॉल"
 
-#: src/sli.ui:1763
+#: src/sli.ui:1753
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
 "a complete desktop environment\n"
 "and a complete selection of matching applications,\n"
-"always following the \"one application per task\" rationale. "
+"always following the \\\"one application per task\\ rationale. "
 msgstr ""
 "पूर्ण इंस्टॉल :\n"
 "आईएसओ में सम्मिलित सभी कुछ इंस्टॉल होता है।\n"
 "इसमें एक परिपूर्ण डेस्कटॉप वातावरण व\n"
 "'प्रति कार्य एकल अनुप्रयोग' तर्काधार पर संबंधित अनुप्रयोग होते हैं।"
 
-#: src/sli.ui:1839
+#: src/sli.ui:1829
 msgid "About"
 msgstr "बारे में"
 
-#: src/sli.ui:2526
+#: src/sli.ui:2516
 msgid "translator-credits"
 msgstr "Panwar108 <caspian7pena@gmail.com>"
 
-#: src/sli.ui:2559
+#: src/sli.ui:2549
 msgid ""
 "Cannot install Grub boot loader on an xfs filesystem. System will not boot. \n"
 "Choose (e)Lilo instead. Please verify and correct."
@@ -421,31 +418,31 @@ msgstr ""
 "सिस्टम आरंभ विफलता के कारण फाइल सिस्टम पर Grub बूट लोड साधन इंस्टॉल करना संभव नहीं है।\n"
 "इसके स्थान पर (ई)लीलो चुनें। कृपया जाँचकर सुधारें।"
 
-#: src/sli.ui:2601
+#: src/sli.ui:2591
 msgid "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr "दोनों (ई)लीलो व Grub बूट लोड साधन इंस्टॉल करना संभव नहीं है। कृपया जाँचकर सुधारें।"
 
-#: src/sli.ui:2638 src/sli.ui:2686
+#: src/sli.ui:2628 src/sli.ui:2676
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:2648
+#: src/sli.ui:2638
 msgid "Error encountered."
 msgstr "त्रुटि हुई।"
 
-#: src/sli.ui:2695
+#: src/sli.ui:2685
 msgid "Installation completed."
 msgstr "इंस्टॉल प्रक्रिया पूर्ण।"
 
-#: src/sli.ui:2740
+#: src/sli.ui:2730
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr "रुट कूटशब्द प्रविष्टियाँ मेल नहीं खाती हैं। कृपया जाँचकर सुधारें।"
 
-#: src/sli.ui:2784
+#: src/sli.ui:2774
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr "उपयोक्ता कूटशब्द प्रविष्टियाँ मेल नहीं खाती हैं। कृपया जाँचकर सुधारें।"
 
-#: src/sli.ui:2828
+#: src/sli.ui:2818
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -459,27 +456,27 @@ msgstr ""
 "\n"
 "कृपया जाँचकर सुधारें।\n"
 
-#: src/sli.ui:2949
+#: src/sli.ui:2939
 msgid "Please select your preferred keyboard type and map."
 msgstr "कृपया इच्छित कुंजीपटल प्रकार व अभिन्यास चुनें।"
 
-#: src/sli.ui:2987
+#: src/sli.ui:2977
 msgid "keyboard type"
 msgstr "कुंजीपटल प्रकार"
 
-#: src/sli.ui:3023
+#: src/sli.ui:3013
 msgid "keyboard map"
 msgstr "कुंजीपटल अभिन्यास"
 
-#: src/sli.ui:3139
+#: src/sli.ui:3129
 msgid "Please select a default system locale."
 msgstr "कृपया सिस्टम हेतु डिफ़ॉल्ट स्थानिकी चुनें।"
 
-#: src/sli.ui:3188
+#: src/sli.ui:3178
 msgid "Locale"
 msgstr "स्थानिकी"
 
-#: src/sli.ui:3220
+#: src/sli.ui:3210
 msgid "Error: system is not live."
 msgstr "त्रुटि : सिस्टम लाइव नहीं है।"
 

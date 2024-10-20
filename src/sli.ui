@@ -1531,9 +1531,8 @@ login name.</property>
               <object class="GtkEntry" id="username">
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
-                <property name="has-tooltip">True</property>
                 <property name="tooltip-text" translatable="yes">Here you must define your login name which should only include
-alphanumerical characters with no space or upper case letters. </property>
+alphanumerical characters with no space or upper case letters.</property>
                 <property name="invisible-char">●</property>
                 <property name="primary-icon-activatable">False</property>
                 <property name="secondary-icon-activatable">False</property>
@@ -1549,7 +1548,6 @@ alphanumerical characters with no space or upper case letters. </property>
               <object class="GtkEntry" id="userpassword">
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
-                <property name="has-tooltip">True</property>
                 <property name="tooltip-text" translatable="yes">Choose a password or passphrase to be coupled with your
 login name. Your password or passprase should include a mix
 of upper and lower case letters, numbers, and even symbols
@@ -1570,7 +1568,6 @@ of upper and lower case letters, numbers, and even symbols
               <object class="GtkEntry" id="rootpassword">
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
-                <property name="has-tooltip">True</property>
                 <property name="tooltip-text" translatable="yes">On Linux systems, the superuser, or root, is a special user
 account used for system administration. Here you must set
 its password or passphrase. Remember, this password or
@@ -1590,7 +1587,6 @@ letters, numbers, and even symbols (such as the @, !, and &amp;)</property>
               <object class="GtkEntry" id="rootpassword1">
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
-                <property name="has-tooltip">True</property>
                 <property name="tooltip-text" translatable="yes">Here you must retype the superuser (root) password as a
 confirmation of your choice.</property>
                 <property name="visibility">False</property>
@@ -1607,7 +1603,6 @@ confirmation of your choice.</property>
               <object class="GtkEntry" id="userpassword1">
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
-                <property name="has-tooltip">True</property>
                 <property name="tooltip-text" translatable="yes">Here you must retype your password as
 a confirmation of your choice.</property>
                 <property name="visibility">False</property>
@@ -1628,7 +1623,6 @@ a confirmation of your choice.</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">False</property>
-                <property name="has-tooltip">True</property>
                 <property name="tooltip-text" translatable="yes">Check this box if you want to be able to see the password
 you are typing.</property>
                 <property name="draw-indicator">True</property>
@@ -1645,7 +1639,6 @@ you are typing.</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">False</property>
-                <property name="has-tooltip">True</property>
                 <property name="tooltip-text" translatable="yes">Check this box if you want to be able to see the password
 you are typing.</property>
                 <property name="draw-indicator">True</property>
@@ -1713,11 +1706,10 @@ you are typing.</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">False</property>
-                    <property name="has-tooltip">True</property>
                     <property name="tooltip-text" translatable="yes">Core installation:
-Only the minimum essentials for a console system to start are 
-included. A graphical environment is not provided. This is ideal 
-if you are an experienced user and want to customize your 
+Only the minimum essentials for a console system to start are
+included. A graphical environment is not provided. This is ideal
+if you are an experienced user and want to customize your
 installation for any specific purpose, such as a web server.
 file server etc. </property>
                     <property name="active">True</property>
@@ -1736,13 +1728,12 @@ file server etc. </property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">False</property>
-                    <property name="has-tooltip">True</property>
                     <property name="tooltip-text" translatable="yes">Basic installation:
-This installs only a basic desktop environment, with very few 
+This installs only a basic desktop environment, with very few
 extra applications installed on top, such as a web browser and
-the gslapt package manager. Ideal for advanced users that 
+the gslapt package manager. Ideal for advanced users that
 would like to install a lightweight system and add their own
-choice of applications. </property>
+choice of applications.</property>
                     <property name="active">True</property>
                     <property name="draw-indicator">True</property>
                     <property name="group">full</property>
@@ -1759,12 +1750,11 @@ choice of applications. </property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">False</property>
-                    <property name="has-tooltip">True</property>
                     <property name="tooltip-text" translatable="yes">Full installation:
 Everything that is included in the iso is installed. That includes 
 a complete desktop environment
 and a complete selection of matching applications,
-always following the "one application per task" rationale. </property>
+always following the \"one application per task\ rationale. </property>
                     <property name="active">True</property>
                     <property name="draw-indicator">True</property>
                   </object>
