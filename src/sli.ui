@@ -1131,6 +1131,7 @@ to backup important data before starting this procedure.</property>
                       <object class="GtkLabel" id="label6">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="tooltip-text" translatable="yes">choose the Linux partition to hold the main directory tree.</property>
                         <property name="label" translatable="yes">Install location:</property>
                       </object>
                     </child>
