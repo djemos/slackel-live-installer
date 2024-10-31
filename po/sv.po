@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: slackel-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-20 12:32+0300\n"
-"PO-Revision-Date: 2024-10-20 12:10+0300\n"
+"POT-Creation-Date: 2024-10-31 03:03+0200\n"
+"PO-Revision-Date: 2024-10-31 03:07+0200\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/djemos/slackel-live-"
 "installer/language/sv/)\n"
@@ -188,7 +188,7 @@ msgstr "Kopiera live-system till usb"
 msgid "Choose the filesystem type to format usb."
 msgstr "Välj filsystems typ för att formatera usb."
 
-#: src/sli.ui:1014 src/sli.ui:1142
+#: src/sli.ui:1014 src/sli.ui:1143
 msgid "Filesystem Type:"
 msgstr "Filsystemstyp:"
 
@@ -216,15 +216,11 @@ msgstr "markera den här om du vill installera Grub starthanterare"
 msgid "Install location:"
 msgstr "Installationsplats:"
 
-#: src/sli.ui:1153
+#: src/sli.ui:1142 src/sli.ui:1154
 msgid "Choose the filesystem type to format partition(s)."
 msgstr "Välj filsystemstyp för att formatera partition(er)."
 
-#: src/sli.ui:1174
-msgid "Home location:"
-msgstr "Home Plats:"
-
-#: src/sli.ui:1185
+#: src/sli.ui:1175 src/sli.ui:1188
 msgid ""
 "If you want to use a home partition to another disk then choose one from "
 "here.\n"
@@ -233,53 +229,57 @@ msgstr ""
 "Om du vill använda en home-partition på en annan hårddisk välj en härifrån.\n"
 "Annars lämna det tomt."
 
-#: src/sli.ui:1204
+#: src/sli.ui:1177
+msgid "Home location:"
+msgstr "Home Plats:"
+
+#: src/sli.ui:1207
 msgid "Format Ηome"
 msgstr "Formatera Home"
 
-#: src/sli.ui:1208
+#: src/sli.ui:1211
 msgid "check this if you want to format /home partition"
 msgstr "markera denna om du vill formatera /home partitionen"
 
-#: src/sli.ui:1229
+#: src/sli.ui:1232
 msgid ""
 "click here if you want to install system to internal or external ssd disk or "
 "a USB stick "
 msgstr "Klicka här om du vill installera systemet på hårddisk"
 
-#: src/sli.ui:1251
+#: src/sli.ui:1254
 msgid "Install live system"
 msgstr "Installera livesystemet"
 
-#: src/sli.ui:1315
+#: src/sli.ui:1318
 msgid "Actions needed before proceeding with system installation.\n"
 msgstr "Åtgärder krävs innan du fortsätter med installationen av systemet.\n"
 
-#: src/sli.ui:1341
+#: src/sli.ui:1344
 msgid "System clock"
 msgstr "Systemclocka"
 
-#: src/sli.ui:1345
+#: src/sli.ui:1348
 msgid "Please set the time, date and time zone:"
 msgstr "Vänligen ställ in tid, datum och tidszon:"
 
-#: src/sli.ui:1404 src/sli.ui:3167
+#: src/sli.ui:1407 src/sli.ui:3170
 msgid "Language"
 msgstr "Språk"
 
-#: src/sli.ui:1408
+#: src/sli.ui:1411
 msgid "Select a default system locale."
 msgstr "Välj standard systemspråk."
 
-#: src/sli.ui:1432
+#: src/sli.ui:1435
 msgid "keyboard"
 msgstr "Tangentbord"
 
-#: src/sli.ui:1436
+#: src/sli.ui:1439
 msgid "Select your preferred keyboard type."
 msgstr "Välj din föredragna tangentbordstyp."
 
-#: src/sli.ui:1472
+#: src/sli.ui:1475
 msgid ""
 "Set root password, define login name, choose a password to be coupled with "
 "your\n"
@@ -289,19 +289,19 @@ msgstr ""
 "kopplad\n"
 "med ditt namn."
 
-#: src/sli.ui:1506
+#: src/sli.ui:1509
 msgid "root password"
 msgstr "root lösenord"
 
-#: src/sli.ui:1513
+#: src/sli.ui:1516
 msgid "user name"
 msgstr "användarnamn"
 
-#: src/sli.ui:1524
+#: src/sli.ui:1527
 msgid "user password"
 msgstr "användarlösenord"
 
-#: src/sli.ui:1535
+#: src/sli.ui:1538
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters."
@@ -309,7 +309,7 @@ msgstr ""
 "Här måste du ange ditt inloggningsnamn som bara bör omfatta\n"
 "alfanumeriska tecken utan mellanslag eller stora bokstäver."
 
-#: src/sli.ui:1552
+#: src/sli.ui:1555
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -322,7 +322,7 @@ msgstr ""
 "av stora och små bokstäver, siffror, och även symboler\n"
 "(t.ex. @,!, och &)"
 
-#: src/sli.ui:1572
+#: src/sli.ui:1575
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -336,7 +336,7 @@ msgstr ""
 "lösenordsfras bör innehålla en blandning av stora och små bokstäver,\n"
 "siffror och till och med symboler (till exempel @,! och &)"
 
-#: src/sli.ui:1591
+#: src/sli.ui:1594
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
@@ -344,7 +344,7 @@ msgstr ""
 "Här måste du skriva in superuser (root) lösenord som en\n"
 "Bekräftelse av ditt val."
 
-#: src/sli.ui:1607
+#: src/sli.ui:1610
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
@@ -352,11 +352,11 @@ msgstr ""
 "Här måste du skriva in ditt lösenord som\n"
 "en bekräftelse på ditt val."
 
-#: src/sli.ui:1623 src/sli.ui:1639
+#: src/sli.ui:1626 src/sli.ui:1642
 msgid "visible"
 msgstr "synlig"
 
-#: src/sli.ui:1627 src/sli.ui:1643
+#: src/sli.ui:1630 src/sli.ui:1646
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
@@ -364,15 +364,15 @@ msgstr ""
 "Markera den här rutan om du vill kunna se lösenordet\n"
 "du skriver."
 
-#: src/sli.ui:1681
+#: src/sli.ui:1684
 msgid "Choose installation mode"
 msgstr "Välj installationsläge"
 
-#: src/sli.ui:1706
+#: src/sli.ui:1709
 msgid "core installation"
 msgstr "core installation"
 
-#: src/sli.ui:1710
+#: src/sli.ui:1713
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are\n"
@@ -388,11 +388,11 @@ msgstr ""
 "din installationen för något speciellt ändamål,\n"
 "t.ex. en webbserver, filserver m.m."
 
-#: src/sli.ui:1728
+#: src/sli.ui:1731
 msgid "basic installation"
 msgstr "grundläggande installation"
 
-#: src/sli.ui:1732
+#: src/sli.ui:1735
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few\n"
@@ -408,11 +408,11 @@ msgstr ""
 "som vill installera ett lättviktigt system och lägga till sina egna\n"
 "val av applikationer."
 
-#: src/sli.ui:1750
+#: src/sli.ui:1753
 msgid "full installation"
 msgstr "fullständig installation"
 
-#: src/sli.ui:1754
+#: src/sli.ui:1757
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -426,15 +426,15 @@ msgstr ""
 "och ett komplett utbud av matchande applikationer,\n"
 "alltid efter \"ett program per uppgift\" filosofin."
 
-#: src/sli.ui:1830
+#: src/sli.ui:1833
 msgid "About"
 msgstr "Om"
 
-#: src/sli.ui:2517
+#: src/sli.ui:2520
 msgid "translator-credits"
 msgstr "Ingemar Karlsson <po@ingk.se>"
 
-#: src/sli.ui:2550
+#: src/sli.ui:2553
 msgid ""
 "Cannot install Grub boot loader on an xfs filesystem. System will not "
 "boot. \n"
@@ -444,38 +444,38 @@ msgstr ""
 "inte upp.\n"
 "Välj (e)Lilo istället. Kontrollera och korrigera."
 
-#: src/sli.ui:2592
+#: src/sli.ui:2595
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
 "Kan inte installera både (e)Lilo och Grub starthanterare. Vänligen "
 "kontrollera och rätta."
 
-#: src/sli.ui:2629 src/sli.ui:2677
+#: src/sli.ui:2632 src/sli.ui:2680
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:2639
+#: src/sli.ui:2642
 msgid "Error encountered."
 msgstr "Fel uppstod."
 
-#: src/sli.ui:2686
+#: src/sli.ui:2689
 msgid "Installation completed."
 msgstr "Installation slutförd."
 
-#: src/sli.ui:2731
+#: src/sli.ui:2734
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr ""
 "Dina två root lösenordsangivelser matchar inte. Vänligen kontrollera och "
 "rätta."
 
-#: src/sli.ui:2775
+#: src/sli.ui:2778
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr ""
 "Dina två användar lösenordsangivelser matchar inte. Vänligen kontrollera och "
 "rätta."
 
-#: src/sli.ui:2819
+#: src/sli.ui:2822
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -488,27 +488,27 @@ msgstr ""
 "root lösenord och användar lösenord ska ha minst 5 tecken\n"
 "Kontrollera och korrigera.\n"
 
-#: src/sli.ui:2940
+#: src/sli.ui:2943
 msgid "Please select your preferred keyboard type and map."
 msgstr "Välj din föredragna tangentbordstyp och layout."
 
-#: src/sli.ui:2978
+#: src/sli.ui:2981
 msgid "keyboard type"
 msgstr "tangentbordstyp"
 
-#: src/sli.ui:3014
+#: src/sli.ui:3017
 msgid "keyboard map"
 msgstr "tangentbordslayout"
 
-#: src/sli.ui:3130
+#: src/sli.ui:3133
 msgid "Please select a default system locale."
 msgstr "Vänligen välj standard systemspråk."
 
-#: src/sli.ui:3179
+#: src/sli.ui:3182
 msgid "Locale"
 msgstr "Språk"
 
-#: src/sli.ui:3211
+#: src/sli.ui:3214
 msgid "Error: system is not live."
 msgstr "Fel: systemet är inte live."
 

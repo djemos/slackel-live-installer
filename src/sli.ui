@@ -1139,6 +1139,7 @@ to backup important data before starting this procedure.</property>
                       <object class="GtkLabel" id="label18">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="tooltip-text" translatable="yes">Choose the filesystem type to format partition(s).</property>
                         <property name="label" translatable="yes">Filesystem Type:</property>
                       </object>
                       <packing>
@@ -1171,6 +1172,8 @@ to backup important data before starting this procedure.</property>
                       <object class="GtkLabel" id="label17">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="tooltip-text" translatable="yes">If you want to use a home partition to another disk then choose one from here.
+Otherwise leave it empty.</property>
                         <property name="label" translatable="yes">Home location:</property>
                       </object>
                       <packing>

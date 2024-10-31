@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: slackel-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-20 12:32+0300\n"
-"PO-Revision-Date: 2024-10-20 12:09+0300\n"
+"POT-Creation-Date: 2024-10-31 03:03+0200\n"
+"PO-Revision-Date: 2024-10-31 03:06+0200\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/djemos/slackel-live-"
 "installer/language/ro/)\n"
@@ -188,7 +188,7 @@ msgstr "Copiere sistem live pe usb"
 msgid "Choose the filesystem type to format usb."
 msgstr "Alegeți tipul de sistem de fișiere pentru a formata usb."
 
-#: src/sli.ui:1014 src/sli.ui:1142
+#: src/sli.ui:1014 src/sli.ui:1143
 msgid "Filesystem Type:"
 msgstr "Tipul sistemului de fișiere:"
 
@@ -216,15 +216,11 @@ msgstr "alegeți dacă vreți să instalați Grub"
 msgid "Install location:"
 msgstr "Locația instalării:"
 
-#: src/sli.ui:1153
+#: src/sli.ui:1142 src/sli.ui:1154
 msgid "Choose the filesystem type to format partition(s)."
 msgstr "Alegeți tipul sistemului de fișiere pentru formatarea partițiilor."
 
-#: src/sli.ui:1174
-msgid "Home location:"
-msgstr "Locația partiției home:"
-
-#: src/sli.ui:1185
+#: src/sli.ui:1175 src/sli.ui:1188
 msgid ""
 "If you want to use a home partition to another disk then choose one from "
 "here.\n"
@@ -233,53 +229,57 @@ msgstr ""
 "Dacă doriți să instalați partiția /home pe alt disc,alegeți aici.\n"
 "Altfel,nu modificați."
 
-#: src/sli.ui:1204
+#: src/sli.ui:1177
+msgid "Home location:"
+msgstr "Locația partiției home:"
+
+#: src/sli.ui:1207
 msgid "Format Ηome"
 msgstr "Formatare Home"
 
-#: src/sli.ui:1208
+#: src/sli.ui:1211
 msgid "check this if you want to format /home partition"
 msgstr "alegeți aici dacă doriți formatarea partiției /home"
 
-#: src/sli.ui:1229
+#: src/sli.ui:1232
 msgid ""
 "click here if you want to install system to internal or external ssd disk or "
 "a USB stick "
 msgstr "apăsați aici pentru a instala sistemul pe disc"
 
-#: src/sli.ui:1251
+#: src/sli.ui:1254
 msgid "Install live system"
 msgstr "Instalare sistem live"
 
-#: src/sli.ui:1315
+#: src/sli.ui:1318
 msgid "Actions needed before proceeding with system installation.\n"
 msgstr "Acțiuni necesare înaintea trecerii la instalarea sistemului\n"
 
-#: src/sli.ui:1341
+#: src/sli.ui:1344
 msgid "System clock"
 msgstr ""
 
-#: src/sli.ui:1345
+#: src/sli.ui:1348
 msgid "Please set the time, date and time zone:"
 msgstr ""
 
-#: src/sli.ui:1404 src/sli.ui:3167
+#: src/sli.ui:1407 src/sli.ui:3170
 msgid "Language"
 msgstr ""
 
-#: src/sli.ui:1408
+#: src/sli.ui:1411
 msgid "Select a default system locale."
 msgstr ""
 
-#: src/sli.ui:1432
+#: src/sli.ui:1435
 msgid "keyboard"
 msgstr ""
 
-#: src/sli.ui:1436
+#: src/sli.ui:1439
 msgid "Select your preferred keyboard type."
 msgstr ""
 
-#: src/sli.ui:1472
+#: src/sli.ui:1475
 msgid ""
 "Set root password, define login name, choose a password to be coupled with "
 "your\n"
@@ -288,19 +288,19 @@ msgstr ""
 "Setați parola root,definiți numele de logare,alegeți o parolă\n"
 "pentru numele de logare."
 
-#: src/sli.ui:1506
+#: src/sli.ui:1509
 msgid "root password"
 msgstr "parolă root"
 
-#: src/sli.ui:1513
+#: src/sli.ui:1516
 msgid "user name"
 msgstr "nume user"
 
-#: src/sli.ui:1524
+#: src/sli.ui:1527
 msgid "user password"
 msgstr "parolă user"
 
-#: src/sli.ui:1535
+#: src/sli.ui:1538
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters."
@@ -308,7 +308,7 @@ msgstr ""
 "Aici trebuie să definiți numele de logare care trebuie să includă\n"
 "caractere alfanumerice,fără spații sau litere mari. "
 
-#: src/sli.ui:1552
+#: src/sli.ui:1555
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -320,7 +320,7 @@ msgstr ""
 "un amestec de litere mici,mari,numere și eventual simboluri\n"
 "(cum ar fi @,! și &)"
 
-#: src/sli.ui:1572
+#: src/sli.ui:1575
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -334,7 +334,7 @@ msgstr ""
 "sau frază trebuie să conțină un amestec de litere mici și mari,\n"
 "cifre și simboluri(cum ar fi @,! și &)."
 
-#: src/sli.ui:1591
+#: src/sli.ui:1594
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
@@ -342,7 +342,7 @@ msgstr ""
 "Reintroduceți parola root\n"
 "pentru confirmare."
 
-#: src/sli.ui:1607
+#: src/sli.ui:1610
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
@@ -350,11 +350,11 @@ msgstr ""
 "Aici trebuie să reintroduceți parola\n"
 "pentru a confirma alegerea."
 
-#: src/sli.ui:1623 src/sli.ui:1639
+#: src/sli.ui:1626 src/sli.ui:1642
 msgid "visible"
 msgstr "vizibil"
 
-#: src/sli.ui:1627 src/sli.ui:1643
+#: src/sli.ui:1630 src/sli.ui:1646
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
@@ -362,15 +362,15 @@ msgstr ""
 "Apăsați acest buton dacă doriți să vedeți parola\n"
 "introdusă."
 
-#: src/sli.ui:1681
+#: src/sli.ui:1684
 msgid "Choose installation mode"
 msgstr "Alegeți tipul instalării"
 
-#: src/sli.ui:1706
+#: src/sli.ui:1709
 msgid "core installation"
 msgstr "instalare minimală"
 
-#: src/sli.ui:1710
+#: src/sli.ui:1713
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are\n"
@@ -386,11 +386,11 @@ msgstr ""
 "customizeze instalarea din motive specifice,cum ar fi server\n"
 "de web sau fișiere,etc."
 
-#: src/sli.ui:1728
+#: src/sli.ui:1731
 msgid "basic installation"
 msgstr "instalare de bază"
 
-#: src/sli.ui:1732
+#: src/sli.ui:1735
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few\n"
@@ -406,11 +406,11 @@ msgstr ""
 "userii avansați care doresc un sistem cu mai puține aplicații\n"
 "și un consum redus de resurse."
 
-#: src/sli.ui:1750
+#: src/sli.ui:1753
 msgid "full installation"
 msgstr "instalare completă"
 
-#: src/sli.ui:1754
+#: src/sli.ui:1757
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -422,15 +422,15 @@ msgstr ""
 "Cuprinde tot ce este inclus în imaginea iso.Toate aplicațiile\n"
 "care vin cu desktop-ul respectiv sunt incluse."
 
-#: src/sli.ui:1830
+#: src/sli.ui:1833
 msgid "About"
 msgstr "Despre"
 
-#: src/sli.ui:2517
+#: src/sli.ui:2520
 msgid "translator-credits"
 msgstr ""
 
-#: src/sli.ui:2550
+#: src/sli.ui:2553
 msgid ""
 "Cannot install Grub boot loader on an xfs filesystem. System will not "
 "boot. \n"
@@ -440,37 +440,37 @@ msgstr ""
 "xfs.Sistemul nu va porni.Puteți încerca (e)Lilo.Vă rugăm verificați și "
 "corectați. "
 
-#: src/sli.ui:2592
+#: src/sli.ui:2595
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
 "Nu puteți instala (e)Lilo și Grub în același timp.Vă rugăm verificați și "
 "corectați."
 
-#: src/sli.ui:2629 src/sli.ui:2677
+#: src/sli.ui:2632 src/sli.ui:2680
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:2639
+#: src/sli.ui:2642
 msgid "Error encountered."
 msgstr "Eroare întâmpinată."
 
-#: src/sli.ui:2686
+#: src/sli.ui:2689
 msgid "Installation completed."
 msgstr "Instalare terminată."
 
-#: src/sli.ui:2731
+#: src/sli.ui:2734
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr ""
 "Cele două parole introduse pentru root nu se potrivesc.Vă rugăm verificați "
 "și corectați. "
 
-#: src/sli.ui:2775
+#: src/sli.ui:2778
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr ""
 "Cele două parole introduse nu se potrivesc.Vă rugăm verificați și corectați. "
 
-#: src/sli.ui:2819
+#: src/sli.ui:2822
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -484,27 +484,27 @@ msgstr ""
 "\n"
 "Vă rugăm verificați și corectați. \n"
 
-#: src/sli.ui:2940
+#: src/sli.ui:2943
 msgid "Please select your preferred keyboard type and map."
 msgstr ""
 
-#: src/sli.ui:2978
+#: src/sli.ui:2981
 msgid "keyboard type"
 msgstr ""
 
-#: src/sli.ui:3014
+#: src/sli.ui:3017
 msgid "keyboard map"
 msgstr ""
 
-#: src/sli.ui:3130
+#: src/sli.ui:3133
 msgid "Please select a default system locale."
 msgstr ""
 
-#: src/sli.ui:3179
+#: src/sli.ui:3182
 msgid "Locale"
 msgstr ""
 
-#: src/sli.ui:3211
+#: src/sli.ui:3214
 msgid "Error: system is not live."
 msgstr "Eroare: sistemul nu funcționează."
 
