@@ -1,7 +1,7 @@
 #if(NOT DEFINED CMAKE_MINIMUM_REQUIRED_VERSION)
-#  cmake_minimum_required(VERSION 3.6)
+#  cmake_minimum_required(VERSION 3.10)
 #endif()
-cmake_minimum_required(VERSION 2.4)
+cmake_minimum_required(VERSION 3.10)
 
 set (PROJECT_NAME "sli")
 project (${PROJECT_NAME})
