@@ -1,15 +1,9 @@
-SLI requires the following utilities (and their dependencies) to operate:
-- rsync,
-- a GUI to ask the SSH password (SSH_ASKPASS environment variable must be set).
+SLI use the CMake construction system. So, cmake has to be installed if it is not ( sudo slapt-get -u && sudo slapt-get -i cmake)
 
-Attention, SLI use the CMake construction system. So, the installation
-procedure is:
-1) extract the archive containing the program sources,
-2) enter the directory containing the sources,
-3) run the command `cmake .'
-	(or `cmake -DCMAKE_INSTALL_PREFIX = / usr .' to install the
-	package under `/usr' instead of `/usr/local' ),
-4) run the command `make',
-5) run the command `make install'
-	(or `make install DESTDIR=absolute_path_to_somedir' to place the files
-	in a temporary location instead of the expected one).
+The installation procedure is:
+1) download the sources
+git clone https://github.com/djemos/slackel-live-installer.git
+2) cd sli
+3) sh maketxz.sh
+4) Install the package
+sudo spkg sli-1.2.6-x86_64-1dj.txz or sudo installpkg sli-1.2.6-x86_64-1dj.txz
