@@ -4,7 +4,7 @@ Slackware-live is a dependency for SLI.
 
 The SLKBUILD source package and binary can be found on http://www.slackel.gr/repo/source/slackel-source/slackware-live-installer-1.2.6/
 To build the package fakeroot slkbuild -X
-To install the package sudo spkg sli-1.2.6-x86_64-2dj.txz or sudo installpkg sli-1.2.6-x86_64-2dj.txz
+To install the package sudo spkg sli-1.2.6-x86_64-1dj.txz or sudo installpkg sli-1.2.6-x86_64-1dj.txz
 
 If you want to build from the source in here in git:
 SLI use the CMake construction system. So, cmake has to be installed if it is not (sudo slapt-get -u && sudo slapt-get -i cmake)
@@ -15,7 +15,7 @@ git clone https://github.com/djemos/slackel-live-installer.git
 2) cd slackel-live-installer
 3) sh maketxz.sh
 4) Install the package
-sudo spkg sli-1.2.6-x86_64-2dj.txz or sudo installpkg sli-1.2.6-x86_64-2dj.txz
+sudo spkg sli-1.2.6-x86_64-1dj.txz or sudo installpkg sli-1.2.6-x86_64-1dj.txz
 
 Copyright (C) 2014-2024 Dimitris Tzemos <dijemos@gmail.com>
 This program is free software: you can redistribute it and/or modify it under the terms 

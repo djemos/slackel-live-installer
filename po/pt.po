@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: slackel-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-31 03:03+0200\n"
-"PO-Revision-Date: 2024-10-31 03:06+0200\n"
+"POT-Creation-Date: 2025-04-21 20:49+0300\n"
+"PO-Revision-Date: 2025-04-21 20:54+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/djemos/slackel-live-"
 "installer/language/pt/)\n"
@@ -21,124 +21,83 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.5\n"
 
-#: src/sli.ui:139
-msgid "Keep clock synchronized with internet servers"
-msgstr "Mantenha o relógio sincronizado com os servidores da internet"
-
-#: src/sli.ui:165
-msgid "Synchronize now"
-msgstr "Sincronizar agora"
-
-#: src/sli.ui:193
-msgid "Time Zone:"
-msgstr "Fuso horário:"
-
-#: src/sli.ui:227
-msgid "Select time zone..."
-msgstr "Selecione o fuso horário..."
-
-#: src/sli.ui:249
-msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr ""
-"O relógio da máquina está definido para o Tempo Universal Coordenado (UTC)"
-
-#: src/sli.ui:377
-msgid "Time:"
-msgstr "Hora:"
-
-#: src/sli.ui:388
-msgid "Date:"
-msgstr "Data:"
-
-#: src/sli.ui:419
+#: src/sli.ui:78
 msgid "azerty"
 msgstr "azerty"
 
-#: src/sli.ui:422
+#: src/sli.ui:81
 msgid "dvorak"
 msgstr "dvorak"
 
-#: src/sli.ui:425
+#: src/sli.ui:84
 msgid "olpc"
 msgstr "olpc"
 
-#: src/sli.ui:428
+#: src/sli.ui:87
 msgid "qwerty"
 msgstr "qwerty"
 
-#: src/sli.ui:431
+#: src/sli.ui:90
 msgid "qwertz"
 msgstr "qwertz"
 
-#: src/sli.ui:454
+#: src/sli.ui:113
 msgid "btrfs"
 msgstr "btrfs"
 
-#: src/sli.ui:457
+#: src/sli.ui:116
 msgid "ext2"
 msgstr "ext2"
 
-#: src/sli.ui:460 src/sli.ui:486
+#: src/sli.ui:119 src/sli.ui:145
 msgid "ext3"
 msgstr "ext3"
 
-#: src/sli.ui:463
+#: src/sli.ui:122
 msgid "ext4"
 msgstr "ext4"
 
-#: src/sli.ui:466
+#: src/sli.ui:125
 msgid "jfs"
 msgstr "jfs"
 
-#: src/sli.ui:469
+#: src/sli.ui:128
 msgid "reiserfs"
 msgstr "reiserfs"
 
-#: src/sli.ui:472
+#: src/sli.ui:131
 msgid "xfs"
 msgstr "xfs"
 
-#: src/sli.ui:483
+#: src/sli.ui:142
 msgid "vfat"
 msgstr "vfat"
 
-#: src/sli.ui:507
-msgid "Select time zone"
-msgstr "Selecione o fuso horário"
+#: src/sli.ui:177
+msgid "Slackel Installation"
+msgstr "Instalação Slackel"
 
-#: src/sli.ui:573
-msgid "Please select your time zone:"
-msgstr "Por favor, selecione o seu fuso horário:"
-
-#: src/sli.ui:612
-msgid "General area"
-msgstr "Área geral"
-
-#: src/sli.ui:648
-msgid "Location"
-msgstr "Localização"
-
-#: src/sli.ui:710
+#: src/sli.ui:198
 msgid "_File"
 msgstr "_Ficheiro"
 
-#: src/sli.ui:740
+#: src/sli.ui:228
 msgid "_Help"
 msgstr "_Ajuda"
 
-#: src/sli.ui:764
+#: src/sli.ui:252
 msgid "_Slackel Startup Guide"
 msgstr "Guia de iniciação do Slackel"
 
-#: src/sli.ui:772
+#: src/sli.ui:260
 msgid "S_tartup_Guide"
 msgstr "_Guia de iniciação"
 
-#: src/sli.ui:857
+#: src/sli.ui:345
 msgid "Partitions"
 msgstr "Partições"
 
-#: src/sli.ui:861
+#: src/sli.ui:349
 msgid ""
 "Important!\n"
 "\n"
@@ -165,61 +124,61 @@ msgstr ""
 "fazer uma cópia de segurança de dados importantes antes de iniciar este "
 "procedimento."
 
-#: src/sli.ui:900
+#: src/sli.ui:388
 msgid ""
 "<i>Warning: copy / installation wipes everything on the selected location.</"
 "i>"
 msgstr "<i>Aviso: a cópia / instalação elimina tudo no local selecionado.</i>"
 
-#: src/sli.ui:925
+#: src/sli.ui:413
 msgid "Copy location:"
 msgstr "Local a copiar:"
 
-#: src/sli.ui:964
+#: src/sli.ui:452
 msgid "click here if you want to copy system to usb"
 msgstr "clique aqui se quiser copiar o sistema para usb"
 
-#: src/sli.ui:987
+#: src/sli.ui:475
 msgid "Copy live system to usb"
 msgstr "Copie o sistema live para o usb"
 
-#: src/sli.ui:1013 src/sli.ui:1026
+#: src/sli.ui:501 src/sli.ui:514
 msgid "Choose the filesystem type to format usb."
 msgstr "Escolha o tipo de sistema de ficheiros para formatar o usb."
 
-#: src/sli.ui:1014 src/sli.ui:1143
+#: src/sli.ui:502 src/sli.ui:631
 msgid "Filesystem Type:"
 msgstr "Tipo de Sistema de ficheiros:"
 
-#: src/sli.ui:1083
+#: src/sli.ui:571
 msgid "Install (e)LiLo"
 msgstr "Instalar o (e)LiLo"
 
-#: src/sli.ui:1087
+#: src/sli.ui:575
 msgid "check this if you want to install (e)Lilo boot loader"
 msgstr "marque aqui se deseja instalar o carregador de arranque (e)Lilo"
 
-#: src/sli.ui:1101 src/sli.ui:1134
+#: src/sli.ui:589 src/sli.ui:622
 msgid "choose the Linux partition to hold the main directory tree."
 msgstr "escolha a partição Linux para manter a árvore de diretórios principal."
 
-#: src/sli.ui:1117
+#: src/sli.ui:605
 msgid "Install Grub"
 msgstr "Instalar o Grub"
 
-#: src/sli.ui:1121
+#: src/sli.ui:609
 msgid "check this if you want to install Grub boot loader"
 msgstr "marque aqui se quiser instalar o carregador de arranque Grub"
 
-#: src/sli.ui:1135
+#: src/sli.ui:623
 msgid "Install location:"
 msgstr "Local a instalar:"
 
-#: src/sli.ui:1142 src/sli.ui:1154
+#: src/sli.ui:630 src/sli.ui:642
 msgid "Choose the filesystem type to format partition(s)."
 msgstr "Escolha o tipo de sistema de ficheiros para formatar a partição(ções)."
 
-#: src/sli.ui:1175 src/sli.ui:1188
+#: src/sli.ui:663 src/sli.ui:676
 msgid ""
 "If you want to use a home partition to another disk then choose one from "
 "here.\n"
@@ -228,57 +187,57 @@ msgstr ""
 "Se quiser usar uma partição home noutro disco, escolha uma daqui.\n"
 "Caso contrário, deixe em branco."
 
-#: src/sli.ui:1177
+#: src/sli.ui:665
 msgid "Home location:"
 msgstr "Localização da Home:"
 
-#: src/sli.ui:1207
+#: src/sli.ui:695
 msgid "Format Ηome"
 msgstr "Formatar a Home"
 
-#: src/sli.ui:1211
+#: src/sli.ui:699
 msgid "check this if you want to format /home partition"
 msgstr "marque aqui se deseja formatar a partição /home"
 
-#: src/sli.ui:1232
+#: src/sli.ui:720
 msgid ""
 "click here if you want to install system to internal or external ssd disk or "
 "a USB stick "
 msgstr "clique aqui se quiser instalar o sistema no disco rígido"
 
-#: src/sli.ui:1254
+#: src/sli.ui:742
 msgid "Install live system"
 msgstr "Instalar o sistema live"
 
-#: src/sli.ui:1318
+#: src/sli.ui:806
 msgid "Actions needed before proceeding with system installation.\n"
 msgstr "Ações necessárias antes de prosseguir com a instalação do sistema.\n"
 
-#: src/sli.ui:1344
+#: src/sli.ui:832
 msgid "System clock"
 msgstr "Relógio do sistema"
 
-#: src/sli.ui:1348
+#: src/sli.ui:836
 msgid "Please set the time, date and time zone:"
 msgstr "Por favor, defina a hora, a data e o fuso horário:"
 
-#: src/sli.ui:1407 src/sli.ui:3170
+#: src/sli.ui:895 src/sli.ui:3002
 msgid "Language"
 msgstr "Idioma"
 
-#: src/sli.ui:1411
+#: src/sli.ui:899
 msgid "Select a default system locale."
 msgstr "Selecione a localização predefinida do sistema."
 
-#: src/sli.ui:1435
+#: src/sli.ui:923
 msgid "keyboard"
 msgstr "Teclado"
 
-#: src/sli.ui:1439
+#: src/sli.ui:927
 msgid "Select your preferred keyboard type."
 msgstr "Selecione o seu tipo de teclado preferido."
 
-#: src/sli.ui:1475
+#: src/sli.ui:963
 msgid ""
 "Set root password, define login name, choose a password to be coupled with "
 "your\n"
@@ -288,19 +247,19 @@ msgstr ""
 "uma palavra-passe para ser acoplada ao seu\n"
 "nome de início de sessão."
 
-#: src/sli.ui:1509
+#: src/sli.ui:997
 msgid "root password"
 msgstr "palavra-passe do root"
 
-#: src/sli.ui:1516
+#: src/sli.ui:1004
 msgid "user name"
 msgstr "nome do utilizador"
 
-#: src/sli.ui:1527
+#: src/sli.ui:1015
 msgid "user password"
 msgstr "palavra-passe do utilizador"
 
-#: src/sli.ui:1538
+#: src/sli.ui:1026
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters."
@@ -308,7 +267,7 @@ msgstr ""
 "Aqui deve definir seu nome de início de sessão, que deve incluir apenas\n"
 "caracteres alfanuméricos sem espaço ou letras maiúsculas. "
 
-#: src/sli.ui:1555
+#: src/sli.ui:1043
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -321,7 +280,7 @@ msgstr ""
 "de letras maiúsculas e minúsculas, números e até símbolos\n"
 "(tais como o @, ! e &)"
 
-#: src/sli.ui:1575
+#: src/sli.ui:1063
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -335,7 +294,7 @@ msgstr ""
 "a frase secreta deve incluir uma mistura de letras maiúsculas e minúsculas\n"
 "letras, números e até símbolos (tais como o @, ! e &)"
 
-#: src/sli.ui:1594
+#: src/sli.ui:1082
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
@@ -344,7 +303,7 @@ msgstr ""
 "como\n"
 "confirmação da sua escolha."
 
-#: src/sli.ui:1610
+#: src/sli.ui:1098
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
@@ -352,11 +311,11 @@ msgstr ""
 "Aqui você deve escrever novamente a sua palavra-passe como\n"
 "uma confirmação da sua escolha."
 
-#: src/sli.ui:1626 src/sli.ui:1642
+#: src/sli.ui:1114 src/sli.ui:1130
 msgid "visible"
 msgstr "visível"
 
-#: src/sli.ui:1630 src/sli.ui:1646
+#: src/sli.ui:1118 src/sli.ui:1134
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
@@ -364,15 +323,15 @@ msgstr ""
 "Marque esta caixa se quiser ver a palavra-passe\n"
 "que está a escrever."
 
-#: src/sli.ui:1684
+#: src/sli.ui:1172
 msgid "Choose installation mode"
 msgstr "Escolha o modo de instalação"
 
-#: src/sli.ui:1709
+#: src/sli.ui:1197
 msgid "core installation"
 msgstr "instalação de núcleo"
 
-#: src/sli.ui:1713
+#: src/sli.ui:1201
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are\n"
@@ -388,11 +347,11 @@ msgstr ""
 "instalação para qualquer finalidade específica, como um servidor da Web.\n"
 "servidor de ficheiros etc. "
 
-#: src/sli.ui:1731
+#: src/sli.ui:1219
 msgid "basic installation"
 msgstr "instalação básica"
 
-#: src/sli.ui:1735
+#: src/sli.ui:1223
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few\n"
@@ -408,11 +367,11 @@ msgstr ""
 "gostariam de instalar um sistema leve e adicionar as suas próprias\n"
 "escolhas de aplicações. "
 
-#: src/sli.ui:1753
+#: src/sli.ui:1241
 msgid "full installation"
 msgstr "instalação completa"
 
-#: src/sli.ui:1757
+#: src/sli.ui:1245
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -426,15 +385,48 @@ msgstr ""
 "e uma seleção completa de aplicações correspondentes\n"
 "sempre seguindo o raciocínio \"uma aplicação por tarefa\". "
 
-#: src/sli.ui:1833
+#: src/sli.ui:1321
 msgid "About"
 msgstr "Acerca"
 
-#: src/sli.ui:2520
+#: src/sli.ui:2008
 msgid "translator-credits"
 msgstr "Hugo Carvalho <hugokarvalho@gmail.com>"
 
-#: src/sli.ui:2553
+#: src/sli.ui:2034
+msgid "Date and time settings"
+msgstr "Definições de data e hora"
+
+#: src/sli.ui:2103
+msgid "Keep clock synchronized with internet servers"
+msgstr "Mantenha o relógio sincronizado com os servidores da internet"
+
+#: src/sli.ui:2129
+msgid "Synchronize now"
+msgstr "Sincronizar agora"
+
+#: src/sli.ui:2157
+msgid "Time Zone:"
+msgstr "Fuso horário:"
+
+#: src/sli.ui:2190
+msgid "Select time zone..."
+msgstr "Selecione o fuso horário..."
+
+#: src/sli.ui:2212
+msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
+msgstr ""
+"O relógio da máquina está definido para o Tempo Universal Coordenado (UTC)"
+
+#: src/sli.ui:2340
+msgid "Time:"
+msgstr "Hora:"
+
+#: src/sli.ui:2351
+msgid "Date:"
+msgstr "Data:"
+
+#: src/sli.ui:2385
 msgid ""
 "Cannot install Grub boot loader on an xfs filesystem. System will not "
 "boot. \n"
@@ -444,38 +436,38 @@ msgstr ""
 "ficheiros xfs. O sistema não arranca.\n"
 "Escolha o (e)Lilo em seu lugar. Por favor, verifique e corrija."
 
-#: src/sli.ui:2595
+#: src/sli.ui:2427
 msgid ""
 "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr ""
 "Não é possível instalar os carregadores de arranque (e)Lilo e Grub. Por "
 "favor, verifique e corrija."
 
-#: src/sli.ui:2632 src/sli.ui:2680
+#: src/sli.ui:2464 src/sli.ui:2512
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:2642
+#: src/sli.ui:2474
 msgid "Error encountered."
 msgstr "Erro encontrado."
 
-#: src/sli.ui:2689
+#: src/sli.ui:2521
 msgid "Installation completed."
 msgstr "Instalação Concluída."
 
-#: src/sli.ui:2734
+#: src/sli.ui:2566
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr ""
 "As suas palavras-passe de root não correspondem. Por favor, verifique e "
 "corrija."
 
-#: src/sli.ui:2778
+#: src/sli.ui:2610
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr ""
 "As suas palavras-passe de utilizador não correspondem. Por favor, verifique "
 "e corrija."
 
-#: src/sli.ui:2822
+#: src/sli.ui:2654
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -490,27 +482,51 @@ msgstr ""
 "\n"
 "Por favor, verifique e corrija.\n"
 
-#: src/sli.ui:2943
+#: src/sli.ui:2696
+msgid "Keyboard settings"
+msgstr "tipo de teclado"
+
+#: src/sli.ui:2775
 msgid "Please select your preferred keyboard type and map."
 msgstr "Por favor, selecione o seu tipo de teclado e mapa preferido."
 
-#: src/sli.ui:2981
+#: src/sli.ui:2813
 msgid "keyboard type"
 msgstr "tipo de teclado"
 
-#: src/sli.ui:3017
+#: src/sli.ui:2849
 msgid "keyboard map"
 msgstr "mapa de teclado"
 
-#: src/sli.ui:3133
+#: src/sli.ui:2885
+msgid "System language"
+msgstr "Idioma"
+
+#: src/sli.ui:2965
 msgid "Please select a default system locale."
 msgstr "Selecione a localização predefinida do sistema."
 
-#: src/sli.ui:3182
+#: src/sli.ui:3014
 msgid "Locale"
 msgstr "Localização"
 
-#: src/sli.ui:3214
+#: src/sli.ui:3042
+msgid "Select time zone"
+msgstr "Selecione o fuso horário"
+
+#: src/sli.ui:3108
+msgid "Please select your time zone:"
+msgstr "Por favor, selecione o seu fuso horário:"
+
+#: src/sli.ui:3147
+msgid "General area"
+msgstr "Área geral"
+
+#: src/sli.ui:3183
+msgid "Location"
+msgstr "Localização"
+
+#: src/sli.ui:3223
 msgid "Error: system is not live."
 msgstr "Erro: o sistema não é live."
 

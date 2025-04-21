@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: slackel-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-31 03:03+0200\n"
-"PO-Revision-Date: 2024-10-31 03:05+0200\n"
+"POT-Creation-Date: 2025-04-21 20:49+0300\n"
+"PO-Revision-Date: 2025-04-21 20:53+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: Hindi (India) (http://www.transifex.com/djemos/slackel-live-installer/"
 "language/hi_IN/)\n"
@@ -20,123 +20,83 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.5\n"
 
-#: src/sli.ui:139
-msgid "Keep clock synchronized with internet servers"
-msgstr "घड़ी को इंटरनेट सर्वर से समकालीन रखें"
-
-#: src/sli.ui:165
-msgid "Synchronize now"
-msgstr "अभी समकालीन करें"
-
-#: src/sli.ui:193
-msgid "Time Zone:"
-msgstr "समय क्षेत्र :"
-
-#: src/sli.ui:227
-msgid "Select time zone..."
-msgstr "समय क्षेत्र चुनें..."
-
-#: src/sli.ui:249
-msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr "हार्डवेयर घड़ी समन्वित सर्वत्र समय (UTC) पर सेट है"
-
-#: src/sli.ui:377
-msgid "Time:"
-msgstr "समय :"
-
-#: src/sli.ui:388
-msgid "Date:"
-msgstr "दिनांक :"
-
-#: src/sli.ui:419
+#: src/sli.ui:78
 msgid "azerty"
 msgstr "azerty"
 
-#: src/sli.ui:422
+#: src/sli.ui:81
 msgid "dvorak"
 msgstr "dvorak"
 
-#: src/sli.ui:425
+#: src/sli.ui:84
 msgid "olpc"
 msgstr "olpc"
 
-#: src/sli.ui:428
+#: src/sli.ui:87
 msgid "qwerty"
 msgstr "qwerty"
 
-#: src/sli.ui:431
+#: src/sli.ui:90
 msgid "qwertz"
 msgstr "qwertz"
 
-#: src/sli.ui:454
+#: src/sli.ui:113
 msgid "btrfs"
 msgstr "btrfs"
 
-#: src/sli.ui:457
+#: src/sli.ui:116
 msgid "ext2"
 msgstr "ext2"
 
-#: src/sli.ui:460 src/sli.ui:486
+#: src/sli.ui:119 src/sli.ui:145
 msgid "ext3"
 msgstr "ext3"
 
-#: src/sli.ui:463
+#: src/sli.ui:122
 msgid "ext4"
 msgstr "ext4"
 
-#: src/sli.ui:466
+#: src/sli.ui:125
 msgid "jfs"
 msgstr "jfs"
 
-#: src/sli.ui:469
+#: src/sli.ui:128
 msgid "reiserfs"
 msgstr "reiserfs"
 
-#: src/sli.ui:472
+#: src/sli.ui:131
 msgid "xfs"
 msgstr "xfs"
 
-#: src/sli.ui:483
+#: src/sli.ui:142
 msgid "vfat"
 msgstr "vfat"
 
-#: src/sli.ui:507
-msgid "Select time zone"
-msgstr "समय क्षेत्र चयन"
+#: src/sli.ui:177
+msgid "Slackel Installation"
+msgstr "स्लैकेल स्थापना"
 
-#: src/sli.ui:573
-msgid "Please select your time zone:"
-msgstr "कृपया अपना समय क्षेत्र चुनें :"
-
-#: src/sli.ui:612
-msgid "General area"
-msgstr "सामान्य क्षेत्र"
-
-#: src/sli.ui:648
-msgid "Location"
-msgstr "फोल्डर :"
-
-#: src/sli.ui:710
+#: src/sli.ui:198
 msgid "_File"
 msgstr "फाइल (_F)"
 
-#: src/sli.ui:740
+#: src/sli.ui:228
 msgid "_Help"
 msgstr "सहायता (_H)"
 
-#: src/sli.ui:764
+#: src/sli.ui:252
 msgid "_Slackel Startup Guide"
 msgstr "स्लैकल आरंभ गाइड"
 
-#: src/sli.ui:772
+#: src/sli.ui:260
 msgid "S_tartup_Guide"
 msgstr "आरंभ गाइड (G)"
 
-#: src/sli.ui:857
+#: src/sli.ui:345
 msgid "Partitions"
 msgstr "विभाजन"
 
-#: src/sli.ui:861
+#: src/sli.ui:349
 msgid ""
 "Important!\n"
 "\n"
@@ -161,59 +121,59 @@ msgstr ""
 "पर डाटा नष्ट हो सकता है। अतः हम आपको प्रक्रिया आरंभ\n"
 "पूर्व अहम डेटा बैकअप करने का परामर्श देते हैं।"
 
-#: src/sli.ui:900
+#: src/sli.ui:388
 msgid "<i>Warning: copy / installation wipes everything on the selected location.</i>"
 msgstr "<i>चेतावनी : कॉपी/इंस्टॉल प्रक्रिया से चयनित ड्राइव पर पहले से मौजूद डाटा नष्ट हो जाएगा।</i>"
 
-#: src/sli.ui:925
+#: src/sli.ui:413
 msgid "Copy location:"
 msgstr "कॉपी हेतु फोल्डर :"
 
-#: src/sli.ui:964
+#: src/sli.ui:452
 msgid "click here if you want to copy system to usb"
 msgstr "यहाँ क्लिक कर सिस्टम को यूएसबी पर कॉपी करें"
 
-#: src/sli.ui:987
+#: src/sli.ui:475
 msgid "Copy live system to usb"
 msgstr "लाइव सिस्टम को यूएसबी पर कॉपी करें"
 
-#: src/sli.ui:1013 src/sli.ui:1026
+#: src/sli.ui:501 src/sli.ui:514
 msgid "Choose the filesystem type to format usb."
 msgstr "यूएसबी फॉर्मेट हेतु फाइल सिस्टम प्रकार चुनें।"
 
-#: src/sli.ui:1014 src/sli.ui:1143
+#: src/sli.ui:502 src/sli.ui:631
 msgid "Filesystem Type:"
 msgstr "फाइल सिस्टम प्रकार :"
 
-#: src/sli.ui:1083
+#: src/sli.ui:571
 msgid "Install (e)LiLo"
 msgstr "(ई)लीलो इंस्टॉल करें "
 
-#: src/sli.ui:1087
+#: src/sli.ui:575
 msgid "check this if you want to install (e)Lilo boot loader"
 msgstr "इसे चिन्हित कर (ई)लीलो बूट लोड साधन इंस्टॉल करें"
 
-#: src/sli.ui:1101 src/sli.ui:1134
+#: src/sli.ui:589 src/sli.ui:622
 msgid "choose the Linux partition to hold the main directory tree."
 msgstr "मुख्य डायरेक्टरी संरचना हेतु लिनक्स विभाजन चुनें।"
 
-#: src/sli.ui:1117
+#: src/sli.ui:605
 msgid "Install Grub"
 msgstr "Grub इंस्टॉल करें"
 
-#: src/sli.ui:1121
+#: src/sli.ui:609
 msgid "check this if you want to install Grub boot loader"
 msgstr "इसे चिन्हित कर Grub बूट लोड साधन इंस्टॉल करें"
 
-#: src/sli.ui:1135
+#: src/sli.ui:623
 msgid "Install location:"
 msgstr "इंस्टॉल हेतु फोल्डर :"
 
-#: src/sli.ui:1142 src/sli.ui:1154
+#: src/sli.ui:630 src/sli.ui:642
 msgid "Choose the filesystem type to format partition(s)."
 msgstr "विभाजन फॉर्मेट हेतु फाइल सिस्टम प्रकार चुनें।"
 
-#: src/sli.ui:1175 src/sli.ui:1188
+#: src/sli.ui:663 src/sli.ui:676
 msgid ""
 "If you want to use a home partition to another disk then choose one from here.\n"
 "Otherwise leave it empty."
@@ -221,75 +181,74 @@ msgstr ""
 "अन्य डिस्क से होम विभाजन चयन करने हेतु यहाँ से चुनें।\n"
 "अन्यथा इसे रिक्त रखें।"
 
-#: src/sli.ui:1177
+#: src/sli.ui:665
 msgid "Home location:"
 msgstr "होम हेतु फोल्डर :"
 
-#: src/sli.ui:1207
+#: src/sli.ui:695
 msgid "Format Ηome"
 msgstr "होम फॉर्मेट करें"
 
-#: src/sli.ui:1211
+#: src/sli.ui:699
 msgid "check this if you want to format /home partition"
 msgstr "इसे चिन्हित कर /home विभाजन फॉर्मेट करें"
 
-#: src/sli.ui:1232
+#: src/sli.ui:720
 msgid ""
 "click here if you want to install system to internal or external ssd disk or a USB stick "
 msgstr "यहाँ क्लिक कर सिस्टम को हार्ड डिस्क पर इंस्टॉल करें"
 
-#: src/sli.ui:1254
-#, fuzzy
+#: src/sli.ui:742
 msgid "Install live system"
 msgstr "लाइव सिस्टम इंस्टॉल करें"
 
-#: src/sli.ui:1318
+#: src/sli.ui:806
 msgid "Actions needed before proceeding with system installation.\n"
 msgstr "सिस्टम इंस्टॉल प्रक्रिया पूर्व आवश्यक कार्य।\n"
 
-#: src/sli.ui:1344
+#: src/sli.ui:832
 msgid "System clock"
 msgstr "सिस्टम घड़ी"
 
-#: src/sli.ui:1348
+#: src/sli.ui:836
 msgid "Please set the time, date and time zone:"
 msgstr "कृपया समय, दिनांक व समय क्षेत्र सेट करें :"
 
-#: src/sli.ui:1407 src/sli.ui:3170
+#: src/sli.ui:895 src/sli.ui:3002
 msgid "Language"
 msgstr "भाषा"
 
-#: src/sli.ui:1411
+#: src/sli.ui:899
 msgid "Select a default system locale."
 msgstr "सिस्टम हेतु डिफ़ॉल्ट स्थानिकी चुनें।"
 
-#: src/sli.ui:1435
+#: src/sli.ui:923
 msgid "keyboard"
 msgstr "कुंजीपटल"
 
-#: src/sli.ui:1439
+#: src/sli.ui:927
 msgid "Select your preferred keyboard type."
 msgstr "इच्छित कुंजीपटल प्रकार चुनें।"
 
-#: src/sli.ui:1475
+#: src/sli.ui:963
 msgid ""
 "Set root password, define login name, choose a password to be coupled with your\n"
 "login name."
 msgstr "रुट कूटशब्द सेट करें, लॉगिन नाम दर्ज करें व लॉगिन नाम हेतु कूटशब्द चुनें।"
 
-#: src/sli.ui:1509
+#: src/sli.ui:997
 msgid "root password"
 msgstr "रुट कूटशब्द"
 
-#: src/sli.ui:1516
+#: src/sli.ui:1004
 msgid "user name"
 msgstr "उपयोक्ता नाम"
 
-#: src/sli.ui:1527
+#: src/sli.ui:1015
 msgid "user password"
 msgstr "उपयोक्ता कूटशब्द"
 
-#: src/sli.ui:1538
+#: src/sli.ui:1026
 msgid ""
 "Here you must define your login name which should only include\n"
 "alphanumerical characters with no space or upper case letters."
@@ -297,7 +256,7 @@ msgstr ""
 "लॉगिन नाम पूर्णतया अक्षरांकीय युक्त हो व इसमें रिक्त स्थान या\n"
 "अपरकेस अक्षर नहीं होने चाहिए।"
 
-#: src/sli.ui:1555
+#: src/sli.ui:1043
 msgid ""
 "Choose a password or passphrase to be coupled with your\n"
 "login name. Your password or passprase should include a mix\n"
@@ -307,7 +266,7 @@ msgstr ""
 "अपने लॉगिन नाम हेतु कूटशब्द चुनें। कूटशब्द में अपरकेस व लोअरकेस\n"
 "अक्षर, अंक व चिन्ह (जैसे @, ! व &) का मिश्रण होना आवश्यक है ।"
 
-#: src/sli.ui:1575
+#: src/sli.ui:1063
 msgid ""
 "On Linux systems, the superuser, or root, is a special user\n"
 "account used for system administration. Here you must set\n"
@@ -320,23 +279,23 @@ msgstr ""
 "रहें कि इस कूटशब्द में अपरकेस व लोअरकेस अक्षर, अंक\n"
 "व चिन्ह (जैसे @, ! व &) का मिश्रण होना आवश्यक है।"
 
-#: src/sli.ui:1594
+#: src/sli.ui:1082
 msgid ""
 "Here you must retype the superuser (root) password as a\n"
 "confirmation of your choice."
 msgstr "कृपया पुष्टिकरण हेतु रुट कूटशब्द पुनः दर्ज करें।"
 
-#: src/sli.ui:1610
+#: src/sli.ui:1098
 msgid ""
 "Here you must retype your password as\n"
 "a confirmation of your choice."
 msgstr "कृपया पुष्टिकरण हेतु कूटशब्द पुनः दर्ज करें।"
 
-#: src/sli.ui:1626 src/sli.ui:1642
+#: src/sli.ui:1114 src/sli.ui:1130
 msgid "visible"
 msgstr "दृश्यमान"
 
-#: src/sli.ui:1630 src/sli.ui:1646
+#: src/sli.ui:1118 src/sli.ui:1134
 msgid ""
 "Check this box if you want to be able to see the password\n"
 "you are typing."
@@ -344,15 +303,15 @@ msgstr ""
 "यदि आप दर्ज किया गया कूटशब्द दृश्यमान\n"
 "रखना चाहते हैं तो इसे चिन्हित करें।"
 
-#: src/sli.ui:1684
+#: src/sli.ui:1172
 msgid "Choose installation mode"
 msgstr "इंस्टॉल मोड चयन"
 
-#: src/sli.ui:1709
+#: src/sli.ui:1197
 msgid "core installation"
 msgstr "कोर इंस्टॉल"
 
-#: src/sli.ui:1713
+#: src/sli.ui:1201
 msgid ""
 "Core installation:\n"
 "Only the minimum essentials for a console system to start are\n"
@@ -366,11 +325,11 @@ msgstr ""
 "इसमें चित्रात्मक वातावरण नहीं होता है। यह अनुभवी उपयोक्ता एवं\n"
 "वेब सर्वर, फाइल सर्वर जैसे विशिष्ट उद्देश्यों हेतु अनुकूलन के लिए उपयुक्त है।"
 
-#: src/sli.ui:1731
+#: src/sli.ui:1219
 msgid "basic installation"
 msgstr "सामान्य इंस्टॉल"
 
-#: src/sli.ui:1735
+#: src/sli.ui:1223
 msgid ""
 "Basic installation:\n"
 "This installs only a basic desktop environment, with very few\n"
@@ -385,11 +344,11 @@ msgstr ""
 "पैकेज सम्मिलित नहीं होते हैं। यह एक सरल सिस्टम व स्वयं अनुप्रयोग\n"
 "इंस्टॉल करने के इच्छुक उपयोक्ताओं हेतु उपयुक्त है।"
 
-#: src/sli.ui:1753
+#: src/sli.ui:1241
 msgid "full installation"
 msgstr "पूर्ण इंस्टॉल"
 
-#: src/sli.ui:1757
+#: src/sli.ui:1245
 msgid ""
 "Full installation:\n"
 "Everything that is included in the iso is installed. That includes \n"
@@ -402,15 +361,47 @@ msgstr ""
 "इसमें एक परिपूर्ण डेस्कटॉप वातावरण व\n"
 "'प्रति कार्य एकल अनुप्रयोग' तर्काधार पर संबंधित अनुप्रयोग होते हैं।"
 
-#: src/sli.ui:1833
+#: src/sli.ui:1321
 msgid "About"
 msgstr "बारे में"
 
-#: src/sli.ui:2520
+#: src/sli.ui:2008
 msgid "translator-credits"
 msgstr "Panwar108 <caspian7pena@gmail.com>"
 
-#: src/sli.ui:2553
+#: src/sli.ui:2034
+msgid "Date and time settings"
+msgstr "दिनांक और समय सेटिंग"
+
+#: src/sli.ui:2103
+msgid "Keep clock synchronized with internet servers"
+msgstr "घड़ी को इंटरनेट सर्वर से समकालीन रखें"
+
+#: src/sli.ui:2129
+msgid "Synchronize now"
+msgstr "अभी समकालीन करें"
+
+#: src/sli.ui:2157
+msgid "Time Zone:"
+msgstr "समय क्षेत्र :"
+
+#: src/sli.ui:2190
+msgid "Select time zone..."
+msgstr "समय क्षेत्र चुनें..."
+
+#: src/sli.ui:2212
+msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
+msgstr "हार्डवेयर घड़ी समन्वित सर्वत्र समय (UTC) पर सेट है"
+
+#: src/sli.ui:2340
+msgid "Time:"
+msgstr "समय :"
+
+#: src/sli.ui:2351
+msgid "Date:"
+msgstr "दिनांक :"
+
+#: src/sli.ui:2385
 msgid ""
 "Cannot install Grub boot loader on an xfs filesystem. System will not boot. \n"
 "Choose (e)Lilo instead. Please verify and correct."
@@ -418,31 +409,31 @@ msgstr ""
 "सिस्टम आरंभ विफलता के कारण फाइल सिस्टम पर Grub बूट लोड साधन इंस्टॉल करना संभव नहीं है।\n"
 "इसके स्थान पर (ई)लीलो चुनें। कृपया जाँचकर सुधारें।"
 
-#: src/sli.ui:2595
+#: src/sli.ui:2427
 msgid "Cannot install both (e)Lilo and Grub boot loaders. Please verify and correct."
 msgstr "दोनों (ई)लीलो व Grub बूट लोड साधन इंस्टॉल करना संभव नहीं है। कृपया जाँचकर सुधारें।"
 
-#: src/sli.ui:2632 src/sli.ui:2680
+#: src/sli.ui:2464 src/sli.ui:2512
 msgid "sli"
 msgstr "sli"
 
-#: src/sli.ui:2642
+#: src/sli.ui:2474
 msgid "Error encountered."
 msgstr "त्रुटि हुई।"
 
-#: src/sli.ui:2689
+#: src/sli.ui:2521
 msgid "Installation completed."
 msgstr "इंस्टॉल प्रक्रिया पूर्ण।"
 
-#: src/sli.ui:2734
+#: src/sli.ui:2566
 msgid "Your two root password entries do not match. Please verify and correct."
 msgstr "रुट कूटशब्द प्रविष्टियाँ मेल नहीं खाती हैं। कृपया जाँचकर सुधारें।"
 
-#: src/sli.ui:2778
+#: src/sli.ui:2610
 msgid "Your two user password entries do not match. Please verify and correct."
 msgstr "उपयोक्ता कूटशब्द प्रविष्टियाँ मेल नहीं खाती हैं। कृपया जाँचकर सुधारें।"
 
-#: src/sli.ui:2822
+#: src/sli.ui:2654
 msgid ""
 "root password, user name and user password entries \n"
 "cannot be emtpy.\n"
@@ -456,27 +447,51 @@ msgstr ""
 "\n"
 "कृपया जाँचकर सुधारें।\n"
 
-#: src/sli.ui:2943
+#: src/sli.ui:2696
+msgid "Keyboard settings"
+msgstr "कुंजीपटल प्रकार"
+
+#: src/sli.ui:2775
 msgid "Please select your preferred keyboard type and map."
 msgstr "कृपया इच्छित कुंजीपटल प्रकार व अभिन्यास चुनें।"
 
-#: src/sli.ui:2981
+#: src/sli.ui:2813
 msgid "keyboard type"
 msgstr "कुंजीपटल प्रकार"
 
-#: src/sli.ui:3017
+#: src/sli.ui:2849
 msgid "keyboard map"
 msgstr "कुंजीपटल अभिन्यास"
 
-#: src/sli.ui:3133
+#: src/sli.ui:2885
+msgid "System language"
+msgstr "भाषा"
+
+#: src/sli.ui:2965
 msgid "Please select a default system locale."
 msgstr "कृपया सिस्टम हेतु डिफ़ॉल्ट स्थानिकी चुनें।"
 
-#: src/sli.ui:3182
+#: src/sli.ui:3014
 msgid "Locale"
 msgstr "स्थानिकी"
 
-#: src/sli.ui:3214
+#: src/sli.ui:3042
+msgid "Select time zone"
+msgstr "समय क्षेत्र चयन"
+
+#: src/sli.ui:3108
+msgid "Please select your time zone:"
+msgstr "कृपया अपना समय क्षेत्र चुनें :"
+
+#: src/sli.ui:3147
+msgid "General area"
+msgstr "सामान्य क्षेत्र"
+
+#: src/sli.ui:3183
+msgid "Location"
+msgstr "फोल्डर :"
+
+#: src/sli.ui:3223
 msgid "Error: system is not live."
 msgstr "त्रुटि : सिस्टम लाइव नहीं है।"
 

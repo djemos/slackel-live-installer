@@ -5,10 +5,10 @@ mkdir -p pkg
 export DESTDIR=$PWD/pkg
 VER=1.2.6
 ARCH=${ARCH:-x86_64}
-RLZ=2dj
+RLZ=1dj
 
 	LDFLAGS='-export-dynamic' \
- 	cmake -DCMAKE_INSTALL_PREFIX=/usr .
+	cmake -DCMAKE_INSTALL_PREFIX=/usr .
 
 	make || return 1
 	make DESTDIR=pkg install || return 1
