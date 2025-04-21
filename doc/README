@@ -17,7 +17,7 @@ git clone https://github.com/djemos/slackel-live-installer.git
 4) Install the package
 sudo spkg sli-1.2.6-x86_64-1dj.txz or sudo installpkg sli-1.2.6-x86_64-1dj.txz
 
-Copyright (C) 2014-2024 Dimitris Tzemos <dijemos@gmail.com>
+Copyright (C) 2014-2025 Dimitris Tzemos <dijemos@gmail.com>
 This program is free software: you can redistribute it and/or modify it under the terms 
 of the GNU General Public License as published by the Free Software Foundation, 
 either version 2 of the License, or (at your option) any later version.
