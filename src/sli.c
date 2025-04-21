@@ -1,6 +1,6 @@
 /*
 sli.c (Slackel-Live installer) from Slackel <http://www.slackel.gr>
-Copyright (C) 2014-2024 Dimitris Tzemos <dijemos@gmail.com>
+Copyright (C) 2014-2025 Dimitris Tzemos <dijemos@gmail.com>
 This program is free software: you can redistribute it and/or modify it under the terms 
 of the GNU General Public License as published by the Free Software Foundation, 
 either version 2 of the License, or (at your option) any later version.
@@ -796,7 +796,7 @@ void on_continentlist_cursor_changed(GtkTreeView       *treeview,
 	GtkTreeView *listwidget;
 	GtkTreeView *continentlistwidget, *locationlistwidget;
 	GtkListStore *continentliststore, *locationliststore;
-	gchar *continentlist,current_zone[2][30],**dummy;;
+	gchar *continentlist,current_zone[2][30],**dummy;
 	gchar **lines, *output,*locale,*location;
 	gint i;
 	gint status;
@@ -881,7 +881,7 @@ void on_continentlist_cursor_changed(GtkTreeView       *treeview,
 			
 		row_count ++;
 		valid = gtk_tree_model_iter_next (model, &iter);
-		}  
+		}
 	}
 }
 
