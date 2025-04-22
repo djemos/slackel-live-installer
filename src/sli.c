@@ -820,7 +820,7 @@ void on_continentlist_cursor_changed(GtkTreeView       *treeview,
 		scrolledwindow4 = (GtkWidget *) gtk_builder_get_object(widgetstree, "scrolledwindow4");    
 		locationlistwidget = (GtkTreeView *) gtk_builder_get_object(widgetstree, "locationlist");
 		locationliststore = (GtkListStore *) gtk_tree_view_get_model(locationlistwidget);
-	    model = gtk_tree_view_get_model(locationlistwidget);
+	    	model = gtk_tree_view_get_model(locationlistwidget);
 		/*sortable = GTK_TREE_SORTABLE(keymapliststore);
 		gtk_tree_sortable_set_sort_column_id(sortable, 0, GTK_SORT_ASCENDING);*/
 	
@@ -842,7 +842,7 @@ void on_continentlist_cursor_changed(GtkTreeView       *treeview,
 	}
 	 
 		//location focus
-        get_current_zone(current_zone);
+        	get_current_zone(current_zone);
 		/* label = (GtkWidget *) gtk_builder_get_object(widgetstree, "label25");
 		
 		if (strlen(gtk_label_get_text(GTK_LABEL(label)))==0){
