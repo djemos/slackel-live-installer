@@ -30,7 +30,7 @@ for disks in sda sdb sdc sdd sde sdf sdg sdh sdi sdj sdk sdl sdm sdn sdo sdp sd 
 for disk in $disks; do
 	if [ "$1" == "copy" ]; then
 		size=`cat /proc/partitions | grep "$disk$" | sed 's/  */:/g' |cut -f4 -d:`
-		if (( $size > $requiredsize )); then
+		if [[ $size > $requiredsize ]]; then
 			echo "/dev/$disk"
 		fi
 	fi
@@ -38,7 +38,7 @@ for disk in $disks; do
 		partitions=`{ fdisk -l -o Device,Type-UUID /dev/$disk; fdisk -l -o Device,Id /dev/$disk; } 2>/dev/null | grep " 0FC63DAF-8483-4772-8E79-3D69D8477DE4$\| 83$" | cut -f1 -d' ' | cut -f3 -d'/'` #linux partitions
 		for partition in $partitions; do
 			size=`cat /proc/partitions | grep "$partition$" | sed 's/  */:/g'| cut -f4 -d:`
-			if (( $size > $requiredsize )); then
+			if [[ $size > $requiredsize ]]; then
 				echo "/dev/$partition"
 			fi
 		done
