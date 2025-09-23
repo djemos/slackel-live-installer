@@ -67,8 +67,8 @@ int ntpstate(){
 	}
 }
 
-void setntp(int true){
-	if (true) {
+void setntp(int ntp){
+	if (ntp) {
 			system("/usr/sbin/service restart ntpd");
 		}
 	else
